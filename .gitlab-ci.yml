@@ -1,0 +1,178 @@
+include:
+  - project: "devops/compliance"
+    file: "/rendered/license.yml"
+
+stages:
+  - test
+  - build
+  - docker
+  - deploy
+
+.nodeversion: &nodeversion registry.dev0.wizardtales.com/comcon/pnpm:18
+
+variables:
+  NPMCMD: pnpm
+  DOCKER_DRIVER: overlay
+
+.deployscript:
+  script: &deploy__prod_-_script
+    - |
+      helm3 -n "$NAMESPACE" \
+      upgrade --install "$NAME" \
+      "${CHART:-/charts/deployment}" \
+      -f "${HELM_VALUES:-deployment/values.yaml}" \
+      --set global.imagePullSecrets.0="$PULLSECRET" \
+      --set global.envLabel="$CI_ENVIRONMENT_SLUG" \
+      --set global.env.CI_COMMIT_SHA=$CI_COMMIT_SHA \
+      --set global.image.repository=$CI_REGISTRY_IMAGE \
+      --set global.image.tag="${TAG:-$CI_COMMIT_TAG}";
+
+.nodecache:
+  cache: &spec__audit_-_cache
+    paths:
+      - node_modules
+    untracked: true
+
+.containerbuild: &containerbuild
+  script:
+    - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
+    - /kaniko/executor --context $CI_PROJECT_DIR --dockerfile $CI_PROJECT_DIR/Dockerfile --destination $CI_REGISTRY_IMAGE:$TAG
+
+.substitue_for_gitlab_non_ee:
+  before_script: &gl_k8s_subst
+    - echo "${KUBECONFIG:-$KUBE_DEFAULT}" > "$CI_PROJECT_DIR.tmp/KUBECONFIG"
+    - export KUBECONFIG="$CI_PROJECT_DIR.tmp/KUBECONFIG"
+
+license:
+  image: *nodeversion
+  cache: *spec__audit_-_cache
+  only:
+    changes:
+      - package.json
+      - package-lock.json
+      - pnpm-lock.json
+
+spec::audit:
+  before_script:
+    - "pnpm install"
+  cache: *spec__audit_-_cache
+  image: *nodeversion
+  script:
+    - "pnpm audit --audit-level critical --production"
+  stage: test
+
+spec::build:
+  image: *nodeversion
+  stage: build
+  cache: *spec__audit_-_cache
+  artifacts:
+    expire_in: 5d
+    paths:
+      - dist
+  script:
+    - pnpm install
+    # - sed -i "s/%%__GIT_COMMIT_HASH__%%/$CI_COMMIT_SHA/g" public/index.html;
+    # - sed -i "s/%%__GIT_COMMIT_HASH__%%/$CI_COMMIT_SHA/g" public/version.json;
+    # - sed -i "s/%%__GIT_COMMIT_HASH__%%/$CI_COMMIT_SHA/g" src/main.js;
+    - npm run build
+
+build:container:tag:
+  image:
+    name: gcr.io/kaniko-project/executor:debug
+    entrypoint: [""]
+  stage: docker
+  variables:
+    TAG: "$CI_COMMIT_TAG"
+  <<: *containerbuild
+  only:
+    - tags
+
+build:container:latest:
+  image:
+    name: gcr.io/kaniko-project/executor:debug
+    entrypoint: [""]
+  stage: docker
+  variables:
+    TAG: "latest"
+  <<: *containerbuild
+  only:
+    - master
+
+build:container:dev:
+  image:
+    name: gcr.io/kaniko-project/executor:debug
+    entrypoint: [""]
+  stage: docker
+  variables:
+    TAG: "dev"
+  <<: *containerbuild
+  only:
+    - develop
+
+build:container:prod:
+  image:
+    name: gcr.io/kaniko-project/executor:debug
+    entrypoint: [""]
+  stage: docker
+  variables:
+    TAG: "prod"
+  <<: *containerbuild
+  only:
+    - prod
+
+deploy::test:
+  dependencies: []
+  variables:
+    NAME: $CI_ENVIRONMENT_SLUG-$CI_PROJECT_NAME
+    NAMESPACE: "sldev"
+    PULLSECRET: $pullSecret
+    KUBECONFIG: $KUBE_DEV
+    HELM_VALUES: deployment/$CI_ENVIRONMENT_SLUG.yml
+    TAG: "dev"
+  image: registry.dev0.wizardtales.com/devops/helm:latest
+  stage: deploy
+  before_script: *gl_k8s_subst
+  script: *deploy__prod_-_script
+  environment:
+    name: test
+  when: manual
+  only:
+    - develop
+
+deploy::staging:
+  dependencies: []
+  variables:
+    NAME: $CI_ENVIRONMENT_SLUG-$CI_PROJECT_NAME
+    NAMESPACE: "sldev"
+    PULLSECRET: $pullSecret
+    KUBECONFIG: $KUBE_DEV
+    HELM_VALUES: deployment/$CI_ENVIRONMENT_SLUG.yml
+    TAG: "latest"
+  image: registry.dev0.wizardtales.com/devops/helm:latest
+  stage: deploy
+  before_script: *gl_k8s_subst
+  script: *deploy__prod_-_script
+  environment:
+    name: staging
+  when: manual
+  only:
+    - master
+
+deploy::prod:
+  dependencies: []
+  variables:
+    NAME: $CI_ENVIRONMENT_SLUG-$CI_PROJECT_NAME
+    NAMESPACE: "sl"
+    PULLSECRET: $pullSecret
+    KUBECONFIG: $KUBE_DEV
+    HELM_VALUES: deployment/$CI_ENVIRONMENT_SLUG.yml
+    TAG: "$CI_COMMIT_TAG"
+  image: registry.dev0.wizardtales.com/devops/helm:latest
+  stage: deploy
+  before_script: *gl_k8s_subst
+  script: *deploy__prod_-_script
+  environment:
+    name: production
+  when: manual
+  only:
+    - tags
