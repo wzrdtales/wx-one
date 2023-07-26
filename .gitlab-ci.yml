@@ -4,7 +4,6 @@ include:
 
 stages:
   - test
-  - build
   - docker
   - deploy
 
@@ -63,7 +62,7 @@ spec::audit:
 
 spec::build:
   image: *nodeversion
-  stage: build
+  stage: test
   cache: *spec__audit_-_cache
   artifacts:
     expire_in: 5d
