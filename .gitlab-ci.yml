@@ -120,59 +120,32 @@ build:container:prod:
   only:
     - prod
 
-deploy::test:
-  dependencies: []
-  variables:
-    NAME: $CI_ENVIRONMENT_SLUG-$CI_PROJECT_NAME
-    NAMESPACE: "sldev"
-    PULLSECRET: $pullSecret
-    KUBECONFIG: $KUBE_DEV
-    HELM_VALUES: deployment/$CI_ENVIRONMENT_SLUG.yml
-    TAG: "dev"
-  image: registry.dev0.wizardtales.com/devops/helm:latest
-  stage: deploy
-  before_script: *gl_k8s_subst
-  script: *deploy__prod_-_script
-  environment:
-    name: test
-  when: manual
-  only:
-    - develop
-
-deploy::staging:
-  dependencies: []
-  variables:
-    NAME: $CI_ENVIRONMENT_SLUG-$CI_PROJECT_NAME
-    NAMESPACE: "sldev"
-    PULLSECRET: $pullSecret
-    KUBECONFIG: $KUBE_DEV
-    HELM_VALUES: deployment/$CI_ENVIRONMENT_SLUG.yml
-    TAG: "latest"
-  image: registry.dev0.wizardtales.com/devops/helm:latest
-  stage: deploy
-  before_script: *gl_k8s_subst
-  script: *deploy__prod_-_script
-  environment:
-    name: staging
-  when: manual
-  only:
-    - master
-
 deploy::prod:
   dependencies: []
   variables:
-    NAME: $CI_ENVIRONMENT_SLUG-$CI_PROJECT_NAME
-    NAMESPACE: "sl"
-    PULLSECRET: $pullSecret
-    KUBECONFIG: $KUBE_DEV
-    HELM_VALUES: deployment/$CI_ENVIRONMENT_SLUG.yml
-    TAG: "$CI_COMMIT_TAG"
-  image: registry.dev0.wizardtales.com/devops/helm:latest
+    KUBECONFIG: $KUBE_PROD
+    TAG: prod
+  image: bitnami/kubectl
   stage: deploy
   before_script: *gl_k8s_subst
-  script: *deploy__prod_-_script
+  script:
+    - kubectl -n wx1page set env deployment/wx1page CI_COMMIT_SHA=$CI_COMMIT_SHA
   environment:
-    name: production
-  when: manual
+    name: prod
   only:
-    - tags
+    - master
+
+deploy::dev:
+  dependencies: []
+  variables:
+    KUBECONFIG: $KUBE_PROD
+    TAG: dev
+  image: bitnami/kubectl
+  stage: deploy
+  before_script: *gl_k8s_subst
+  script:
+    - kubectl -n landingpage set env deployment/landing CI_COMMIT_SHA=$CI_COMMIT_SHA
+  environment:
+    name: devdeploy
+  only:
+    - devdeploy

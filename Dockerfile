@@ -1,4 +1,4 @@
-FROM nginxinc/nginx-unprivileged:1.22
+FROM nginxinc/nginx-unprivileged:stable
 
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY dist/ /usr/share/nginx/html/
