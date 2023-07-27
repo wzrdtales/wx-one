@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-wf-page="649e8340bde586a93b2c239a" data-wf-site="649e8340bde586a93b2c230d"><head><link rel="preconnect" crossorigin="true" href="https://assets.website-files.com">{%- seo seo -%}
+<html data-wf-page="649e8340bde586a93b2c239a" data-wf-site="649e8340bde586a93b2c230d" lang="de"><head><link rel="preconnect" crossorigin="true" href="https://assets.website-files.com">{%- seo seo -%}
   <meta charset="utf-8">
   
   
@@ -15,21 +15,15 @@
   <script type="text/javascript">WebFont.load({  google: {    families: ["Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic"]  }});</script>
   <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
   <link href="{{ settings.site.favicon | default: "/assets/images/favicon.png" }}" rel="shortcut icon" type="image/x-icon">
-  <link href="{{ settings.site.apple_touch_icon | default: "/assets/images/webclip.png" }}" rel="apple-touch-icon"><!--  Google tag (gtag.js)  -->
-  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3XPBT7BZ10"></script>
-  <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-3XPBT7BZ10');
-</script>
+  <link href="{{ settings.site.apple_touch_icon | default: "/assets/images/webclip.png" }}" rel="apple-touch-icon">
+  <link href="https://wx1.de/" rel="canonical">
 {{ settings.site.header_additional_content }}{%- include "partials/_site-css-variables" -%}<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script><style>.w-video.w-embed {
             aspect-ratio: 16 / 9;
         }</style></head>
 <body class="body background-1">
   <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
     <div class="navbar-container w-container">
-      <a href="{{ links.2f }}" aria-current="page" class="brand w-nav-brand w--current"><img src="{{ images.11546ea9.url }}" loading="lazy" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;100vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;175.75px&quot;}]" alt="{{ images.11546ea9.alt | trim | escape }}" class="image home" height="30"></a>
+      <a href="{{ links.2f }}" aria-current="page" class="brand w-nav-brand w--current"><img src="{{ images.-1101e822.url }}" loading="lazy" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;100vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;175.75px&quot;}]" alt="{{ images.-1101e822.alt | trim | escape }}" class="image home" height="30"></a>
       <nav role="navigation" class="nav-menu w-nav-menu">
         <div data-hover="true" data-delay="0" class="dropdown w-dropdown">
           <div class="dropdown-toggle w-dropdown-toggle">
@@ -38,36 +32,24 @@
               <a href="{{ links.-32173fbe }}" class="link-2">{{ texts.560f747e }}</a>
             </div>
           </div>
-          <nav class="dropdown-list w-dropdown-list">
-            <figure class="dropdown-link-wrapper">
-              <div class="dropdown-line"></div>
-            </figure>
-            <div class="dropdown-link-wrapper">
-              <div class="dropdown-line"></div>
-              <a href="{{ links.4c2c9ec6 }}" class="dropdown-link w-dropdown-link">{{ texts.-74eb2627 }}</a>
+          <article class="dropdown-list w-dropdown-list">
+            {%- assign collection = collections.services | sort: "-created-on" -%}<div class="w-dyn-list">
+              {%- unless collection.length == 0 -%}<div role="list" class="collection-list-9 w-dyn-items">
+                {%- for item in collection -%}<div role="listitem" class="w-dyn-item">
+                  <div class="dropdown-link-wrapper">
+                    <div class="dropdown-line"></div>
+                    <a href="{{ item.url }}" class="w-inline-block">
+                      <p class="paragraph-13">{{ item.data.title }}</p>
+                    </a>
+                  </div>
+                </div>{%- endfor -%}
+              </div>{%- endunless -%}
+              {%- if collection.length == 0 -%}<div class="w-dyn-empty">
+                <div>{{ texts.3d503d2b }}</div>
+              </div>{%- endif -%}
             </div>
             <div class="triangles"></div>
-            <div class="dropdown-link-wrapper">
-              <div class="dropdown-line"></div>
-              <a href="{{ links.4c2c9ec5 }}" class="dropdown-link w-dropdown-link">{{ texts.77be36d }}</a>
-            </div>
-            <div class="dropdown-link-wrapper">
-              <div class="dropdown-line"></div>
-              <a href="{{ links.4c2c9ec4 }}" class="dropdown-link w-dropdown-link">{{ texts.73f6abff }}</a>
-            </div>
-            <div class="dropdown-link-wrapper">
-              <div class="dropdown-line"></div>
-              <a href="{{ links.4c2c9ec3 }}" class="dropdown-link w-dropdown-link">{{ texts.-7ebbe4e1 }}</a>
-            </div>
-            <div class="dropdown-link-wrapper">
-              <div class="dropdown-line"></div>
-              <a href="{{ links.4c2c9ec2 }}" class="dropdown-link w-dropdown-link">{{ texts.-786d7d7 }}</a>
-            </div>
-            <div class="dropdown-link-wrapper">
-              <div class="dropdown-line"></div>
-              <a href="{{ links.4c2c9e99 }}" class="dropdown-link w-dropdown-link">{{ texts.7ebc0e46 }}</a>
-            </div>
-          </nav>
+          </article>
         </div>
         <div data-hover="true" data-delay="0" data-w-id="4944a633-c0e0-33e4-cb00-2b459527516b" class="dropdown w-dropdown">
           <div class="dropdown-toggle w-dropdown-toggle">
@@ -76,30 +58,6 @@
               <a href="{{ links.-766f6c3e }}" class="link-3">{{ texts.38557d8d }}</a>
             </div>
           </div>
-          <nav class="dropdown-list w-dropdown-list">
-            <div class="dropdown-link-wrapper">
-              <div class="dropdown-line"></div>
-            </div>
-            <div class="dropdown-link-wrapper">
-              <div class="dropdown-line"></div>
-              <a href="{{ links.23 }}" class="dropdown-link w-dropdown-link">{{ texts.3eea8780 }}</a>
-            </div>
-            <div class="dropdown-link-wrapper">
-              <div class="dropdown-line"></div>
-            </div>
-            <div class="dropdown-link-wrapper">
-              <div class="dropdown-line"></div>
-              <a href="{{ links.23 }}" class="dropdown-link w-dropdown-link">{{ texts.20ee6453 }}</a>
-            </div>
-            <div class="dropdown-link-wrapper">
-              <div class="dropdown-line"></div>
-              <a href="{{ links.23 }}" class="dropdown-link w-dropdown-link">{{ texts.1f39e7f6 }}</a>
-            </div>
-            <div class="dropdown-link-wrapper">
-              <div class="dropdown-line"></div>
-            </div>
-            <div class="triangles"></div>
-          </nav>
         </div>
         <div data-hover="true" data-delay="0" class="dropdown w-dropdown">
           <div class="dropdown-toggle w-dropdown-toggle">
@@ -129,17 +87,17 @@
       <div class="button-wrapper">
         <a href="{{ links.6bfbaa95 }}" target="_blank" class="subscribe-button w-button">{{ texts.82a066c }}</a>
       </div>
-      <div class="menu-button w-nav-button"><img src="{{ images.7a2568a3.url }}" loading="lazy" data-sizes="[{&quot;max&quot;:24,&quot;size&quot;:&quot;100vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;24px&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;100vw&quot;}]" alt="{{ images.7a2568a3.alt | trim | escape }}" class="burger-menu">
+      <nav class="menu-button w-nav-button"><img src="{{ images.7a2568a3.url }}" loading="eager" data-sizes="[{&quot;max&quot;:24,&quot;size&quot;:&quot;100vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;24px&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;100vw&quot;}]" alt="{{ images.7a2568a3.alt | trim | escape }}" class="burger-menu" width="18">
         <div class="icon-2 w-icon-nav-menu"></div>
-      </div>
+      </nav>
     </div>
   </div>
   <section class="setion-main-home wf-section">
     <div class="w-layout-blockcontainer container-main w-container">
-      <div id="w-node-_28187b1b-b3ed-5781-7b66-af2fa69c1a09-3b2c239a" class="w-layout-layout quick-stack-main wf-layout-layout">
+      <div id="w-node-_28187b1b-b3ed-5781-7b66-af2fa69c1a09-3b2c239a" class="w-layout-layout quick-stack-mobile wf-layout-layout">
         <div id="w-node-_28187b1b-b3ed-5781-7b66-af2fa69c1a0a-3b2c239a" class="w-layout-cell cell">
           <div class="div-block-18">
-            <h1 class="heading-408">{{ texts.-3f66573b }}<br>{{ texts.-39e8a131 }}</h1>
+            <h1 class="heading-408">{{ texts.1c63ecc9 }}</h1>
             <div class="div-block-19"></div>
             <div class="main-untertitel">{{ texts.5b5307aa }}</div>
             <a href="{{ links.6bfbaa95 }}" class="subscribe-button-1-front w-button">{{ texts.-27aaf35e }}</a>
@@ -152,16 +110,25 @@
     <div class="container w-container">
       <div data-w-id="3a57a481-e0d2-021a-6221-fbfedc50b1e3" style="opacity:0" class="w-layout-grid grid">
         <div id="w-node-c7499c76-a644-c9a9-4113-33217e9b3008-3b2c239a" class="video-container">
-          <div class="lightbox-wrapper"><img src="{{ images.43968198.url }}" loading="lazy" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;100vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;96vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;45vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;462px&quot;}]" sizes="(max-width: 479px) 100vw, (max-width: 767px) 142.0625px, 100vw" alt="{{ images.43968198.alt | trim | escape }}" class="viedo-block-image" height=""></div>
-          <p class="paragraph-centured">{{ texts.73f6abff }}</p>
+          <div>
+            <a href="{{ links.4c2c9ec4 }}" target="_blank" class="link-block-5 w-inline-block"><img src="{{ images.43968198.url }}" loading="lazy" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;100vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;96vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;45vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;462px&quot;}]" sizes="(max-width: 479px) 100vw, (max-width: 767px) 72vw, (max-width: 1279px) 73vw, 768px" alt="{{ images.43968198.alt | trim | escape }}" class="viedo-block-image" height="">
+              <p class="paragraph-centured">{{ texts.73f6abff }}</p>
+            </a>
+          </div>
         </div>
         <div id="w-node-_0494cd82-1870-2403-d9c2-36ccad2e4f4f-3b2c239a" class="video-container">
-          <div class="lightbox-wrapper"><img src="{{ images.32c12385.url }}" loading="lazy" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;100vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;96vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;45vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;386px&quot;}]" sizes="(max-width: 479px) 100vw, (max-width: 767px) 142.0625px, 100vw" alt="{{ images.32c12385.alt | trim | escape }}" class="viedo-block-image" height=""></div>
-          <p class="paragraph-centured">{{ texts.-74eb2627 }}</p>
+          <div class="lightbox-wrapper">
+            <a href="{{ links.4c2c9ec6 }}" target="_blank" class="link-block-6 w-inline-block"><img src="{{ images.32c12385.url }}" loading="lazy" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;100vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;96vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;45vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;386px&quot;}]" sizes="(max-width: 479px) 100vw, (max-width: 767px) 72vw, (max-width: 1279px) 73vw, 768px" alt="{{ images.32c12385.alt | trim | escape }}" class="viedo-block-image" height="">
+              <p class="paragraph-centured">{{ texts.-74eb2627 }}</p>
+            </a>
+          </div>
         </div>
         <div id="w-node-_8a27401b-ff67-897e-dba5-7b3fcb10b6b7-3b2c239a" class="video-container">
-          <div class="lightbox-wrapper"><img src="{{ images.709b3f08.url }}" loading="lazy" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;100vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;96vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;45vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;387px&quot;}]" sizes="(max-width: 479px) 100vw, (max-width: 767px) 142.0625px, 100vw" alt="{{ images.709b3f08.alt | trim | escape }}" class="viedo-block-image" height=""></div>
-          <p class="paragraph-centured">{{ texts.77be36d }}</p>
+          <div class="lightbox-wrapper">
+            <a href="{{ links.4c2c9ec5 }}" target="_blank" class="link-block-7 w-inline-block"><img src="{{ images.709b3f08.url }}" loading="lazy" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;100vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;96vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;45vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;387px&quot;}]" sizes="(max-width: 479px) 100vw, (max-width: 767px) 72vw, (max-width: 1279px) 73vw, 768px" alt="{{ images.709b3f08.alt | trim | escape }}" class="viedo-block-image" height="">
+              <p class="paragraph-centured">{{ texts.77be36d }}</p>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -343,77 +310,89 @@
       <div class="w-col w-col-4">
         <a href="{{ links.23 }}" class="link-block-clean w-inline-block"><img src="{{ images.-340ca3e8.url }}" loading="lazy" alt="{{ images.-340ca3e8.alt | trim | escape }}" class="image-14">
           <h5 class="heading-409">{{ texts.4554353e }}<br>{{ texts.-56fee4f7 }}</h5>
-          <p>{{ texts.-58bec3f4 }}</p>
+          <p class="paragraph-14">{{ texts.-58bec3f4 }}</p>
         </a>
       </div>
       <div class="w-col w-col-4">
         <a href="{{ links.23 }}" class="link-block-clean w-inline-block"><img src="{{ images.-33fe8c67.url }}" loading="lazy" alt="{{ images.-33fe8c67.alt | trim | escape }}" class="image-14">
           <h5 class="heading-409">{{ texts.3381f34b }}</h5>
-          <p><br>{{ texts.-7e5c05a8 }}</p>
+          <p class="paragraph-15"><br>{{ texts.-7e5c05a8 }}</p>
         </a>
       </div>
     </div>
   </section>
   <div class="section background-image wf-section">
-    <h2 class="centured-heading white-text"><span class="dot">{{ texts.5e7f788b }}</span></h2>
-    <div data-delay="4000" data-animation="slide" class="slider-3 w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+    <h2 class="centured-heading white-text"><span class="dot-home">{{ texts.5e7f788b }}</span></h2>
+    <div data-delay="4000" data-animation="outin" class="slider-3 w-slider" data-autoplay="true" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="1200" data-infinite="true">
       <div class="w-slider-mask">
         <div class="w-slide">
           <div id="w-node-fdee3c2e-b1d0-cde9-becc-d55c8d35fb9b-3b2c239a" class="w-layout-layout quick-stack-services-main wf-layout-layout">
-            <div id="w-node-fdee3c2e-b1d0-cde9-becc-d55c8d35fb9c-3b2c239a" class="w-layout-cell cell-4"><img src="{{ images.-346130ee.url }}" loading="lazy" alt="{{ images.-346130ee.alt | trim | escape }}" class="image-13" width="350" height="350"></div>
+            <div id="w-node-fdee3c2e-b1d0-cde9-becc-d55c8d35fb9c-3b2c239a" class="w-layout-cell cell-4">
+              <div class="w-layout-blockcontainer container-mobile-slide w-container"><img src="{{ images.-346130ee.url }}" loading="lazy" alt="{{ images.-346130ee.alt | trim | escape }}" class="image-13" width="350" height="350"></div>
+            </div>
             <div id="w-node-fdee3c2e-b1d0-cde9-becc-d55c8d35fb9d-3b2c239a" class="w-layout-cell cell-2">
-              <h5 class="slider-heading-home">{{ texts.-74eb2627 }}</h5>
-              <p class="paragraph-slider-home">{{ texts.-64d94c82 }}</p>
+              <h5 class="slider-heading-mobile"><br>{{ texts.-74eb2627 }}</h5>
+              <p class="paragraph-slider-mobile">{{ texts.-64d94c82 }}</p>
               <a href="{{ links.4c2c9ec6 }}" class="button-slider-home w-button">{{ texts.4a6f132f }}</a>
             </div>
           </div>
         </div>
         <div class="w-slide">
           <div id="w-node-ed56ad7c-a305-297f-f28b-054e696d420b-3b2c239a" class="w-layout-layout quick-stack-services-main wf-layout-layout">
-            <div id="w-node-ed56ad7c-a305-297f-f28b-054e696d420c-3b2c239a" class="w-layout-cell cell-4"><img src="{{ images.18fc8e86.url }}" loading="lazy" alt="{{ images.18fc8e86.alt | trim | escape }}" class="image-13" width="350" height="350"></div>
+            <div id="w-node-ed56ad7c-a305-297f-f28b-054e696d420c-3b2c239a" class="w-layout-cell cell-4">
+              <div class="w-layout-blockcontainer container-mobile-slide w-container"><img src="{{ images.18fc8e86.url }}" loading="lazy" alt="{{ images.18fc8e86.alt | trim | escape }}" class="image-13" width="350" height="350"></div>
+            </div>
             <div id="w-node-ed56ad7c-a305-297f-f28b-054e696d420e-3b2c239a" class="w-layout-cell cell-2">
-              <h5 class="slider-heading-home">{{ texts.29b363ed }}</h5>
-              <p class="paragraph-slider-home">{{ texts.68aeb13e }}</p>
+              <h5 class="slider-heading-mobile"><br><br>{{ texts.29b363ed }}</h5>
+              <p class="paragraph-slider-mobile">{{ texts.68aeb13e }}</p>
               <a href="{{ links.4c2c9ec5 }}" class="button-slider-home w-button">{{ texts.4a6f132f }}</a>
             </div>
           </div>
         </div>
         <div class="w-slide">
           <div id="w-node-_6e349432-e84f-7d6c-92f4-cfd1e3ef9030-3b2c239a" class="w-layout-layout quick-stack-services-main wf-layout-layout">
-            <div id="w-node-_6e349432-e84f-7d6c-92f4-cfd1e3ef9031-3b2c239a" class="w-layout-cell cell-4"><img src="{{ images.-3453196d.url }}" loading="lazy" alt="{{ images.-3453196d.alt | trim | escape }}" class="image-13" width="350" height="350"></div>
+            <div id="w-node-_6e349432-e84f-7d6c-92f4-cfd1e3ef9031-3b2c239a" class="w-layout-cell cell-4">
+              <div class="w-layout-blockcontainer container-mobile-slide w-container"><img src="{{ images.-3453196d.url }}" loading="lazy" alt="{{ images.-3453196d.alt | trim | escape }}" class="image-13" width="350" height="350"></div>
+            </div>
             <div id="w-node-_6e349432-e84f-7d6c-92f4-cfd1e3ef9033-3b2c239a" class="w-layout-cell cell-2">
-              <h5 class="slider-heading-home">{{ texts.73f6abff }}</h5>
-              <p class="paragraph-slider-home">{{ texts.6abd7d3b }}</p>
+              <h5 class="slider-heading-mobile"><br><br>{{ texts.73f6abff }}</h5>
+              <p class="paragraph-slider-mobile">{{ texts.6abd7d3b }}</p>
               <a href="{{ links.4c2c9ec4 }}" class="button-slider-home w-button">{{ texts.4a6f132f }}</a>
             </div>
           </div>
         </div>
         <div class="w-slide">
           <div id="w-node-_41a0058a-2188-99f5-edcf-44ff24629afc-3b2c239a" class="w-layout-layout quick-stack-services-main wf-layout-layout">
-            <div id="w-node-_41a0058a-2188-99f5-edcf-44ff24629afd-3b2c239a" class="w-layout-cell cell-4"><img src="{{ images.-3428d2ea.url }}" loading="lazy" alt="{{ images.-3428d2ea.alt | trim | escape }}" class="image-13" width="350" height="350"></div>
+            <div id="w-node-_41a0058a-2188-99f5-edcf-44ff24629afd-3b2c239a" class="w-layout-cell cell-4">
+              <div class="w-layout-blockcontainer container-mobile-slide w-container"><img src="{{ images.-3428d2ea.url }}" loading="lazy" alt="{{ images.-3428d2ea.alt | trim | escape }}" class="image-13" width="350" height="350"></div>
+            </div>
             <div id="w-node-_41a0058a-2188-99f5-edcf-44ff24629aff-3b2c239a" class="w-layout-cell cell-2">
-              <h5 class="slider-heading-home">{{ texts.-35a2f6df }}</h5>
-              <p class="paragraph-slider-home">{{ texts.-666f64b2 }}</p>
+              <h5 class="slider-heading-mobile"><br><br>{{ texts.-35a2f6df }}</h5>
+              <p class="paragraph-slider-mobile">{{ texts.-666f64b2 }}</p>
               <a href="{{ links.4c2c9ec3 }}" class="button-slider-home w-button">{{ texts.4a6f132f }}</a>
             </div>
           </div>
         </div>
         <div class="w-slide">
           <div id="w-node-c7c04b85-53bd-91bb-296a-c657734eb314-3b2c239a" class="w-layout-layout quick-stack-services-main wf-layout-layout">
-            <div id="w-node-c7c04b85-53bd-91bb-296a-c657734eb315-3b2c239a" class="w-layout-cell cell-4"><img src="{{ images.-525ace67.url }}" loading="lazy" alt="{{ images.-525ace67.alt | trim | escape }}" class="image-13" width="350" height="350"></div>
+            <div id="w-node-c7c04b85-53bd-91bb-296a-c657734eb315-3b2c239a" class="w-layout-cell cell-4">
+              <div class="w-layout-blockcontainer container-mobile-slide w-container"><img src="{{ images.-525ace67.url }}" loading="lazy" alt="{{ images.-525ace67.alt | trim | escape }}" class="image-13" width="350" height="350"></div>
+            </div>
             <div id="w-node-c7c04b85-53bd-91bb-296a-c657734eb317-3b2c239a" class="w-layout-cell cell-2">
-              <h5 class="slider-heading-home">{{ texts.16abdd17 }}</h5>
-              <p class="paragraph-slider-home">{{ texts.693d7808 }}</p>
+              <h5 class="slider-heading-mobile"><br><br>{{ texts.16abdd17 }}</h5>
+              <p class="paragraph-slider-mobile">{{ texts.693d7808 }}</p>
               <a href="{{ links.4c2c9ec2 }}" class="button-slider-home w-button">{{ texts.4a6f132f }}</a>
             </div>
           </div>
         </div>
         <div class="w-slide">
           <div id="w-node-adc1194d-d9a1-0cd2-6bb2-f2dec898dba3-3b2c239a" class="w-layout-layout quick-stack-services-main wf-layout-layout">
-            <div id="w-node-adc1194d-d9a1-0cd2-6bb2-f2dec898dba4-3b2c239a" class="w-layout-cell cell-4"><img src="{{ images.-3436ea6b.url }}" loading="lazy" alt="{{ images.-3436ea6b.alt | trim | escape }}" class="image-13" width="350" height="350"></div>
+            <div id="w-node-adc1194d-d9a1-0cd2-6bb2-f2dec898dba4-3b2c239a" class="w-layout-cell cell-4">
+              <div class="w-layout-blockcontainer container-mobile-slide w-container"><img src="{{ images.-3436ea6b.url }}" loading="lazy" alt="{{ images.-3436ea6b.alt | trim | escape }}" class="image-13" width="350" height="350"></div>
+            </div>
             <div id="w-node-adc1194d-d9a1-0cd2-6bb2-f2dec898dba6-3b2c239a" class="w-layout-cell cell-2">
-              <h5 class="slider-heading-home">{{ texts.7ebc0e46 }}</h5>
-              <p class="paragraph-slider-home">{{ texts.3ae9c0c6 }}</p>
+              <h5 class="slider-heading-mobile"><br><br>{{ texts.7ebc0e46 }}</h5>
+              <p class="paragraph-slider-mobile">{{ texts.3ae9c0c6 }}</p>
               <a href="{{ links.4c2c9e99 }}" class="button-slider-home w-button">{{ texts.4a6f132f }}</a>
             </div>
           </div>
@@ -425,15 +404,15 @@
       <div class="w-slider-arrow-right">
         <div class="w-icon-slider-right"></div>
       </div>
-      <div class="w-slider-nav w-round w-num"></div>
+      <div class="slide-nav-3 w-slider-nav w-round w-num"></div>
     </div>
     <div class="container animated w-container">
-      <a href="{{ links.6bfbaa95 }}" class="orange-link padding"><strong>{{ texts.-7341b7bc }}</strong> <span class="triangle"><strong>{{ texts.f0da }}</strong></span><strong> </strong></a>
+      <a href="{{ links.6bfbaa95 }}" class="orange-link padding"><strong class="bold-text-9">{{ texts.-7341b7bc }}</strong> <span class="triangle"><strong>{{ texts.f0da }}</strong></span><strong> </strong></a>
     </div>
   </div>
   <div class="section wf-section">
     <div class="container hidden w-container">
-      <h2 class="centured-heading">{{ texts.-25286c6f }}<span class="dot"></span></h2>
+      <h2 class="centured-heading-mobile">{{ texts.-25286c6f }}<span class="dot"></span></h2>
       <div data-delay="4000" data-animation="slide" class="testimonial-slider w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="8" data-duration="500" data-infinite="true">
         <div class="mask-2 w-slider-mask">
           <div class="testimonial-slide w-slide">
@@ -445,7 +424,7 @@
               <div class="testimonial-info">
                 <div class="round-border"></div>
                 <div class="author-info">
-                  <h5 class="author">{{ texts.-fb67ebf }}<span class="text-span-5">{{ texts.2e }}</span></h5>
+                  <h5 class="author">{{ texts.-447a766c }}</h5>
                   <p>{{ texts.7049ec0b }}</p>
                 </div>
               </div>
@@ -498,10 +477,10 @@
     </div>
   </div>
   <div class="section dark wf-section">
+    <div class="horizontal-wrapper-mobile">
+      <h3 class="subscribe">{{ texts.7b5f2c66 }}</h3>
+    </div>
     <div class="email-container">
-      <div class="horizontal-wrapper">
-        <h3 class="subscribe">{{ texts.7b5f2c66 }}</h3>
-      </div>
       <div class="horizontal-wrapper">
         <div class="form-block w-form">
           <form id="email-form" name="email-form" data-name="email" method="get" class="form" data-wf-page-id="649e8340bde586a93b2c239a" data-wf-element-id="30f7f905-d226-3191-1a78-4bdd31a59b18" data-netlify="true" data-ajax="true" data-content-type="application/x-www-form-urlencoded"><input type="email" class="text-field w-input" maxlength="256" name="email-2" data-name="Email 2" placeholder="Deine beste Email..." id="email-2" required="">
@@ -533,7 +512,7 @@
     <div class="container w-container">
       <div class="footer-wrapper">
         <div class="footer-brand-wrapper">
-          <p class="footer-brand-description">{{ texts.-29c9f069 }}</p>
+          <p class="footer-brand-description">{{ texts.-1fa6c15c }}</p>
           <div class="form-block-3 w-form">
             <form id="email-form-2" name="email-form-2" data-name="email_2" method="get" class="subscribe-form-flex" data-wf-page-id="649e8340bde586a93b2c239a" data-wf-element-id="9e9e97d8-995e-2fbf-f6cd-5844e76115da" data-netlify="true" data-ajax="true" data-content-type="application/x-www-form-urlencoded">
               <div class="subscribe-form-input-wrapper"><input type="email" class="subscribe-form-input w-input" maxlength="256" name="Subscriber-Email" data-name="Subscriber Email" placeholder="Subscribe to Our Newsletter" id="Subscriber-Email" required=""></div><input type="submit" value="" data-wait="Please wait..." class="fa-icon background w-button">
@@ -545,13 +524,13 @@
               <div>{{ texts.-7c112e99 }}</div>
             </div>
           </div>
-          <a href="{{ links.2f }}" aria-current="page" class="brand-footer w-nav-brand w--current"><img src="{{ images.3282dba9.url }}" loading="lazy" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;100vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;280px&quot;},{&quot;max&quot;:1279,&quot;size&quot;:&quot;26vw&quot;},{&quot;max&quot;:1439,&quot;size&quot;:&quot;327px&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;315px&quot;}]" sizes="(max-width: 479px) 100vw, (max-width: 991px) 280px, 100vw" alt="{{ images.3282dba9.alt | trim | escape }}" class="image-footer"></a>
+          <a href="{{ links.2f }}" aria-current="page" class="brand-footer w-nav-brand w--current"><img src="{{ images.3282dba9.url }}" loading="lazy" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;100vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;280px&quot;},{&quot;max&quot;:1279,&quot;size&quot;:&quot;26vw&quot;},{&quot;max&quot;:1439,&quot;size&quot;:&quot;327px&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;315px&quot;}]" sizes="(max-width: 479px) 100vw, (max-width: 991px) 280px, (max-width: 1279px) 26vw, (max-width: 1439px) 327px, 315px" alt="{{ images.3282dba9.alt | trim | escape }}" class="image-footer"></a>
         </div>
         <div class="footer-links-wrapper">
           <h5 class="white-text">{{ texts.733ed8df }}</h5>
           <a href="{{ links.-32173fbe }}" class="footer-link">{{ texts.560f747e }}</a>
           <a href="{{ links.-766f6c3e }}" class="footer-link">{{ texts.38557d8d }}</a>
-          <a href="{{ links.4d9427b }}" class="footer-link">{{ texts.43219700 }}</a>
+          <a href="{{ links.6bfbaa95 }}" class="footer-link">{{ texts.43219700 }}</a>
           <a href="{{ links.61941ebd }}" class="footer-link">{{ texts.6f6b7057 }}</a>
           <a href="{{ links.-acc15c3 }}" class="footer-link">{{ texts.-33c4befd }}</a>
         </div>
