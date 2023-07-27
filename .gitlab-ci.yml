@@ -74,6 +74,7 @@ spec::build:
     # - sed -i "s/%%__GIT_COMMIT_HASH__%%/$CI_COMMIT_SHA/g" public/version.json;
     # - sed -i "s/%%__GIT_COMMIT_HASH__%%/$CI_COMMIT_SHA/g" src/main.js;
     - npm run build
+    - mv public dist
 
 build:container:tag:
   image:

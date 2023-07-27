@@ -27,7 +27,7 @@ const markdownIt = require("markdown-it");
           dir: {
             input: "cms",
             includes: "../theme",
-            output: "dist"
+            output: "public"
           }
         };
       };
