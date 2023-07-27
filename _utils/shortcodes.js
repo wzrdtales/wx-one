@@ -59,7 +59,7 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.addShortcode('image', async function(src, alt = "", dataSizes = "", attributes = "") {
 
-        attributes = attributes.replace(/class(?:\s+)?=(?:\s+)?["'][^'"]+["']/, '')
+        const imgAttributes = attributes.replace(/class(?:\s+)?=(?:\s+)?["'][^'"]+["']/, '')
 
         if (!src) {
             return "";
@@ -117,7 +117,7 @@ module.exports = function (eleventyConfig) {
       <img
         src="${lowsrc.url}"
         alt="${alt}"
-        ${attributes}
+        ${imgAttributes}
         decoding="async">
     </picture>`;
         } catch (e) {
