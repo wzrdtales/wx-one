@@ -30,7 +30,7 @@ variables:
   cache: &spec__audit_-_cache
     paths:
       - node_modules
-    untracked: true
+    untracked: false
 
 .containerbuild: &containerbuild
   script:
