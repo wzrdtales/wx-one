@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-wf-page="649e8340bde586a93b2c23b7" data-wf-site="649e8340bde586a93b2c230d" lang="de"><head><link rel="preconnect" crossorigin="true" href="https://assets.website-files.com">{%- seo seo -%}
+<html data-wf-page="649e8340bde586a93b2c23b7" data-wf-site="649e8340bde586a93b2c230d" lang="de"><head>{%- seo seo -%}
   <meta charset="utf-8">
   
   
@@ -19,11 +19,14 @@
   <link href="https://wx1.de/our-values/" rel="canonical">
 {{ settings.site.header_additional_content }}{%- include "partials/_site-css-variables" -%}<style>.w-video.w-embed {
             aspect-ratio: 16 / 9;
-        }</style></head>
+        }</style><style>picture { border: 0;
+        max-width: 100%;
+        vertical-align: middle;
+        display: inline-block; }</style></head>
 <body>
   <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
     <div class="navbar-container w-container">
-      <a href="{{ links.2f }}" class="brand w-nav-brand"><img src="{{ images.-1101e822.url }}" loading="lazy" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;100vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;175.75px&quot;}]" alt="{{ images.-1101e822.alt | trim | escape }}" class="image home" height="30"></a>
+      <a href="{{ links.2f }}" class="brand w-nav-brand">{%- image images.-1101e822.url, images.-1101e822.alt, '[{"max":479,"size":"100vw"},{"max":10000,"size":"175.75px"}]', 'loading="lazy" class="image home" height="30"' -%}</a>
       <nav role="navigation" class="nav-menu w-nav-menu">
         <div data-hover="true" data-delay="0" class="dropdown w-dropdown">
           <div class="dropdown-toggle w-dropdown-toggle">
@@ -87,7 +90,7 @@
       <div class="button-wrapper">
         <a href="{{ links.6bfbaa95 }}" target="_blank" class="subscribe-button w-button">{{ texts.82a066c }}</a>
       </div>
-      <nav class="menu-button w-nav-button"><img src="{{ images.7a2568a3.url }}" loading="eager" data-sizes="[{&quot;max&quot;:24,&quot;size&quot;:&quot;100vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;24px&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;100vw&quot;}]" alt="{{ images.7a2568a3.alt | trim | escape }}" class="burger-menu" width="18">
+      <nav class="menu-button w-nav-button">{%- image images.7a2568a3.url, images.7a2568a3.alt, '[{"max":24,"size":"100vw"},{"max":991,"size":"24px"},{"max":10000,"size":"100vw"}]', 'loading="eager" class="burger-menu" width="18"' -%}
         <div class="icon-2 w-icon-nav-menu"></div>
       </nav>
     </div>
@@ -131,7 +134,7 @@
     </a>
   </div>
   <div class="section wf-section">
-    <div class="container flex w-container"><img src="{{ images.-2f72b1e1.url }}" loading="lazy" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;100vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;96vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;97vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;100vw&quot;}]" alt="{{ images.-2f72b1e1.alt | trim | escape }}" class="our-values-image">
+    <div class="container flex w-container">{%- image images.-2f72b1e1.url, images.-2f72b1e1.alt, '[{"max":479,"size":"100vw"},{"max":767,"size":"96vw"},{"max":991,"size":"97vw"},{"max":10000,"size":"100vw"}]', 'loading="lazy" class="our-values-image"' -%}
       <div class="section-info">
         <h2 class="heading-wrapper">{{ texts.3dba0078 }}<span class="text-span-10">{{ texts.2e }}</span></h2>
         <p class="paragraph animated">{{ texts.-1b0b980f }}<br><br>{{ texts.-3f0e1aaa }}</p>
@@ -145,8 +148,8 @@
         <p class="paragraph animated">{{ texts.-3a16ffe7 }}</p>
         <a href="{{ links.61941ebd }}" class="orange-link animated"><strong>{{ texts.-65098854 }}</strong><span class="triangle"><strong>{{ texts.f4ba }}</strong></span></a>
       </div>
-      <div class="div-block-15"><img src="{{ images.-162f748c.url }}" loading="lazy" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;100vw&quot;},{&quot;max&quot;:511,&quot;size&quot;:&quot;94vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;481px&quot;}]" alt="{{ images.-162f748c.alt | trim | escape }}" class="our-values-image">
-        <a href="{{ links.23 }}" class="lightbox-link-video-home-3 w-inline-block w-lightbox"><img src="{{ images.50ce9229.url }}" loading="lazy" data-sizes="[{&quot;max&quot;:193,&quot;size&quot;:&quot;81vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;157px&quot;}]" alt="{{ images.50ce9229.alt | trim | escape }}" class="play-button-image">
+      <div class="div-block-15">{%- image images.-162f748c.url, images.-162f748c.alt, '[{"max":479,"size":"100vw"},{"max":511,"size":"94vw"},{"max":10000,"size":"481px"}]', 'loading="lazy" class="our-values-image"' -%}
+        <a href="{{ links.23 }}" class="lightbox-link-video-home-3 w-inline-block w-lightbox">{%- image images.50ce9229.url, images.50ce9229.alt, '[{"max":193,"size":"81vw"},{"max":10000,"size":"157px"}]', 'loading="lazy" class="play-button-image"' -%}
           <p class="play-button-text-top-home-3 big-posts">{{ texts.f42b }}</p>
           <script type="application/json" class="w-json">{"items":[{"url":"https://www.youtube.com/watch?v=J9X5Wpijm3k&ab_channel=UlianaRoyce","originalUrl":"https://www.youtube.com/watch?v=J9X5Wpijm3k&ab_channel=UlianaRoyce","width":940,"height":528,"thumbnailUrl":"https://i.ytimg.com/vi/J9X5Wpijm3k/hqdefault.jpg","html":"<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FJ9X5Wpijm3k%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DJ9X5Wpijm3k&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FJ9X5Wpijm3k%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>","type":"video"}],"group":""}</script>
         </a>
@@ -154,10 +157,10 @@
     </div>
   </div>
   <div class="section wf-section">
-    <div class="container flex w-container"><img src="{{ images.-2f5682df.url }}" loading="lazy" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;100vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;96vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;97vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;100vw&quot;}]" alt="{{ images.-2f5682df.alt | trim | escape }}" class="our-values-image">
+    <div class="container flex w-container">{%- image images.-2f5682df.url, images.-2f5682df.alt, '[{"max":479,"size":"100vw"},{"max":767,"size":"96vw"},{"max":991,"size":"97vw"},{"max":10000,"size":"100vw"}]', 'loading="lazy" class="our-values-image"' -%}
       <div class="section-info">
         <h2 class="heading-wrapper">{{ texts.41a925a2 }}<span class="dot">{{ texts.2e }}</span></h2>
-        <p class="paragraph animated">{{ texts.-283a81cf }}</p><img src="{{ images.-726ef268.url }}" loading="lazy" style="opacity:0" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;100vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;195px&quot;}]" data-w-id="a82d1344-a540-f07f-8648-fc9db3c69a7c" alt="{{ images.-726ef268.alt | trim | escape }}" class="animated-image" width="195">
+        <p class="paragraph animated">{{ texts.-283a81cf }}</p>{%- image images.-726ef268.url, images.-726ef268.alt, '[{"max":479,"size":"100vw"},{"max":10000,"size":"195px"}]', 'loading="lazy" style="opacity:0" data-w-id="a82d1344-a540-f07f-8648-fc9db3c69a7c" class="animated-image" width="195"' -%}
       </div>
     </div>
   </div>
@@ -252,7 +255,7 @@
               <div>{{ texts.-7c112e99 }}</div>
             </div>
           </div>
-          <a href="{{ links.2f }}" class="brand-footer w-nav-brand"><img src="{{ images.3282dba9.url }}" loading="lazy" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;100vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;280px&quot;},{&quot;max&quot;:1279,&quot;size&quot;:&quot;26vw&quot;},{&quot;max&quot;:1439,&quot;size&quot;:&quot;327px&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;315px&quot;}]" sizes="(max-width: 479px) 100vw, (max-width: 991px) 280px, (max-width: 1279px) 26vw, (max-width: 1439px) 327px, 315px" alt="{{ images.3282dba9.alt | trim | escape }}" class="image-footer"></a>
+          <a href="{{ links.2f }}" class="brand-footer w-nav-brand">{%- image images.3282dba9.url, images.3282dba9.alt, '[{"max":479,"size":"100vw"},{"max":991,"size":"280px"},{"max":1279,"size":"26vw"},{"max":1439,"size":"327px"},{"max":10000,"size":"315px"}]', 'loading="lazy" class="image-footer"' -%}</a>
         </div>
         <div class="footer-links-wrapper">
           <h5 class="white-text">{{ texts.733ed8df }}</h5>
@@ -268,7 +271,7 @@
       </div>
     </div>
   </div>
-  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js" type="text/javascript" crossorigin="anonymous"></script>
+  <script src="/assets/external/jquery-3.5.1.min.dc5e7f18c8.js" type="text/javascript" crossorigin="anonymous"></script>
   <script src="/assets/js/webflow.js" type="text/javascript"></script>
 
 <script src="/assets/js/udesly-11ty.min.js" async="" defer=""></script>{{ settings.site.footer_additional_content }}</body></html>
