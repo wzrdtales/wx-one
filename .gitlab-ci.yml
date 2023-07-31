@@ -8,6 +8,7 @@ stages:
   - deploy
 
 .nodeversion: &nodeversion registry.dev0.wizardtales.com/comcon/pnpm:18
+.nodeversionb: &nodeversionb registry.dev0.wizardtales.com/comcon/pnpm:18-browser
 
 variables:
   NPMCMD: pnpm
@@ -61,7 +62,7 @@ spec::audit:
   stage: test
 
 spec::build:
-  image: *nodeversion
+  image: *nodeversionb
   stage: test
   cache: *spec__audit_-_cache
   artifacts:
