@@ -24,8 +24,6 @@ const criticalCss = require("eleventy-critical-css");
         
         createCollectionsAndFilters(eleventyConfig);
 
-        eleventyConfig.addPlugin(criticalCss);
-        
         return {
           dir: {
             input: "cms",
