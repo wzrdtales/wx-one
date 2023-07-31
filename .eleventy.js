@@ -1,5 +1,4 @@
 const markdownIt = require("markdown-it");
-const criticalCss = require("eleventy-critical-css");
 
     // Add within your config module
     const md = new markdownIt({
@@ -23,7 +22,7 @@ const criticalCss = require("eleventy-critical-css");
         eleventyConfig.addPassthroughCopy("admin");
         
         createCollectionsAndFilters(eleventyConfig);
-
+        
         return {
           dir: {
             input: "cms",
