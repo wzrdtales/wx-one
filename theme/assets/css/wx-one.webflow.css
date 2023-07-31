@@ -8764,7 +8764,8 @@ img {
 
   .container.animated {
     padding-left: 0;
-    padding-right: 30px;
+    padding-right: 0;
+    display: block;
   }
 
   .brand.w--current {
@@ -9180,6 +9181,7 @@ img {
   }
 
   .central {
+    margin-bottom: auto;
     margin-right: 10px;
     font-size: 12px;
   }
