@@ -1,12 +1,9 @@
 backend:
-  name: gitlab
-  repo: wx-one/marketing/website
-  api_root: https://dev0git.wizardtales.com/api/v4
-  base_url: https://dev0git.wizardtales.com
+  name: git-gateway
+  accept_roles:
+    - admin
+    - editor
   branch: master
-  auth_type: pkce
-  app_id: 26d47b35abc8d8918f9e8bd554b8a7347f66ca0117f52bd2638b8303be5f6d55
-
 media_folder: theme/assets/images
 public_folder: /assets/images
 collections:
@@ -938,92 +935,6 @@ collections:
             label: Text
             name: '-5d1e5e67'
             widget: text
-          - hint: >-
-              Original text: We’ve been Helping the Leading European IT
-              Companies Create Software Since 1988 , key: 774f4bfe
-            label: Text
-            name: 774f4bfe
-            widget: string
-          - hint: 'Original text: ., key: 2e'
-            label: Text
-            name: 2e
-            widget: string
-          - hint: >-
-              Original text: Outsourceo is an UK’s custom software development
-              company with local presence in London that has a strong industry
-              focus on Insurance, FinTech and Location Based Services. Besides
-              being England’s top IT employer, we have been featured in 2018
-              Global Outsourcing 100 List and recognized by Inc. 5000 as well as
-              GSA UK Awards., key: 2137a554
-            label: Text
-            name: 2137a554
-            widget: text
-          - hint: 'Original text: Retails, key: -5b573850'
-            label: Text
-            name: '-5b573850'
-            widget: string
-          - hint: >-
-              Original text: IT plays an increasingly important role in the
-              management of complex retail., key: 6fdcc93a
-            label: Text
-            name: 6fdcc93a
-            widget: string
-          - hint: 'Original text: , key: f0da'
-            label: Text
-            name: f0da
-            widget: string
-          - hint: 'Original text:  , key: 1d2a86'
-            label: Text
-            name: 1d2a86
-            widget: string
-          - hint: 'Original text: Maintain Your Platform, key: -50fac3f5'
-            label: Text
-            name: '-50fac3f5'
-            widget: string
-          - hint: 'Original text: FinTech, key: 3056dd21'
-            label: Text
-            name: 3056dd21
-            widget: string
-          - hint: >-
-              Original text: To Fintech such services as mobile payments,
-              transferring, credits etc., key: -33399813
-            label: Text
-            name: '-33399813'
-            widget: string
-          - hint: 'Original text: Stay On Top Of Your Game, key: -68b80a45'
-            label: Text
-            name: '-68b80a45'
-            widget: string
-          - hint: 'Original text: Healthcare, key: -530b3473'
-            label: Text
-            name: '-530b3473'
-            widget: string
-          - hint: >-
-              Original text: See to the integrity and security of your medical
-              records., key: -1d188064
-            label: Text
-            name: '-1d188064'
-            widget: string
-          - hint: 'Original text: For End Users And Developers, key: -5c0728da'
-            label: Text
-            name: '-5c0728da'
-            widget: string
-          - hint: 'Original text: Today’s Industry Insights, key: -4fc27aa8'
-            label: Text
-            name: '-4fc27aa8'
-            widget: string
-          - hint: 'Original text: Popular Posts, key: 5b857b8c'
-            label: Text
-            name: 5b857b8c
-            widget: string
-          - hint: 'Original text: Categories, key: -3be6ddc4'
-            label: Text
-            name: '-3be6ddc4'
-            widget: string
-          - hint: 'Original text:  / , key: 7df1'
-            label: Text
-            name: 7df1
-            widget: string
           - hint: 'Original text: ISO-zertifizierte Rechenzentren, key: -9450013'
             label: Text
             name: '-9450013'
@@ -1134,6 +1045,10 @@ collections:
             label: Text
             name: '-7341b7bc'
             widget: string
+          - hint: 'Original text: , key: f0da'
+            label: Text
+            name: f0da
+            widget: string
           - hint: 'Original text: Worte denen man vertrauen kann., key: -25286c6f'
             label: Text
             name: '-25286c6f'
@@ -1205,16 +1120,6 @@ collections:
               form., key: -7c112e99
             label: Text
             name: '-7c112e99'
-            widget: string
-          - hint: >-
-              Original text: Let’s Create the Next Big Thing Together, key:
-              -4b1bb38f
-            label: Text
-            name: '-4b1bb38f'
-            widget: string
-          - hint: 'Original text: Get started, key: 667a5d97'
-            label: Text
-            name: 667a5d97
             widget: string
           - hint: >-
               Original text: Innovativ, zukunftsweisend, revolutionär -
@@ -1636,6 +1541,10 @@ collections:
             label: Text
             name: 2616d41c
             widget: string
+          - hint: 'Original text: ., key: 2e'
+            label: Text
+            name: 2e
+            widget: string
           - hint: 'Original text: All, key: 10181'
             label: Text
             name: '10181'
@@ -1741,6 +1650,10 @@ collections:
           - hint: 'Original text: Recent Posts, key: 2d2c9ce'
             label: Text
             name: 2d2c9ce
+            widget: string
+          - hint: 'Original text: Categories, key: -3be6ddc4'
+            label: Text
+            name: '-3be6ddc4'
             widget: string
           - hint: 'Original text: , key: f0b1'
             label: Text
@@ -1993,6 +1906,10 @@ collections:
             label: Text
             name: '-4da1cbb8'
             widget: text
+          - hint: 'Original text: Get started, key: 667a5d97'
+            label: Text
+            name: 667a5d97
+            widget: string
           - hint: >-
               Original text: We combine proven methods with our experience to
               help you achieve the success and business growth that you
@@ -2017,6 +1934,10 @@ collections:
               first!, key: -5c888e90
             label: Text
             name: '-5c888e90'
+            widget: string
+          - hint: 'Original text:  , key: 1d2a86'
+            label: Text
+            name: 1d2a86
             widget: string
           - hint: 'Original text: Help Center, key: 558d7e14'
             label: Text
@@ -2267,9 +2188,23 @@ collections:
             label: Text
             name: f42b
             widget: string
+          - hint: >-
+              Original text: Outsourceo is an UK’s custom software development
+              company with local presence in London that has a strong industry
+              focus on Insurance, FinTech and Location Based Services. Besides
+              being England’s top IT employer, we have been featured in 2018
+              Global Outsourcing 100 List and recognized by Inc. 5000 as well as
+              GSA UK Awards., key: 2137a554
+            label: Text
+            name: 2137a554
+            widget: text
           - hint: 'Original text:  Download Our Brochure, key: 6db2c710'
             label: Text
             name: 6db2c710
+            widget: string
+          - hint: 'Original text: Today’s Industry Insights, key: -4fc27aa8'
+            label: Text
+            name: '-4fc27aa8'
             widget: string
           - hint: 'Original text:  View Case Study, key: 314b4cf4'
             label: Text
@@ -3573,136 +3508,6 @@ collections:
                 widget: string
                 required: false
           - label: Image
-            name: 6ead69b6
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: 7374a06b
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: 7382b7ec
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: 7390cf6d
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: '-5ab88e8d'
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: '-2275460c'
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: '-572ea094'
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: 40ab43c3
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: 7b1728a9
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: '-d4cfa25'
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
             name: '-344501ec'
             widget: object
             fields:
@@ -4211,6 +4016,84 @@ collections:
                 required: false
           - label: Image
             name: '-7f3a86bb'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-5ab88e8d'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-2275460c'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-572ea094'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 40ab43c3
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 7b1728a9
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-d4cfa25'
             widget: object
             fields:
               - name: url
