@@ -8784,6 +8784,12 @@ img {
 
   .subscribe-button._100 {
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    left: -26px;
+    overflow: visible;
   }
 
   .image.home {
@@ -8850,7 +8856,8 @@ img {
   .subscribe-button-wrapper {
     width: 100%;
     margin-top: -58px;
-    margin-left: -50px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .subscribe {
