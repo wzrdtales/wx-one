@@ -1,12 +1,9 @@
 backend:
-  name: gitlab
-  repo: wx-one/marketing/website
-  api_root: https://dev0git.wizardtales.com/api/v4
-  base_url: https://dev0git.wizardtales.com
+  name: git-gateway
+  accept_roles:
+    - admin
+    - editor
   branch: master
-  auth_type: pkce
-  app_id: 26d47b35abc8d8918f9e8bd554b8a7347f66ca0117f52bd2638b8303be5f6d55
-
 media_folder: theme/assets/images
 public_folder: /assets/images
 collections:
@@ -1512,34 +1509,6 @@ collections:
             label: Text
             name: '-45e051c'
             widget: string
-          - hint: 'Original text: Buy this Template, key: -28239c5e'
-            label: Text
-            name: '-28239c5e'
-            widget: string
-          - hint: 'Original text: More Templates, key: -36557d2'
-            label: Text
-            name: '-36557d2'
-            widget: string
-          - hint: 'Original text: Hire a professional, key: 36f2be12'
-            label: Text
-            name: 36f2be12
-            widget: string
-          - hint: "Original text: Make an appointment with a Webflow Professional to \_build a website using this template. , key: -263b8103"
-            label: Text
-            name: '-263b8103'
-            widget: string
-          - hint: 'Original text: Learn More, key: -52bd880f'
-            label: Text
-            name: '-52bd880f'
-            widget: string
-          - hint: 'Original text: Make an Appointment, key: 5b89905e'
-            label: Text
-            name: 5b89905e
-            widget: string
-          - hint: 'Original text: Get a Quote, key: 1e12f2f3'
-            label: Text
-            name: 1e12f2f3
-            widget: string
           - hint: 'Original text: Our Latest Case Studies, key: 2616d41c'
             label: Text
             name: 2616d41c
@@ -1953,6 +1922,10 @@ collections:
           - hint: 'Original text: 575 Madison Ave, New York, USA., key: -436ca6a2'
             label: Text
             name: '-436ca6a2'
+            widget: string
+          - hint: 'Original text: Learn More, key: -52bd880f'
+            label: Text
+            name: '-52bd880f'
             widget: string
           - hint: >-
               Original text: Open Monday to Saturday 07:00 AM to 18:00 PM, key:
@@ -3039,59 +3012,43 @@ collections:
             label: Link
             name: 6bfbaa95
             widget: string
-          - hint: >-
-              Original link:
-              https://webflow.com/design/wx-one?pageId=649e8340bde586a93b2c23af&itemId=649e8340bde586a93b2c248c,
-              key: 4c2c9ec4
+          - hint: 'Original link: http://__managedlink__, key: 45093187'
             label: Link
-            name: 4c2c9ec4
+            name: '45093187'
             widget: string
-          - hint: >-
-              Original link:
-              https://webflow.com/design/wx-one?pageId=649e8340bde586a93b2c23af&itemId=649e8340bde586a93b2c248e,
-              key: 4c2c9ec6
+          - hint: 'Original link: http://__cloudloesungenlink__, key: 31ec7dbd'
             label: Link
-            name: 4c2c9ec6
+            name: 31ec7dbd
             widget: string
-          - hint: >-
-              Original link:
-              https://webflow.com/design/wx-one?pageId=649e8340bde586a93b2c23af&itemId=649e8340bde586a93b2c248d,
-              key: 4c2c9ec5
+          - hint: 'Original link: http://__backuplink__, key: -d71dff2'
             label: Link
-            name: 4c2c9ec5
+            name: '-d71dff2'
             widget: string
           - hint: 'Original link: #, key: 23'
             label: Link
             name: '23'
             widget: string
-          - hint: >-
-              Original link:
-              https://webflow.com/design/wx-one?pageId=649e8340bde586a93b2c23af&itemId=649e8340bde586a93b2c248b,
-              key: 4c2c9ec3
+          - hint: 'Original link: http://__saaslink__, key: 5e53f74c'
             label: Link
-            name: 4c2c9ec3
+            name: 5e53f74c
+            widget: string
+          - hint: 'Original link: http://__consultinglink__, key: 45844ec2'
+            label: Link
+            name: 45844ec2
+            widget: string
+          - hint: 'Original link: http://__supportlink__, key: 2709bdb7'
+            label: Link
+            name: 2709bdb7
+            widget: string
+          - hint: 'Original link: https://wizardtales.com/imprint, key: 19e80fe0'
+            label: Link
+            name: 19e80fe0
             widget: string
           - hint: >-
-              Original link:
-              https://webflow.com/design/wx-one?pageId=649e8340bde586a93b2c23af&itemId=649e8340bde586a93b2c248a,
-              key: 4c2c9ec2
+              Original link: https://wizardtales.com/dataprotection, key:
+              -321e85b4
             label: Link
-            name: 4c2c9ec2
-            widget: string
-          - hint: >-
-              Original link:
-              https://webflow.com/design/wx-one?pageId=649e8340bde586a93b2c23af&itemId=649e8340bde586a93b2c2488,
-              key: 4c2c9e99
-            label: Link
-            name: 4c2c9e99
-            widget: string
-          - hint: 'Original link: /why-us/, key: 61941ebd'
-            label: Link
-            name: 61941ebd
-            widget: string
-          - hint: 'Original link: /our-values/, key: -acc15c3'
-            label: Link
-            name: '-acc15c3'
+            name: '-321e85b4'
             widget: string
           - hint: 'Original link: #ueber-WX-ONE, key: 993d68b'
             label: Link
@@ -3109,38 +3066,21 @@ collections:
             label: Link
             name: 7b3589e6
             widget: string
+          - hint: 'Original link: /why-us/, key: 61941ebd'
+            label: Link
+            name: 61941ebd
+            widget: string
           - hint: 'Original link: /leadership/, key: 4d9427b'
             label: Link
             name: 4d9427b
             widget: string
+          - hint: 'Original link: /our-values/, key: -acc15c3'
+            label: Link
+            name: '-acc15c3'
+            widget: string
           - hint: 'Original link: /templates/careers/, key: -2468b161'
             label: Link
             name: '-2468b161'
-            widget: string
-          - hint: 'Original link: https://bit.ly/3y7hlx6, key: -1df06ddf'
-            label: Link
-            name: '-1df06ddf'
-            widget: string
-          - hint: 'Original link: https://bit.ly/3BVHhyS, key: -7a24ba11'
-            label: Link
-            name: '-7a24ba11'
-            widget: string
-          - hint: >-
-              Original link: https://wcopilot.com/webflow-experts, key:
-              -585dc8fa
-            label: Link
-            name: '-585dc8fa'
-            widget: string
-          - hint: >-
-              Original link:
-              https://calendly.com/d/yj5-h2k-qq7/client-brief?month=2023-05,
-              key: -7f5c9be6
-            label: Link
-            name: '-7f5c9be6'
-            widget: string
-          - hint: 'Original link: https://wcopilot.com/submit-a-task, key: 7e11388e'
-            label: Link
-            name: 7e11388e
             widget: string
           - hint: 'Original link: https://www.facebook.com/, key: 6c4279f0'
             label: Link
@@ -3837,45 +3777,6 @@ collections:
                 required: false
           - label: Image
             name: '-162f748c'
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: '-32ba3e62'
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: '-2ac2f822'
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: ab969c
             widget: object
             fields:
               - name: url
