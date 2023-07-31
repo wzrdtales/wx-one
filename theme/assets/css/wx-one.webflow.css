@@ -9011,6 +9011,10 @@ img {
     padding-bottom: 0;
   }
 
+  .footer {
+    padding-top: 165px;
+  }
+
   .testimonials-nav-outline {
     margin-top: 0;
     padding-top: 0;
@@ -9174,6 +9178,23 @@ img {
     font-weight: 900;
   }
 
+  .rich-text-services {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .sticky-wrapper {
+    padding-left: 0;
+    position: -webkit-sticky;
+    position: sticky;
+  }
+
+  .relative-wrapper {
+    margin-left: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .case-study-tab-block {
     padding-left: 12px;
     padding-right: 12px;
@@ -9187,7 +9208,9 @@ img {
   }
 
   .image-11 {
-    margin-left: 35px;
+    margin-left: auto;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .overview-image {
@@ -9338,6 +9361,11 @@ img {
   .heading-410 {
     margin-top: 35px;
     font-size: 35px;
+  }
+
+  .heading-413 {
+    margin-top: 85px;
+    margin-bottom: -35px;
   }
 
   .link-2 {
