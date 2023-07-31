@@ -8788,7 +8788,7 @@ img {
     margin-right: auto;
     display: block;
     position: relative;
-    left: -26px;
+    left: auto;
     overflow: visible;
   }
 
@@ -8845,8 +8845,13 @@ img {
   }
 
   .text-field {
-    margin-left: -12px;
+    margin-left: auto;
     margin-right: 0;
+    right: auto;
+  }
+
+  .horizontal-wrapper {
+    margin-left: auto;
   }
 
   .form {
