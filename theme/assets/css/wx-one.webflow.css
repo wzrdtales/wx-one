@@ -3408,6 +3408,7 @@ img {
 }
 
 .image-5 {
+  width: 100%;
   height: 250px;
   object-fit: cover;
   overflow: hidden;
@@ -7916,6 +7917,10 @@ img {
     font-size: 22px;
   }
 
+  .centured-heading.smaller {
+    margin-top: 130px;
+  }
+
   .link-section {
     margin-bottom: 50px;
   }
@@ -8413,6 +8418,10 @@ img {
     font-size: 32px;
   }
 
+  .central {
+    margin-bottom: 76px;
+  }
+
   .services-rich-text {
     grid-template-rows: auto auto;
     grid-template-columns: 1fr;
@@ -8704,6 +8713,11 @@ img {
 
   .section.additional-padding {
     padding-bottom: 300px;
+  }
+
+  .section.light-background-image {
+    margin-top: -65px;
+    margin-bottom: 150px;
   }
 
   .bottom-style-spacing-desktop {
