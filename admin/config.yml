@@ -1,12 +1,9 @@
 backend:
-  name: gitlab
-  repo: wx-one/marketing/website
-  api_root: https://dev0git.wizardtales.com/api/v4
-  base_url: https://dev0git.wizardtales.com
+  name: git-gateway
+  accept_roles:
+    - admin
+    - editor
   branch: master
-  auth_type: pkce
-  app_id: 26d47b35abc8d8918f9e8bd554b8a7347f66ca0117f52bd2638b8303be5f6d55
-
 media_folder: theme/assets/images
 public_folder: /assets/images
 collections:
@@ -1599,10 +1596,6 @@ collections:
           - hint: 'Original text: kontakt@wx1.de, key: 3e4142df'
             label: Text
             name: 3e4142df
-            widget: string
-          - hint: 'Original text: , key: f39e'
-            label: Text
-            name: f39e
             widget: string
           - hint: 'Original text: , key: f08c'
             label: Text
@@ -3492,10 +3485,6 @@ collections:
           - hint: 'Original link: /templates/careers/, key: -2468b161'
             label: Link
             name: '-2468b161'
-            widget: string
-          - hint: 'Original link: https://www.facebook.com/, key: 6c4279f0'
-            label: Link
-            name: 6c4279f0
             widget: string
           - hint: 'Original link: https://www.linkedin.com/, key: 6e47a6b8'
             label: Link
