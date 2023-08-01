@@ -745,12 +745,8 @@ collections:
         widget: select
         required: false
         options:
-          - label: by Kate Millestone
-            value: by Kate Millestone
-          - label: by Ronda Hopes
-            value: by Ronda Hopes
-          - label: by Michael Tattumn
-            value: by Michael Tattumn
+          - label: by Tobias Gurtzick
+            value: by Tobias Gurtzick
       - hint: ''
         name: f_ref
         label: Categories
