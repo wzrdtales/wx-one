@@ -10191,6 +10191,14 @@ img {
     font-size: 15px;
   }
 
+  .klick-columns {
+    margin-bottom: 0;
+  }
+
+  .link-block-clean {
+    margin-bottom: 25px;
+  }
+
   .cell-2 {
     padding-top: 45px;
     padding-left: 0;
