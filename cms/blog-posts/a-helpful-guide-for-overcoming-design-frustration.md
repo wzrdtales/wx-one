@@ -1,21 +1,30 @@
 ---
-title: ' A Helpful Guide for Overcoming Design Frustration'
-slug: a-helpful-guide-for-overcoming-design-frustration
-updated-on: '2022-04-17T19:07:22.222Z'
-created-on: '2022-03-29T07:35:13.293Z'
-published-on: '2022-04-17T19:07:29.765Z'
+created-on: 2023-08-01T12:28:23.083Z
 f_image:
-  url: >-
-    https://uploads-ssl.webflow.com/649e8340bde586a93b2c23c2/649e8341bde586a93b2c250b_case-detail-img-01.jpg
+  url: /assets/images/62c1c3afd210ea09132f-designohnetitel.png
   alt: null
-f_prev-text: >-
-  Talking about a website audit, it’s important to consider that there are
-  approximately…
-f_author: by Michael Tattumn
-layout: '[blog-posts].html'
+f_author: by Kate Millestone
+layout: "[blog-posts].html"
+slug: a-helpful-guide-for-overcoming-design-frustration
+title: Kubernetes Grundlagen - Was sind Master und Worker Nodes?
+updated-on: 2023-08-01T12:28:23.761Z
+published-on: 2023-08-01T12:28:24.310Z
+f_prev-text: "Die sogenannten #Worker-Nodes und den #Master-Node (control plan/ kurz cp)..."
 tags: blog-posts
+date: 2023-08-01T12:28:21.081Z
 ---
+\#Kubernetes (k8s) besitzt zwei Hauptkomponenten: Die sogenannten #Worker-Nodes und den #Master-Node (control plan/ kurz cp). Die Worker-Nodes sind die Computer, auf denen deine Programme ausgeführt werden, während der Master-Node der Manager ist, der die Kontrolle über diese Worker-Nodes hat.
 
-![](https://uploads-ssl.webflow.com/649e8340bde586a93b2c23c2/649e8340bde586a93b2c24f6_pasted%20image%200%20(1).png)
+Stell dir vor, du bist Leiter einer großen Fabrik, in der verschiedene Aufgaben erledigt werden müssen. Um diese Aufgaben möglichst effizient zu erledigen, solltest du zwei Arten von Mitarbeitern einstellen: Manager und Arbeiter.
 
-But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?
+Der Master-Node ist vergleichbar mit dem Manager in der Fabrik. Er ist für die Überwachung und Steuerung der Gesamtarbeit verantwortlich. Seine Aufgabe besteht darin, den Überblick über alle Arbeitsprozesse zu behalten und sicherzustellen, dass sie reibungslos ablaufen. Der Master-Node nimmt Anweisungen entgegen und teilt die Arbeit den zuständigen Arbeitern zu.
+
+Die Worker-Nodes sind vergleichbar mit den Arbeitern in der Fabrik. Sie führen die eigentliche Arbeit aus, die ihnen vom Master-Node zugewiesen wurde. Jeder Worker-Node verfügt über Ressourcen wie Rechenleistung (CPU), Speicher und Netzwerkfähigkeiten. Diese Ressourcen werden genutzt, um die jeweiligen Programme und Aufgaben auszuführen, die der Master-Node verteilt hat.
+
+Der Master-Node kommuniziert also mit den Worker-Nodes, weist ihnen Aufgaben zu, überwacht ihre Arbeit und stellt sicher, dass alles reibungslos abläuft. Dieses Zusammenspiel zwischen Master-Node und Worker-Nodes ermöglicht es, komplexe Aufgaben effizient und skalierbar zu erledigen.
+
+Um #Kubernetes zu nutzen, informierst du deinen Manager (Master-Node), welche Programme er wie zu verwalten hat. Du erstellst eine Art Konzept, das als "Kubernetes-Manifest" bezeichnet wird. In diesem Konzept gibst du an, wie viele Kopien eines Programms ausgeführt werden sollen, wie viel Speicher hierfür benötigt wird und andere Richtlinien.
+
+Sobald du deinen Plan erstellt hast, übergibst du das Zepter praktisch an den Master-Node. Dieser übernimmt von nun an die Kontrolle und ist dafür zuständig, dass die Programme dementsprechend ausgeführt werden. Er erstellt automatisch die erforderlichen Kopien der Programme und verteilt sie auf die verfügbaren Worker-Nodes. Wenn einer der Worker-Nodes ausfällt oder nicht mehr richtig funktioniert, kümmert sich der Master-Node darum und sorgt dafür, dass das betroffene Programm auf einem anderen Worker-Node neu gestartet wird.
+
+Hattest du schon Berührungspunkt mit Kubernetes? Schreibs gerne mal in die Kommentare!
