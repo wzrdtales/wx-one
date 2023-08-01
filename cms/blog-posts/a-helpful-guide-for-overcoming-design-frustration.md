@@ -13,6 +13,10 @@ f_prev-text: "Die sogenannten #Worker-Nodes und den #Master-Node (control plan/ 
 tags: blog-posts
 date: 2023-08-01T12:28:21.081Z
 ---
+![](/assets/images/62c1c3afd210ea09132f-designohnetitel.png)
+
+
+
 \#Kubernetes (k8s) besitzt zwei Hauptkomponenten: Die sogenannten #Worker-Nodes und den #Master-Node (control plan/ kurz cp). Die Worker-Nodes sind die Computer, auf denen deine Programme ausgeführt werden, während der Master-Node der Manager ist, der die Kontrolle über diese Worker-Nodes hat.
 
 Stell dir vor, du bist Leiter einer großen Fabrik, in der verschiedene Aufgaben erledigt werden müssen. Um diese Aufgaben möglichst effizient zu erledigen, solltest du zwei Arten von Mitarbeitern einstellen: Manager und Arbeiter.
