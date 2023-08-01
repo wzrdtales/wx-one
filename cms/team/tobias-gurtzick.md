@@ -8,7 +8,7 @@ published-on: null
 f_headshot:
   url: /assets/images/1588928353571.jpeg
   alt: null
-f_role: CEO
+f_role: A - CEO
 tags: team
 date: 2023-08-01T15:06:32.972Z
 ---
