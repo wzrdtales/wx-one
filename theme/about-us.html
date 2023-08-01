@@ -207,9 +207,9 @@
   <section id="Unser-Team" class="section-6 team">
     <div class="container w-container">
       <h2 class="centured-heading">{{ texts.-6d550228 }}<br>{{ texts.200d }}</h2>
-      {%- assign collection = collections.team | sort: "-created-on" -%}<div id="w-node-ba6e5cfe-d450-4dd2-85fc-3ce7247e8dfb-3b2c239d" class="w-dyn-list">
-        {%- unless collection.length == 0 -%}<div role="list" class="w-dyn-items w-row">
-          {%- for item in collection -%}<div role="listitem" class="w-dyn-item w-col w-col-3">
+      {%- assign collection = collections.team | sort: "f_role" -%}{%- assign pagination = collection | paginate: 8 -%}<div id="w-node-ba6e5cfe-d450-4dd2-85fc-3ce7247e8dfb-3b2c239d" class="w-dyn-list">
+        {%- unless pagination.length == 0 -%}<div role="list" class="w-dyn-items w-row">
+          {%- for item in pagination[0] -%}<div role="listitem" class="w-dyn-item w-col w-col-3">
             <div id="w-node-_779d3937-e385-329c-b3e2-dc64c4b2dbcb-3b2c239d" class="our-team-content">{%- image item.data.f_headshot.url, item.data.f_headshot.alt, '[{"max":479,"size":"100vw"},{"max":767,"size":"96vw"},{"max":1279,"size":"97vw"},{"max":10000,"size":"1210px"}]', 'loading="lazy" class="team-image" width="265" height="265"' -%}
               <div class="portfolio-container">
                 <h5>{{ item.data.title }}</h5>
@@ -217,10 +217,29 @@
               </div>
             </div>
           </div>{%- endfor -%}
-        </div>{%- endunless -%}
-        {%- if collection.length == 0 -%}<div class="w-dyn-empty">
+        {%- for paginationPage in pagination -%}{%- if forloop.index > 1 -%}{%- assign paginationFilePath = "/public/_data/paginations" | appendMultiple: page.filePathStem, "/page-741a1fa5-", forloop.index, ".html" -%}<template data-pagination-index="{{ forloop.index }}" data-pagination-url="{{ paginationFilePath | replace: "/public", "" }}">{% capture currentPageHTML %}{%- for item in paginationPage -%}<div role="listitem" class="w-dyn-item w-col w-col-3">
+            <div id="w-node-_779d3937-e385-329c-b3e2-dc64c4b2dbcb-3b2c239d" class="our-team-content">{%- image item.data.f_headshot.url, item.data.f_headshot.alt, '[{"max":479,"size":"100vw"},{"max":767,"size":"96vw"},{"max":1279,"size":"97vw"},{"max":10000,"size":"1210px"}]', 'loading="lazy" class="team-image" width="265" height="265"' -%}
+              <div class="portfolio-container">
+                <h5>{{ item.data.title }}</h5>
+                <p>{{ item.data.f_role }}</p>
+              </div>
+            </div>
+          </div>{%- endfor -%}{% endcapture %}{{ currentPageHTML | writeToFile: paginationFilePath }}</template>{%- endif -%}{%- endfor -%}</div>{%- endunless -%}
+        {%- if pagination.length == 0 -%}<div class="w-dyn-empty">
           <div>{{ texts.3d503d2b }}</div>
         </div>{%- endif -%}
+        <div role="navigation" aria-label="List" class="w-pagination-wrapper">
+          <a href="{{ links.23 }}" aria-label="Previous Page" class="w-pagination-previous" style="display: none;"><svg class="w-pagination-previous-icon" height="12px" width="12px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" transform="translate(0, 1)">
+              <path fill="none" stroke="currentColor" fill-rule="evenodd" d="M8 10L4 6l4-4"></path>
+            </svg>
+            <div class="w-inline-block">{{ texts.-4811e0e9 }}</div>
+          </a>
+          {%- if pagination[1] -%}<a href="{{ links.23 }}" aria-label="Next Page" class="w-pagination-next">
+            <div class="w-inline-block">{{ texts.24ff13 }}</div><svg class="w-pagination-next-icon" height="12px" width="12px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" transform="translate(0, 1)">
+              <path fill="none" stroke="currentColor" fill-rule="evenodd" d="M4 2l4 4-4 4"></path>
+            </svg>
+          </a>{%- endif -%}
+        </div>
       </div>
     </div>
   </section>

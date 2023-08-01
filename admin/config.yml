@@ -1,12 +1,9 @@
 backend:
-  name: gitlab
-  repo: wx-one/marketing/website
-  api_root: https://dev0git.wizardtales.com/api/v4
-  base_url: https://dev0git.wizardtales.com
+  name: git-gateway
+  accept_roles:
+    - admin
+    - editor
   branch: master
-  auth_type: pkce
-  app_id: 26d47b35abc8d8918f9e8bd554b8a7347f66ca0117f52bd2638b8303be5f6d55
-
 media_folder: theme/assets/images
 public_folder: /assets/images
 collections:
@@ -1437,6 +1434,14 @@ collections:
             label: Text
             name: 200d
             widget: string
+          - hint: 'Original text: Previous, key: -4811e0e9'
+            label: Text
+            name: '-4811e0e9'
+            widget: string
+          - hint: 'Original text: Next, key: 24ff13'
+            label: Text
+            name: 24ff13
+            widget: string
           - hint: 'Original text: Jederzeit bereit, Ihrem Geschäft , key: -750defc6'
             label: Text
             name: '-750defc6'
@@ -1730,10 +1735,6 @@ collections:
           - hint: 'Original text: Solution, key: 5cc7b199'
             label: Text
             name: 5cc7b199
-            widget: string
-          - hint: 'Original text: Previous, key: -4811e0e9'
-            label: Text
-            name: '-4811e0e9'
             widget: string
           - hint: 'Original text: Next , key: 47ae36d'
             label: Text
