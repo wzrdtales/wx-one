@@ -1,12 +1,9 @@
 backend:
-  name: gitlab
-  repo: wx-one/marketing/website
-  api_root: https://dev0git.wizardtales.com/api/v4
-  base_url: https://dev0git.wizardtales.com
+  name: git-gateway
+  accept_roles:
+    - admin
+    - editor
   branch: master
-  auth_type: pkce
-  app_id: 26d47b35abc8d8918f9e8bd554b8a7347f66ca0117f52bd2638b8303be5f6d55
-
 media_folder: theme/assets/images
 public_folder: /assets/images
 collections:
@@ -874,20 +871,6 @@ collections:
             name: title
             widget: hidden
             default: Texts
-          - hint: 'Original text: Protected Page, key: -11d4bbff'
-            label: Text
-            name: '-11d4bbff'
-            widget: string
-          - hint: 'Original text: Password, key: 4c641ebb'
-            label: Text
-            name: 4c641ebb
-            widget: string
-          - hint: >-
-              Original text: Incorrect password. Please try again., key:
-              -f5c4b5f
-            label: Text
-            name: '-f5c4b5f'
-            widget: string
           - hint: 'Original text: Services, key: 560f747e'
             label: Text
             name: 560f747e
@@ -1121,10 +1104,10 @@ collections:
             name: '-25f2d51b'
             widget: string
           - hint: >-
-              Original text: Bleibe auf dem Laufendem mit unserem Newsletter,
-              key: 7b5f2c66
+              Original text: Innovativ, zukunftsweisend, revolutionär -
+              Gestalten Sie die IT-Zukunft mit uns., key: -1fa6c15c
             label: Text
-            name: 7b5f2c66
+            name: '-1fa6c15c'
             widget: string
           - hint: >-
               Original text: Thank you! Your submission has been received!, key:
@@ -1137,12 +1120,6 @@ collections:
               form., key: -7c112e99
             label: Text
             name: '-7c112e99'
-            widget: string
-          - hint: >-
-              Original text: Innovativ, zukunftsweisend, revolutionär -
-              Gestalten Sie die IT-Zukunft mit uns., key: -1fa6c15c
-            label: Text
-            name: '-1fa6c15c'
             widget: string
           - hint: 'Original text: zum Unternehmen, key: 733ed8df'
             label: Text
@@ -1163,6 +1140,20 @@ collections:
           - hint: 'Original text: © WX-ONE All Rights Reserved 2023, key: 7ace3a3c'
             label: Text
             name: 7ace3a3c
+            widget: string
+          - hint: 'Original text: Protected Page, key: -11d4bbff'
+            label: Text
+            name: '-11d4bbff'
+            widget: string
+          - hint: 'Original text: Password, key: 4c641ebb'
+            label: Text
+            name: 4c641ebb
+            widget: string
+          - hint: >-
+              Original text: Incorrect password. Please try again., key:
+              -f5c4b5f
+            label: Text
+            name: '-f5c4b5f'
             widget: string
           - hint: 'Original text: 404, key: c938'
             label: Text
@@ -1592,9 +1583,9 @@ collections:
             label: Text
             name: 1f8fc88f
             widget: string
-          - hint: 'Original text: Kokkolastr. 5D, key: 6e643fd2'
+          - hint: 'Original text: Kokkolastr. 5, key: 7f6e96b2'
             label: Text
-            name: 6e643fd2
+            name: 7f6e96b2
             widget: string
           - hint: 'Original text: 40882 Ratingen, key: 36b19ad0'
             label: Text
@@ -1606,9 +1597,9 @@ collections:
             label: Text
             name: '-3634075b'
             widget: string
-          - hint: 'Original text: kontakt@wxone.de, key: 204e104a'
+          - hint: 'Original text: kontakt@wx1.de, key: 3e4142df'
             label: Text
-            name: 204e104a
+            name: 3e4142df
             widget: string
           - hint: 'Original text: , key: f39e'
             label: Text
@@ -1738,10 +1729,6 @@ collections:
           - hint: 'Original text: Email: , key: 19673a2'
             label: Text
             name: 19673a2
-            widget: string
-          - hint: 'Original text: kontakt@wx1.de, key: 3e4142df'
-            label: Text
-            name: 3e4142df
             widget: string
           - hint: 'Original text: zur Beratung, key: 77699235'
             label: Text
@@ -2115,6 +2102,12 @@ collections:
           - hint: 'Original text: Download Our Brochure, key: -63048cd0'
             label: Text
             name: '-63048cd0'
+            widget: string
+          - hint: >-
+              Original text: Bleibe auf dem Laufendem mit unserem Newsletter,
+              key: 7b5f2c66
+            label: Text
+            name: 7b5f2c66
             widget: string
           - hint: >-
               Original text: Wo Geschwindigkeit auf Sicherheit trifft, key:
@@ -2981,6 +2974,422 @@ collections:
             label: Text
             name: '-4dc80e62'
             widget: text
+          - hint: 'Original text: ¿Porqué usar Asana?, key: -78156dc1'
+            label: Text
+            name: '-78156dc1'
+            widget: string
+          - hint: 'Original text: Resumen, key: -5b5c2a3f'
+            label: Text
+            name: '-5b5c2a3f'
+            widget: string
+          - hint: >-
+              Original text: Crea planes de proyectos, coordina tareas y cumple
+              con los vencimientos, key: 72669f1b
+            label: Text
+            name: 72669f1b
+            widget: string
+          - hint: 'Original text: Integraciones con aplicaciones, key: b8ffb88'
+            label: Text
+            name: b8ffb88
+            widget: string
+          - hint: >-
+              Original text: Conéctate con las herramientas que adoras y en las
+              que confías a diario, key: 64f36765
+            label: Text
+            name: 64f36765
+            widget: string
+          - hint: 'Original text: Clientes, key: 39ff9dd9'
+            label: Text
+            name: 39ff9dd9
+            widget: string
+          - hint: >-
+              Original text: Mira cómo Asana ayuda a los equipos a alcanzar sus
+              objetivos, key: -5502c4bb
+            label: Text
+            name: '-5502c4bb'
+            widget: string
+          - hint: 'Original text: Funciones, key: 6e78da52'
+            label: Text
+            name: 6e78da52
+            widget: string
+          - hint: 'Original text: Objetivos, key: 1f939897'
+            label: Text
+            name: 1f939897
+            widget: string
+          - hint: >-
+              Original text: Define los objetivos estratégicos y dales
+              seguimiento a todos en un solo lugar, key: -5f80d308
+            label: Text
+            name: '-5f80d308'
+            widget: string
+          - hint: 'Original text: Cronograma, key: 7e8ca209'
+            label: Text
+            name: 7e8ca209
+            widget: string
+          - hint: >-
+              Original text: Crea un hermoso diagrama de Gantt en minutos, key:
+              -3b2e620a
+            label: Text
+            name: '-3b2e620a'
+            widget: string
+          - hint: 'Original text: Portafolios, key: 4b6b504a'
+            label: Text
+            name: 4b6b504a
+            widget: string
+          - hint: >-
+              Original text: Supervisa el progreso y el estado de las
+              iniciativas clave en tiempo real, key: 7ec676ff
+            label: Text
+            name: 7ec676ff
+            widget: string
+          - hint: 'Original text: Gestión de recursos, key: -5f3437d2'
+            label: Text
+            name: '-5f3437d2'
+            widget: string
+          - hint: >-
+              Original text: Mira cuánto trabajo tienen los miembros de tu
+              equipo en todos los proyectos, key: -18ae0d54
+            label: Text
+            name: '-18ae0d54'
+            widget: string
+          - hint: 'Original text: Formularios, key: -3134bf5f'
+            label: Text
+            name: '-3134bf5f'
+            widget: string
+          - hint: >-
+              Original text: Envía y gestiona las solicitudes de trabajo en un
+              solo lugar, key: -28c7db7c
+            label: Text
+            name: '-28c7db7c'
+            widget: string
+          - hint: 'Original text: Automatización, key: 323943c0'
+            label: Text
+            name: 323943c0
+            widget: string
+          - hint: >-
+              Original text: Simplifica los procesos, reduce las posibilidades
+              de error y dedica menos tiempo a las tareas rutinarias., key:
+              -13b617be
+            label: Text
+            name: '-13b617be'
+            widget: text
+          - hint: 'Original text: Mira todas las funciones, key: -368c9c6a'
+            label: Text
+            name: '-368c9c6a'
+            widget: string
+          - hint: 'Original text: Todos Los planes, key: -73833246'
+            label: Text
+            name: '-73833246'
+            widget: string
+          - hint: 'Original text: Basic, key: 3cfe40e'
+            label: Text
+            name: 3cfe40e
+            widget: string
+          - hint: >-
+              Original text: Para que la gestión de proyectos y tareas sea más
+              sencilla. Gratis para equipos de hasta 15 integrantes., key:
+              -1efb4dee
+            label: Text
+            name: '-1efb4dee'
+            widget: text
+          - hint: 'Original text: Premium, key: 503d6637'
+            label: Text
+            name: 503d6637
+            widget: string
+          - hint: >-
+              Original text: Para una planificación y gestión efectivas de los
+              proyectos de tus equipos., key: 735ca26a
+            label: Text
+            name: 735ca26a
+            widget: string
+          - hint: 'Original text: Business, key: -4080dc20'
+            label: Text
+            name: '-4080dc20'
+            widget: string
+          - hint: >-
+              Original text: Para la gestión de iniciativas a gran escala y la
+              mejora de la colaboración entre los equipos., key: 1abdbd5f
+            label: Text
+            name: 1abdbd5f
+            widget: text
+          - hint: 'Original text: Enterprise, key: 46f90f81'
+            label: Text
+            name: 46f90f81
+            widget: string
+          - hint: >-
+              Original text: Para organizaciones que necesitan seguridad,
+              control y asistencia extra., key: -659ecd6f
+            label: Text
+            name: '-659ecd6f'
+            widget: string
+          - hint: 'Original text: Compara todos lo planes, key: 39415202'
+            label: Text
+            name: '39415202'
+            widget: string
+          - hint: 'Original text: Soluciones, key: 2c9f5978'
+            label: Text
+            name: 2c9f5978
+            widget: string
+          - hint: 'Original text: Por Equipo, key: -4259714'
+            label: Text
+            name: '-4259714'
+            widget: string
+          - hint: 'Original text: Marketing, key: 3fc9ea06'
+            label: Text
+            name: 3fc9ea06
+            widget: string
+          - hint: >-
+              Original text: Planifica y da seguimiento a las campañas, los
+              lanzamientos y a mucho más, key: -13484656
+            label: Text
+            name: '-13484656'
+            widget: string
+          - hint: 'Original text: Operaciones, key: 4e2269a6'
+            label: Text
+            name: 4e2269a6
+            widget: string
+          - hint: >-
+              Original text: Crea, escala y simplifica los procesos para mejorar
+              la eficiencia, key: 44044ddb
+            label: Text
+            name: 44044ddb
+            widget: string
+          - hint: 'Original text: Ventas, key: -677c3439'
+            label: Text
+            name: '-677c3439'
+            widget: string
+          - hint: >-
+              Original text: Cierra negocios e incorpora clientes nuevos más
+              rápido, key: -18ea988a
+            label: Text
+            name: '-18ea988a'
+            widget: string
+          - hint: 'Original text: Producto, key: -37f9ca80'
+            label: Text
+            name: '-37f9ca80'
+            widget: string
+          - hint: 'Original text: Ver todos los equipos, key: 3f024334'
+            label: Text
+            name: 3f024334
+            widget: string
+          - hint: 'Original text: Por flujo de trabajo, key: -723a3abf'
+            label: Text
+            name: '-723a3abf'
+            widget: string
+          - hint: 'Original text: Gestión de proyectos, key: 17736baa'
+            label: Text
+            name: 17736baa
+            widget: string
+          - hint: 'Original text: Gestión de flujos de trabajo, key: -79d0355b'
+            label: Text
+            name: '-79d0355b'
+            widget: string
+          - hint: 'Original text: Calendario, key: -6fa0f2fc'
+            label: Text
+            name: '-6fa0f2fc'
+            widget: string
+          - hint: 'Original text: Tableros Kanban, key: 3b31f70f'
+            label: Text
+            name: 3b31f70f
+            widget: string
+          - hint: 'Original text: Equipos remotos , key: -67debcf7'
+            label: Text
+            name: '-67debcf7'
+            widget: string
+          - hint: 'Original text: Popular, key: 4bbd8ab9'
+            label: Text
+            name: 4bbd8ab9
+            widget: string
+          - hint: 'Original text: Productividad, key: -6c8dc546'
+            label: Text
+            name: '-6c8dc546'
+            widget: string
+          - hint: 'Original text: Agile y Scrum, key: 7fda112f'
+            label: Text
+            name: 7fda112f
+            widget: string
+          - hint: 'Original text: Mira todos los flujos de trabajo, key: 29013191'
+            label: Text
+            name: '29013191'
+            widget: string
+          - hint: 'Original text: Plantillas, key: -3901d5d0'
+            label: Text
+            name: '-3901d5d0'
+            widget: string
+          - hint: 'Original text: Página de inicio de las plantillas, key: -6afbebe5'
+            label: Text
+            name: '-6afbebe5'
+            widget: string
+          - hint: 'Original text: Plantillas más populares, key: 5eb40556'
+            label: Text
+            name: 5eb40556
+            widget: string
+          - hint: 'Original text: Continuidad del equipo, key: -19f11448'
+            label: Text
+            name: '-19f11448'
+            widget: string
+          - hint: 'Original text: Agenda de reuniones, key: -38323f41'
+            label: Text
+            name: '-38323f41'
+            widget: string
+          - hint: 'Original text: Plan de proyecto, key: 45dad36d'
+            label: Text
+            name: 45dad36d
+            widget: string
+          - hint: 'Original text: Solicitudes de trabajo, key: -69c5200a'
+            label: Text
+            name: '-69c5200a'
+            widget: string
+          - hint: >-
+              Original text: Planificación de los objetivos y las metas del
+              equipo, key: -611b1ad7
+            label: Text
+            name: '-611b1ad7'
+            widget: string
+          - hint: 'Original text: Recursos, key: -2b742c96'
+            label: Text
+            name: '-2b742c96'
+            widget: string
+          - hint: 'Original text: Aprende, key: 3409db6d'
+            label: Text
+            name: 3409db6d
+            widget: string
+          - hint: 'Original text: Recursos para gestión del trabajo, key: 7cd176cd'
+            label: Text
+            name: 7cd176cd
+            widget: string
+          - hint: >-
+              Original text: Descubre las mejores prácticas, mira los webinars,
+              accede a los detalles, key: 39ebdf26
+            label: Text
+            name: 39ebdf26
+            widget: string
+          - hint: 'Original text: Guía de Asana, key: 47d24fa1'
+            label: Text
+            name: 47d24fa1
+            widget: string
+          - hint: >-
+              Original text: Accede a muchos consejos, trucos y a asesoramiento
+              para aprovechar Asana al máximo, key: -21968cc6
+            label: Text
+            name: '-21968cc6'
+            widget: string
+          - hint: 'Original text: Academia Asana, key: cbabd87'
+            label: Text
+            name: cbabd87
+            widget: string
+          - hint: >-
+              Original text: Regístrate para tener acceso a cursos interactivos
+              y webinars y así aprender más sobre Asana., key: 117f98d2
+            label: Text
+            name: 117f98d2
+            widget: text
+          - hint: 'Original text: Blog, key: 1fa3c2'
+            label: Text
+            name: 1fa3c2
+            widget: string
+          - hint: >-
+              Original text: Descubre los productos de Asana y las noticias de
+              la empresa más recientes, key: -397c501c
+            label: Text
+            name: '-397c501c'
+            widget: string
+          - hint: 'Original text: Conectar, key: -1eca75db'
+            label: Text
+            name: '-1eca75db'
+            widget: string
+          - hint: 'Original text: Eventos, key: 112cd9de'
+            label: Text
+            name: 112cd9de
+            widget: string
+          - hint: >-
+              Original text: Entérate de los próximos eventos que tendrán lugar
+              cerca de ti, key: 121da7a4
+            label: Text
+            name: 121da7a4
+            widget: string
+          - hint: 'Original text: Programas de la comunidad, key: -62b500de'
+            label: Text
+            name: '-62b500de'
+            widget: string
+          - hint: >-
+              Original text: Conéctate con los clientes de Asana de todo el
+              mundo y aprende de ellos, key: 3bd6d1a7
+            label: Text
+            name: 3bd6d1a7
+            widget: string
+          - hint: 'Original text: Asistencia, key: -341f7486'
+            label: Text
+            name: '-341f7486'
+            widget: string
+          - hint: >-
+              Original text: ¿Necesitas ayuda? Comunícate con el equipo de
+              Asistencia de Asana, key: -115861e5
+            label: Text
+            name: '-115861e5'
+            widget: string
+          - hint: 'Original text: Socios, key: -6c12faba'
+            label: Text
+            name: '-6c12faba'
+            widget: string
+          - hint: >-
+              Original text: Más información sobre nuestros programas para
+              socios, key: -6c284d5e
+            label: Text
+            name: '-6c284d5e'
+            widget: string
+          - hint: 'Original text: Desarrolladores, key: 3987d314'
+            label: Text
+            name: 3987d314
+            widget: string
+          - hint: >-
+              Original text: Descubre cómo desarrollar aplicaciones con la
+              plataforma de Asana, key: -1a6a73e0
+            label: Text
+            name: '-1a6a73e0'
+            widget: string
+          - hint: 'Original text: Lecturas Destacadas, key: -34dc4fe0'
+            label: Text
+            name: '-34dc4fe0'
+            widget: string
+          - hint: >-
+              Original text: 2 funciones nuevas para brindarle mayor claridad y
+              contexto a tu equipo en este nuevo año, key: -13e08c0b
+            label: Text
+            name: '-13e08c0b'
+            widget: string
+          - hint: 'Original text: Leer mas, key: 685ed245'
+            label: Text
+            name: 685ed245
+            widget: string
+          - hint: >-
+              Original text: Superar los obstáculos en un mundo de trabajo a
+              distancia: Índice de la anatomía del trabajo 2021, key: -554204a
+            label: Text
+            name: '-554204a'
+            widget: text
+          - hint: >-
+              Original text: Nuevo: Mantén conectados a los equipos
+              distribuidos, key: 7b2daacb
+            label: Text
+            name: 7b2daacb
+            widget: string
+          - hint: 'Original text: Precios, key: 5038d9cd'
+            label: Text
+            name: 5038d9cd
+            widget: string
+          - hint: 'Original text: Contactar a ventas, key: -1dbaf8ab'
+            label: Text
+            name: '-1dbaf8ab'
+            widget: string
+          - hint: 'Original text: Iniciar sesión, key: -56096518'
+            label: Text
+            name: '-56096518'
+            widget: string
+          - hint: 'Original text: Prueba gratis, key: -2aefa0e9'
+            label: Text
+            name: '-2aefa0e9'
+            widget: string
       - label: Links
         name: links
         file: cms/_data/links.json
@@ -3376,19 +3785,6 @@ collections:
                 widget: string
                 required: false
           - label: Image
-            name: '-7a700be7'
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
             name: '-1101e822'
             widget: object
             fields:
@@ -3572,6 +3968,19 @@ collections:
                 required: false
           - label: Image
             name: 3282dba9
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-7a700be7'
             widget: object
             fields:
               - name: url
@@ -4352,6 +4761,45 @@ collections:
                 required: false
           - label: Image
             name: '-11c73fd'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 62e85c47
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-f5f4bcb'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-114a7f00'
             widget: object
             fields:
               - name: url
