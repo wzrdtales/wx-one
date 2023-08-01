@@ -1,12 +1,9 @@
 backend:
-  name: gitlab
-  repo: wx-one/marketing/website
-  api_root: https://dev0git.wizardtales.com/api/v4
-  base_url: https://dev0git.wizardtales.com
+  name: git-gateway
+  accept_roles:
+    - admin
+    - editor
   branch: master
-  auth_type: pkce
-  app_id: 26d47b35abc8d8918f9e8bd554b8a7347f66ca0117f52bd2638b8303be5f6d55
-
 media_folder: theme/assets/images
 public_folder: /assets/images
 collections:
@@ -874,6 +871,20 @@ collections:
             name: title
             widget: hidden
             default: Texts
+          - hint: 'Original text: Protected Page, key: -11d4bbff'
+            label: Text
+            name: '-11d4bbff'
+            widget: string
+          - hint: 'Original text: Password, key: 4c641ebb'
+            label: Text
+            name: 4c641ebb
+            widget: string
+          - hint: >-
+              Original text: Incorrect password. Please try again., key:
+              -f5c4b5f
+            label: Text
+            name: '-f5c4b5f'
+            widget: string
           - hint: 'Original text: Services, key: 560f747e'
             label: Text
             name: 560f747e
@@ -1149,20 +1160,6 @@ collections:
           - hint: 'Original text: © WX-ONE All Rights Reserved 2023, key: 7ace3a3c'
             label: Text
             name: 7ace3a3c
-            widget: string
-          - hint: 'Original text: Protected Page, key: -11d4bbff'
-            label: Text
-            name: '-11d4bbff'
-            widget: string
-          - hint: 'Original text: Password, key: 4c641ebb'
-            label: Text
-            name: 4c641ebb
-            widget: string
-          - hint: >-
-              Original text: Incorrect password. Please try again., key:
-              -f5c4b5f
-            label: Text
-            name: '-f5c4b5f'
             widget: string
           - hint: 'Original text: 404, key: c938'
             label: Text
@@ -3376,6 +3373,19 @@ collections:
                 widget: string
                 required: false
           - label: Image
+            name: '-7a700be7'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
             name: '-1101e822'
             widget: object
             fields:
@@ -3559,19 +3569,6 @@ collections:
                 required: false
           - label: Image
             name: 3282dba9
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: '-7a700be7'
             widget: object
             fields:
               - name: url
