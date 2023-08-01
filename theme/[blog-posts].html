@@ -112,9 +112,6 @@
         <div class="relative-wrapper blog">
           <div id="w-node-_086f889b-07b6-09c0-d3c4-e953e8e7e9c8-3b2c23ab" class="sticky-wrapper">
             <div class="sticky-element blog">
-              <form action="/search" class="search-orange w-form"><input type="search" class="search-input w-input" maxlength="256" name="query" placeholder="Keyword search…" id="search" required=""><input type="submit" value="Search" class="search-button-orange w-button"></form>
-            </div>
-            <div class="sticky-element blog">
               <h5 class="categories-headings">{{ texts.2d2c9ce }}<br></h5>
               {%- assign collection = collections.blog-posts | sort: "-created-on" -%}<div class="collection-list-wrapper-4 w-dyn-list">
                 {%- unless collection.length == 0 -%}<div role="list" class="w-dyn-items">
