@@ -66,7 +66,7 @@ spec::build:
   stage: test
   cache: *spec__audit_-_cache
   artifacts:
-    expire_in: 5d
+    expire_in: 1d
     paths:
       - dist
   script:
