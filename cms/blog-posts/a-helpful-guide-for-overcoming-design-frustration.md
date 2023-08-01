@@ -3,7 +3,7 @@ created-on: 2023-08-01T12:28:23.083Z
 f_image:
   url: /assets/images/62c1c3afd210ea09132f-designohnetitel.png
   alt: null
-f_author: by Kate Millestone
+f_author: by Tobias Gurtzick
 layout: "[blog-posts].html"
 slug: a-helpful-guide-for-overcoming-design-frustration
 title: Kubernetes Grundlagen - Was sind Master und Worker Nodes?
