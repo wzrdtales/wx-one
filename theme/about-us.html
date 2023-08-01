@@ -207,31 +207,20 @@
   <section id="Unser-Team" class="section-6 team">
     <div class="container w-container">
       <h2 class="centured-heading">{{ texts.-6d550228 }}<br>{{ texts.200d }}</h2>
-      <div class="w-layout-grid our-team-grid">
-        <div id="w-node-_779d3937-e385-329c-b3e2-dc64c4b2dbcb-3b2c239d" class="our-team-content">{%- image images.-67a5a095.url, images.-67a5a095.alt, '[{"max":479,"size":"100vw"},{"max":767,"size":"96vw"},{"max":1279,"size":"97vw"},{"max":10000,"size":"1210px"}]', 'loading="lazy" class="team-image"' -%}
-          <div class="portfolio-container">
-            <h5>{{ texts.-1ca92ab4 }}</h5>
-            <p>{{ texts.62985bbb }}</p>
-          </div>
-        </div>
-        <div id="w-node-_779d3937-e385-329c-b3e2-dc64c4b2dbd2-3b2c239d" class="our-team-content">{%- image images.-79229a14.url, images.-79229a14.alt, '[{"max":479,"size":"100vw"},{"max":767,"size":"96vw"},{"max":1279,"size":"97vw"},{"max":10000,"size":"1210px"}]', 'loading="lazy" class="team-image"' -%}
-          <div class="portfolio-container">
-            <h5>{{ texts.5ecb853f }}</h5>
-            <p>{{ texts.3a7e1d66 }}</p>
-          </div>
-        </div>
-        <div id="w-node-_779d3937-e385-329c-b3e2-dc64c4b2dbd9-3b2c239d" class="our-team-content">{%- image images.75606c6d.url, images.75606c6d.alt, '[{"max":479,"size":"100vw"},{"max":767,"size":"96vw"},{"max":1279,"size":"97vw"},{"max":10000,"size":"1210px"}]', 'loading="lazy" class="team-image"' -%}
-          <div class="portfolio-container">
-            <h5>{{ texts.32dcb19d }}</h5>
-            <p>{{ texts.a10 }}</p>
-          </div>
-        </div>
-        <div id="w-node-_779d3937-e385-329c-b3e2-dc64c4b2dbe0-3b2c239d" class="our-team-content">{%- image images.63e372ee.url, images.63e372ee.alt, '[{"max":479,"size":"100vw"},{"max":767,"size":"96vw"},{"max":1279,"size":"97vw"},{"max":10000,"size":"1210px"}]', 'loading="lazy" class="team-image"' -%}
-          <div class="portfolio-container">
-            <h5>{{ texts.-39d3b327 }}</h5>
-            <p>{{ texts.3797c91d }}</p>
-          </div>
-        </div>
+      {%- assign collection = collections.team | sort: "-created-on" -%}<div id="w-node-ba6e5cfe-d450-4dd2-85fc-3ce7247e8dfb-3b2c239d" class="w-dyn-list">
+        {%- unless collection.length == 0 -%}<div role="list" class="w-dyn-items w-row">
+          {%- for item in collection -%}<div role="listitem" class="w-dyn-item w-col w-col-3">
+            <div id="w-node-_779d3937-e385-329c-b3e2-dc64c4b2dbcb-3b2c239d" class="our-team-content">{%- image item.data.f_headshot.url, item.data.f_headshot.alt, '[{"max":479,"size":"100vw"},{"max":767,"size":"96vw"},{"max":1279,"size":"97vw"},{"max":10000,"size":"1210px"}]', 'loading="lazy" class="team-image" width="265" height="265"' -%}
+              <div class="portfolio-container">
+                <h5>{{ item.data.title }}</h5>
+                <p>{{ item.data.f_role }}</p>
+              </div>
+            </div>
+          </div>{%- endfor -%}
+        </div>{%- endunless -%}
+        {%- if collection.length == 0 -%}<div class="w-dyn-empty">
+          <div>{{ texts.3d503d2b }}</div>
+        </div>{%- endif -%}
       </div>
     </div>
   </section>

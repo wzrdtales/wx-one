@@ -147,22 +147,6 @@
     "url": "/assets/images/vision1.png",
     "alt": ""
   },
-  "-67a5a095": {
-    "url": "/assets/images/layer-1-265x265.jpg",
-    "alt": ""
-  },
-  "-79229a14": {
-    "url": "/assets/images/layer-2-265x265.jpg",
-    "alt": ""
-  },
-  "75606c6d": {
-    "url": "/assets/images/layer-3-265x265.jpg",
-    "alt": ""
-  },
-  "63e372ee": {
-    "url": "/assets/images/layer-4-265x265.jpg",
-    "alt": ""
-  },
   "-1659d157": {
     "url": "/assets/images/about-gallery-01.jpg",
     "alt": ""
@@ -215,6 +199,10 @@
     "url": "/assets/images/layer-9-265x265.jpg",
     "alt": ""
   },
+  "75606c6d": {
+    "url": "/assets/images/layer-3-265x265.jpg",
+    "alt": ""
+  },
   "2771d20": {
     "url": "/assets/external/624a9a29e8a4ba0b1c9af925_layer-7-63x63.jpg",
     "alt": ""
@@ -257,6 +245,18 @@
   },
   "-44421c45": {
     "url": "/assets/images/png_1png.jpg",
+    "alt": ""
+  },
+  "-67a5a095": {
+    "url": "/assets/images/layer-1-265x265.jpg",
+    "alt": ""
+  },
+  "-79229a14": {
+    "url": "/assets/images/layer-2-265x265.jpg",
+    "alt": ""
+  },
+  "63e372ee": {
+    "url": "/assets/images/layer-4-265x265.jpg",
     "alt": ""
   },
   "5266796f": {

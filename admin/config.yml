@@ -1,12 +1,9 @@
 backend:
-  name: gitlab
-  repo: wx-one/marketing/website
-  api_root: https://dev0git.wizardtales.com/api/v4
-  base_url: https://dev0git.wizardtales.com
+  name: git-gateway
+  accept_roles:
+    - admin
+    - editor
   branch: master
-  auth_type: pkce
-  app_id: 26d47b35abc8d8918f9e8bd554b8a7347f66ca0117f52bd2638b8303be5f6d55
-
 media_folder: theme/assets/images
 public_folder: /assets/images
 collections:
@@ -83,6 +80,68 @@ collections:
             name: additional_tags
             widget: text
             required: false
+  - name: team
+    label: Teams
+    folder: cms/team
+    create: true
+    identifier_field: name
+    extension: md
+    slug: '{{slug}}'
+    fields:
+      - hint: ''
+        name: title
+        label: Name
+        widget: string
+        required: true
+      - hint: ''
+        name: created-on
+        label: Created On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: updated-on
+        label: Updated On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: published-on
+        label: Published On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: f_headshot
+        label: headshot
+        widget: object
+        required: true
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: true
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - hint: ''
+        name: f_role
+        label: Role
+        widget: string
+        required: false
+      - label: Tags
+        widget: hidden
+        name: tags
+        default: team
+      - label: Layout
+        widget: hidden
+        name: layout
+        default: '[team].html'
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - *ref_0
   - name: unser_portfolio
     label: Unser Portfolios
     folder: cms/unser-portfolio
@@ -1375,38 +1434,6 @@ collections:
             label: Text
             name: 200d
             widget: string
-          - hint: 'Original text: Ronald James, key: -1ca92ab4'
-            label: Text
-            name: '-1ca92ab4'
-            widget: string
-          - hint: 'Original text: Loint CEO, Co-Founder, key: 62985bbb'
-            label: Text
-            name: 62985bbb
-            widget: string
-          - hint: 'Original text: Etta Green, key: 5ecb853f'
-            label: Text
-            name: 5ecb853f
-            widget: string
-          - hint: 'Original text: Project Manager, key: 3a7e1d66'
-            label: Text
-            name: 3a7e1d66
-            widget: string
-          - hint: 'Original text: Mattew Cussack, key: 32dcb19d'
-            label: Text
-            name: 32dcb19d
-            widget: string
-          - hint: 'Original text: QA, key: a10'
-            label: Text
-            name: a10
-            widget: string
-          - hint: 'Original text: Jenifer Aldo, key: -39d3b327'
-            label: Text
-            name: '-39d3b327'
-            widget: string
-          - hint: 'Original text: Head of Marketing, key: 3797c91d'
-            label: Text
-            name: 3797c91d
-            widget: string
           - hint: 'Original text: Jederzeit bereit, Ihrem Geschäft , key: -750defc6'
             label: Text
             name: '-750defc6'
@@ -2198,6 +2225,38 @@ collections:
           - hint: 'Original text: We Are a Family, key: 18034081'
             label: Text
             name: '18034081'
+            widget: string
+          - hint: 'Original text: Ronald James, key: -1ca92ab4'
+            label: Text
+            name: '-1ca92ab4'
+            widget: string
+          - hint: 'Original text: Loint CEO, Co-Founder, key: 62985bbb'
+            label: Text
+            name: 62985bbb
+            widget: string
+          - hint: 'Original text: Etta Green, key: 5ecb853f'
+            label: Text
+            name: 5ecb853f
+            widget: string
+          - hint: 'Original text: Project Manager, key: 3a7e1d66'
+            label: Text
+            name: 3a7e1d66
+            widget: string
+          - hint: 'Original text: Mattew Cussack, key: 32dcb19d'
+            label: Text
+            name: 32dcb19d
+            widget: string
+          - hint: 'Original text: QA, key: a10'
+            label: Text
+            name: a10
+            widget: string
+          - hint: 'Original text: Jenifer Aldo, key: -39d3b327'
+            label: Text
+            name: '-39d3b327'
+            widget: string
+          - hint: 'Original text: Head of Marketing, key: 3797c91d'
+            label: Text
+            name: 3797c91d
             widget: string
           - hint: 'Original text: Violet Krasinski, key: -3de2b0ce'
             label: Text
@@ -4088,58 +4147,6 @@ collections:
                 widget: string
                 required: false
           - label: Image
-            name: '-67a5a095'
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: '-79229a14'
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: 75606c6d
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: 63e372ee
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
             name: '-1659d157'
             widget: object
             fields:
@@ -4309,6 +4316,19 @@ collections:
                 widget: string
                 required: false
           - label: Image
+            name: 75606c6d
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
             name: 2771d20
             widget: object
             fields:
@@ -4440,6 +4460,45 @@ collections:
                 required: false
           - label: Image
             name: '-44421c45'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-67a5a095'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-79229a14'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 63e372ee
             widget: object
             fields:
               - name: url
