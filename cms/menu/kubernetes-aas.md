@@ -1,6 +1,6 @@
 ---
 created-on: 2023-08-02T16:11:22.826Z
-f_description: A worry free enterprise ready gitlab instance for your developer
+f_description: You enjoy deploying to kubernetes, we run it for you
 layout: "[menu].html"
 slug: gitlab-aas
 title: Kubernetes aaS
