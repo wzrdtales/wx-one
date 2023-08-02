@@ -33,16 +33,6 @@ function htmlEntities(str) {
     return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
-
-const externalFilesJSONPath = path.join(__dirname, 'config','external-files.json')
-
-let externalFiles;
-try {
-    externalFiles    = require(externalFilesJSONPath);
-} catch(_) {
-    externalFiles    = require(externalFilesJSONPath);
-}
-
 module.exports = function (eleventyConfig) {
 
     eleventyConfig.addShortcode('embedVideo', async function(video) {
@@ -69,9 +59,6 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.addShortcode('image', async function(src, alt = "", dataSizes = "", attributes = "") {
 
-        const imgAttributes = attributes.replace(/class(?:\s+)?=(?:\s+)?["'][^'"]+["']/, '')
-
-        
         if (!src) {
             return "";
         }
@@ -107,8 +94,6 @@ module.exports = function (eleventyConfig) {
 
         if (!src.startsWith("http")) {
             src = "theme" + src;
-        } else if(src.startsWith("http") && externalFiles[src]) {
-            src = externalFiles[src];
         } else {
             return `<img src="${src}" alt="${alt}" ${attributes}>`;
         }
@@ -123,7 +108,7 @@ module.exports = function (eleventyConfig) {
             const formats = Object.keys(metadata);
             const lowsrc = metadata[formats[formats.length - 1]][0];
 
-            return `<picture ${imgAttributes}>
+            return `<picture ${attributes}>
     ${Object.values(metadata).map(imageFormat => {
                 return `  <source type="${imageFormat[0].sourceType}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}">`;
             }).join("\n")}
