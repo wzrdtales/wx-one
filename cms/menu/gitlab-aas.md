@@ -1,15 +1,14 @@
 ---
-title: Gitlab aaS
-slug: gitlab-aas
-updated-on: '2023-08-02T10:03:36.288Z'
-created-on: '2023-08-02T08:42:01.571Z'
-published-on: '2023-08-02T10:03:42.436Z'
-f_menu: Menu 2 Column 2
+created-on: 2023-08-02T08:42:01.571Z
 f_description: A worry free enterprise ready gitlab instance for your developer
+layout: "[menu].html"
+slug: gitlab-aas
+title: Gitlab aaS
+updated-on: 2023-08-02T10:03:36.288Z
+published-on: 2023-08-02T10:03:42.436Z
+f_menu: Menu 2 Column 2
+f_label: ""
 f_link: /services/managed-services/
-f_label: POPULAR
-layout: '[menu].html'
 tags: menu
+date: 2023-08-02T16:12:50.013Z
 ---
-
-
