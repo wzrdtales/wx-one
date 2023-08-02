@@ -1041,21 +1041,41 @@ collections:
             label: Text
             name: 560f747e
             widget: string
+          - hint: 'Original text: Allgemein, key: 7f059f5c'
+            label: Text
+            name: 7f059f5c
+            widget: string
+          - hint: 'Original text: Unsere Produkte, key: 107e8320'
+            label: Text
+            name: '107e8320'
+            widget: string
+          - hint: 'Original text: Über WX-ONE, key: 701773e7'
+            label: Text
+            name: '701773e7'
+            widget: string
+          - hint: 'Original text: Informationen, key: -56d2e94b'
+            label: Text
+            name: '-56d2e94b'
+            widget: string
+          - hint: 'Original text: Wir überall, key: -71e6fdb2'
+            label: Text
+            name: '-71e6fdb2'
+            widget: string
+          - hint: 'Original text: Inhalte aus unserem Hause, key: -5415cee5'
+            label: Text
+            name: '-5415cee5'
+            widget: string
+          - hint: 'Original text: Blog, key: 1fa3c2'
+            label: Text
+            name: 1fa3c2
+            widget: string
+          - hint: 'Original text: Weiterlesen, key: -7bb45b03'
+            label: Text
+            name: '-7bb45b03'
+            widget: string
           - hint: 'Original text: No items found., key: 3d503d2b'
             label: Text
             name: 3d503d2b
-            widget: string
-          - hint: 'Original text: Über uns, key: 38557d8d'
-            label: Text
-            name: 38557d8d
-            widget: string
-          - hint: 'Original text: unser Blog, key: -57a006e5'
-            label: Text
-            name: '-57a006e5'
-            widget: string
-          - hint: 'Original text: Folge uns über LinkedIn, key: 4fc7a266'
-            label: Text
-            name: 4fc7a266
             widget: string
           - hint: 'Original text: Jetzt kontaktieren, key: 82a066c'
             label: Text
@@ -1291,6 +1311,10 @@ collections:
             label: Text
             name: 733ed8df
             widget: string
+          - hint: 'Original text: Über uns, key: 38557d8d'
+            label: Text
+            name: 38557d8d
+            widget: string
           - hint: 'Original text: Kontakt, key: 43219700'
             label: Text
             name: '43219700'
@@ -1338,10 +1362,6 @@ collections:
           - hint: 'Original text: Wer wir sind, key: 6d776828'
             label: Text
             name: 6d776828
-            widget: string
-          - hint: 'Original text: Über WX-ONE, key: 701773e7'
-            label: Text
-            name: '701773e7'
             widget: string
           - hint: 'Original text: Ihre Vorteile, key: -68578da'
             label: Text
@@ -1576,6 +1596,14 @@ collections:
           - hint: 'Original text: zum Beitrag, key: d8996fc'
             label: Text
             name: d8996fc
+            widget: string
+          - hint: 'Original text: unser Blog, key: -57a006e5'
+            label: Text
+            name: '-57a006e5'
+            widget: string
+          - hint: 'Original text: Folge uns über LinkedIn, key: 4fc7a266'
+            label: Text
+            name: 4fc7a266
             widget: string
           - hint: 'Original text: Join Us, key: df13554'
             label: Text
@@ -3140,34 +3168,6 @@ collections:
             label: Text
             name: '-4dc80e62'
             widget: text
-          - hint: 'Original text: Allgemein, key: 7f059f5c'
-            label: Text
-            name: 7f059f5c
-            widget: string
-          - hint: 'Original text: Unsere Produkte, key: 107e8320'
-            label: Text
-            name: '107e8320'
-            widget: string
-          - hint: 'Original text: Informationen, key: -56d2e94b'
-            label: Text
-            name: '-56d2e94b'
-            widget: string
-          - hint: 'Original text: Wir überall, key: -71e6fdb2'
-            label: Text
-            name: '-71e6fdb2'
-            widget: string
-          - hint: 'Original text: Inhalte aus unserem Hause, key: -5415cee5'
-            label: Text
-            name: '-5415cee5'
-            widget: string
-          - hint: 'Original text: Blog, key: 1fa3c2'
-            label: Text
-            name: 1fa3c2
-            widget: string
-          - hint: 'Original text: Weiterlesen, key: -7bb45b03'
-            label: Text
-            name: '-7bb45b03'
-            widget: string
       - label: Links
         name: links
         file: cms/_data/links.json
@@ -3179,24 +3179,6 @@ collections:
           - hint: 'Original link: /, key: 2f'
             label: Link
             name: 2f
-            widget: string
-          - hint: 'Original link: /services/, key: -32173fbe'
-            label: Link
-            name: '-32173fbe'
-            widget: string
-          - hint: 'Original link: /about-us/, key: -766f6c3e'
-            label: Link
-            name: '-766f6c3e'
-            widget: string
-          - hint: 'Original link: /blog-3/, key: 11110158'
-            label: Link
-            name: '11110158'
-            widget: string
-          - hint: >-
-              Original link: https://www.linkedin.com/company/wx-one/, key:
-              -648aeb55
-            label: Link
-            name: '-648aeb55'
             widget: string
           - hint: 'Original link: /contact-us/, key: 6bfbaa95'
             label: Link
@@ -3230,6 +3212,14 @@ collections:
             label: Link
             name: 2709bdb7
             widget: string
+          - hint: 'Original link: /services/, key: -32173fbe'
+            label: Link
+            name: '-32173fbe'
+            widget: string
+          - hint: 'Original link: /about-us/, key: -766f6c3e'
+            label: Link
+            name: '-766f6c3e'
+            widget: string
           - hint: 'Original link: https://wizardtales.com/imprint, key: 19e80fe0'
             label: Link
             name: 19e80fe0
@@ -3255,6 +3245,16 @@ collections:
           - hint: 'Original link: #Unser-Team, key: 7b3589e6'
             label: Link
             name: 7b3589e6
+            widget: string
+          - hint: 'Original link: /blog/, key: 55cb89fe'
+            label: Link
+            name: 55cb89fe
+            widget: string
+          - hint: >-
+              Original link: https://www.linkedin.com/company/wx-one/, key:
+              -648aeb55
+            label: Link
+            name: '-648aeb55'
             widget: string
           - hint: 'Original link: /why-us/, key: 61941ebd'
             label: Link
@@ -3572,19 +3572,6 @@ collections:
                 widget: string
                 required: false
           - label: Image
-            name: 7a2568a3
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
             name: '43968198'
             widget: object
             fields:
@@ -3859,6 +3846,19 @@ collections:
                 required: false
           - label: Image
             name: '-771f9056'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 7a2568a3
             widget: object
             fields:
               - name: url
