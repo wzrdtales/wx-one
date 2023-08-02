@@ -1,5 +1,5 @@
 ---
-f_url-2: /services/beratung/
+f_link: /services/beratung/
 title: Software as a Service
 slug: software-as-a-service
 updated-on: '2023-08-02T10:00:58.892Z'

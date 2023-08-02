@@ -1,5 +1,5 @@
 ---
-f_url-2: /services/kundensupport/
+f_link: /services/kundensupport/
 title: Kundensupport
 slug: kundensupport
 updated-on: '2023-08-02T10:01:07.675Z'

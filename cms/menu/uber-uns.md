@@ -1,6 +1,6 @@
 ---
 f_description: Erfahre etwas über uns und das Team
-f_url-2: /about-us/
+f_link: /about-us/
 title: Über uns
 slug: uber-uns
 updated-on: '2023-08-02T09:13:18.990Z'

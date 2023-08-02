@@ -1,5 +1,5 @@
 ---
-f_url-2: /services/beratung/
+f_link: /services/beratung/
 title: 360° Beratung
 slug: 360deg-beratung
 updated-on: '2023-08-02T10:01:04.018Z'

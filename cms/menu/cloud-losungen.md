@@ -1,6 +1,6 @@
 ---
 f_menu: Menu 2 Column 1
-f_url-2: /services/cloud-losungen/
+f_link: /services/cloud-losungen/
 title: Cloud Lösungen
 slug: cloud-losungen
 updated-on: '2023-08-02T09:55:52.761Z'

@@ -151,7 +151,7 @@ collections:
         name: f_url-2
         label: URL
         widget: string
-        required: true
+        required: false
       - hint: Leave empty if you don't want this to be highlighted
         name: f_label
         label: Label
@@ -178,7 +178,7 @@ collections:
         name: f_link
         label: Link
         widget: string
-        required: false
+        required: true
       - label: Tags
         widget: hidden
         name: tags

@@ -1,5 +1,5 @@
 ---
-f_url-2: /services/managed-services/
+f_link: /services/managed-services/
 title: Managed Services
 slug: managed-services
 updated-on: '2023-08-02T10:00:52.976Z'

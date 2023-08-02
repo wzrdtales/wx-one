@@ -1,6 +1,6 @@
 ---
 f_description: Lesen Sie interessante Beiträge in unserem Blog
-f_url-2: /blog-3/
+f_link: /blog-3/
 title: Blog
 slug: blog
 updated-on: '2023-08-02T09:13:42.373Z'
