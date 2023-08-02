@@ -1,14 +1,12 @@
 ---
 title: Search Results
-permalink: '{{ page.fileSlug }}/index.html'
+permalink: "{{ page.fileSlug }}/index.html"
 layout: search.html
 slug: search
 tags: pages
 seo:
-  noindex: false
-  title: Search Results — Outsourceo 128
-  og:title: Search Results — Outsourceo 128
-  twitter:title: Search Results — Outsourceo 128
+  noindex: true
+  title: Search Results — WX-ONE
+  og:title: Search Results — WX-ONE
+  twitter:title: Search Results — WX-ONE
 ---
-
-

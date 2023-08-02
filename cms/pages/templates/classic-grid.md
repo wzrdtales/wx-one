@@ -5,10 +5,10 @@ layout: templates/classic-grid.html
 slug: classic-grid
 tags: pages
 seo:
-  noindex: false
-  title: Classic Grid — Outsourceo 128
-  og:title: Classic Grid — Outsourceo 128
-  twitter:title: Classic Grid — Outsourceo 128
+  noindex: true
+  title: Classic Grid — WX-ONE
+  og:title: Classic Grid — WX-ONE
+  twitter:title: Classic Grid — WX-ONE
 ---
 
 

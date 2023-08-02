@@ -10,5 +10,7 @@ f_menu: Menu 2 Column 2
 f_label: POPULAR
 f_link: /services/managed-services/
 tags: menu
+seo:
+  noindex: true
 date: 2023-08-02T16:11:11.779Z
 ---

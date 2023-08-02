@@ -8,7 +8,9 @@ f_type: Full Time
 f_location: London
 f_time: 9 am - 5 pm
 layout: '[careers].html'
-tags: careers
+tags: menu
+seo:
+  noindex: true
 ---
 
 #### Job Description

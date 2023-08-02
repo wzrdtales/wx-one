@@ -5,10 +5,8 @@ layout: templates/careers.html
 slug: careers
 tags: pages
 seo:
-  noindex: false
+  noindex: true
   title: Careers — WX One
   og:title: Careers — WX One
   twitter:title: Careers — WX One
 ---
-
-

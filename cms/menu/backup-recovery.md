@@ -8,4 +8,6 @@ created-on: "2023-08-02T09:56:20.990Z"
 published-on: "2023-08-02T10:03:42.432Z"
 layout: "[menu].html"
 tags: menu
+seo:
+  noindex: true
 ---

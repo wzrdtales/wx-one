@@ -12,6 +12,8 @@ f_icon-color: '#25e8c8'
 f_bg-color: hsla(141, 76.79%, 50.82%, 1.00)
 layout: '[menu].html'
 tags: menu
+seo:
+  noindex: true
 ---
 
 

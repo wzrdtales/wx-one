@@ -8,4 +8,6 @@ published-on: "2023-08-02T10:03:42.434Z"
 f_menu: Menu 2 Column 1
 layout: "[menu].html"
 tags: menu
+seo:
+  noindex: true
 ---

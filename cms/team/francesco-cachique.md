@@ -9,5 +9,7 @@ updated-on: "2023-08-01T14:56:53.818Z"
 created-on: "2023-08-01T14:56:53.818Z"
 published-on: null
 layout: "[team].html"
-tags: team
+tags: menu
+seo:
+  noindex: true
 ---

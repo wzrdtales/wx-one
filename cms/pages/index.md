@@ -6,9 +6,9 @@ slug: ''
 tags: pages
 seo:
   noindex: false
-  title: Outsourceo 128 - Webflow HTML website template
-  og:title: Outsourceo 128 - Webflow HTML website template
-  twitter:title: Outsourceo 128 - Webflow HTML website template
+  title: WX-ONE - Webflow HTML website template
+  og:title: WX-ONE - Webflow HTML website template
+  twitter:title: WX-ONE - Webflow HTML website template
 ---
 
 
