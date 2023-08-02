@@ -74,10 +74,10 @@
                                   <div class="dropdown-card-bg purple"></div>
                                   <div class="dropdown-card-content">
                                     <div class="div-block-25 w-clearfix">
-                                      <div class="dropdown-card-title"></div>
-                                      {%- if item.data.f_label -%}<div class="label"></div>{%- endif -%}
+                                      <div class="dropdown-card-title">{{ item.data.title }}</div>
+                                      {%- if item.data.f_label -%}<div class="label">{{ item.data.f_label }}</div>{%- endif -%}
                                     </div>
-                                    <p class="dropdown-card-text"></p>
+                                    <p class="dropdown-card-text">{{ item.data.f_description }}</p>
                                   </div>
                                 </a>
                               </div>{%- endfor -%}
@@ -96,10 +96,10 @@
                                       <div class="dropdown-card-bg purple"></div>
                                       <div class="dropdown-card-content">
                                         <div class="div-block-25 w-clearfix">
-                                          <div class="dropdown-card-title"></div>
-                                          {%- if item.data.f_label -%}<div class="label"></div>{%- endif -%}
+                                          <div class="dropdown-card-title">{{ item.data.title }}</div>
+                                          {%- if item.data.f_label -%}<div class="label">{{ item.data.f_label }}</div>{%- endif -%}
                                         </div>
-                                        <p class="dropdown-card-text"></p>
+                                        <p class="dropdown-card-text">{{ item.data.f_description }}</p>
                                       </div>
                                     </a>
                                   </div>{%- endfor -%}
@@ -111,14 +111,14 @@
                               {%- assign collection = collections.menu | filter: "f_menu,eq,Menu 2 Column 2", "ALL", page.inputPath | offset: 3 | limit: 4 | sort: "-created-on" -%}<div class="w-dyn-list">
                                 {%- unless collection.length == 0 -%}<div role="list" class="w-dyn-items">
                                   {%- for item in collection -%}<div role="listitem" class="w-dyn-item">
-                                    <a href="{{ links.23 }}" class="dropdown-card w-inline-block">
+                                    <a href="{{ item.data.f_link }}" class="dropdown-card w-inline-block">
                                       <div class="dropdown-card-bg purple"></div>
                                       <div class="dropdown-card-content">
                                         <div class="div-block-25 w-clearfix">
-                                          <div class="dropdown-card-title"></div>
-                                          {%- if item.data.f_label -%}<div class="label"></div>{%- endif -%}
+                                          <div class="dropdown-card-title">{{ item.data.title }}</div>
+                                          {%- if item.data.f_label -%}<div class="label">{{ item.data.f_label }}</div>{%- endif -%}
                                         </div>
-                                        <p class="dropdown-card-text"></p>
+                                        <p class="dropdown-card-text">{{ item.data.f_description }}</p>
                                       </div>
                                     </a>
                                   </div>{%- endfor -%}
@@ -173,10 +173,10 @@
                                   <div class="dropdown-card-bg purple"></div>
                                   <div class="dropdown-card-content">
                                     <div class="div-block-25 w-clearfix">
-                                      <div class="dropdown-card-title"></div>
-                                      {%- if item.data.f_label -%}<div class="label"></div>{%- endif -%}
+                                      <div class="dropdown-card-title">{{ item.data.title }}</div>
+                                      {%- if item.data.f_label -%}<div class="label">{{ item.data.f_label }}</div>{%- endif -%}
                                     </div>
-                                    <p class="dropdown-card-text"></p>
+                                    <p class="dropdown-card-text">{{ item.data.f_description }}</p>
                                   </div>
                                 </a>
                               </div>{%- endfor -%}
@@ -195,10 +195,10 @@
                                       <div class="dropdown-card-bg purple"></div>
                                       <div class="dropdown-card-content">
                                         <div class="div-block-25 w-clearfix">
-                                          <div class="dropdown-card-title"></div>
-                                          {%- if item.data.f_label -%}<div class="label"></div>{%- endif -%}
+                                          <div class="dropdown-card-title">{{ item.data.title }}</div>
+                                          {%- if item.data.f_label -%}<div class="label">{{ item.data.f_label }}</div>{%- endif -%}
                                         </div>
-                                        <p class="dropdown-card-text"></p>
+                                        <p class="dropdown-card-text">{{ item.data.f_description }}</p>
                                       </div>
                                     </a>
                                   </div>{%- endfor -%}
@@ -214,10 +214,10 @@
                                       <div class="dropdown-card-bg purple"></div>
                                       <div class="dropdown-card-content">
                                         <div class="div-block-25 w-clearfix">
-                                          <div class="dropdown-card-title"></div>
-                                          {%- if item.data.f_label -%}<div class="label"></div>{%- endif -%}
+                                          <div class="dropdown-card-title">{{ item.data.title }}</div>
+                                          {%- if item.data.f_label -%}<div class="label">{{ item.data.f_label }}</div>{%- endif -%}
                                         </div>
-                                        <p class="dropdown-card-text"></p>
+                                        <p class="dropdown-card-text">{{ item.data.f_description }}</p>
                                       </div>
                                     </a>
                                   </div>{%- endfor -%}
