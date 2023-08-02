@@ -218,10 +218,10 @@
                               {%- assign collection = collections.blog-posts | sort: "-created-on" | limit: 3 -%}<div class="w-dyn-list">
                                 {%- unless collection.length == 0 -%}<div role="list" class="w-dyn-items">
                                   {%- for item in collection -%}<div role="listitem" class="w-dyn-item">
-                                    <a href="{{ item.url }}" class="blog-card w-inline-block">{%- image images.62e85c47.url, images.62e85c47.alt, '[]', 'loading="lazy" sym-bind="{"img":{"type":"Call","val":{"fun":{"type":"Variable","val":["DynamoGateway","dynamoImageToImage"]},"arg":{"type":"Select","val":{"from":{"type":"Variable","val":"Dynamo"},"prop":"image"}}}}}" class="blog-card-image"' -%}
+                                    <a href="{{ item.url }}" class="blog-card w-inline-block">{%- image item.data.f_image.url, item.data.f_image.alt, '[]', 'loading="lazy" class="blog-card-image"' -%}
                                       <div class="blog-card-content">
                                         <div class="blog-card-label">{{ texts.1fa3c2 }}</div>
-                                        <div class="blog-card-title"></div>
+                                        <div class="blog-card-title">{{ item.data.f_prev-text }}</div>
                                         <div class="blog-card-link">
                                           <div>{{ texts.-7bb45b03 }}</div>
                                           <div class="dropdown-card-icon arrow w-embed"><svg viewBox="0 0 14 11" preserveAspectRatio="xMinYMin" style="fill: #646f79">
