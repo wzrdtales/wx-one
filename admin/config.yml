@@ -1,12 +1,9 @@
 backend:
-  name: gitlab
-  repo: wx-one/marketing/website
-  api_root: https://dev0git.wizardtales.com/api/v4
-  base_url: https://dev0git.wizardtales.com
+  name: git-gateway
+  accept_roles:
+    - admin
+    - editor
   branch: master
-  auth_type: pkce
-  app_id: 26d47b35abc8d8918f9e8bd554b8a7347f66ca0117f52bd2638b8303be5f6d55
-
 media_folder: theme/assets/images
 public_folder: /assets/images
 collections:
@@ -1738,6 +1735,24 @@ collections:
               kontaktieren dich zeitnah., key: -6107b712
             label: Text
             name: '-6107b712'
+            widget: string
+          - hint: >-
+              Original text: Um Identitätsdiebstahl entgegenzuwirken haben wir
+              dir soeben eine EMail geschickt., key: 4c693359
+            label: Text
+            name: 4c693359
+            widget: string
+          - hint: >-
+              Original text: Bitte bestätige mit dem Link in deiner Mail deine
+              Anfrage., key: 122f1f25
+            label: Text
+            name: 122f1f25
+            widget: string
+          - hint: >-
+              Original text: Vielen dank und bis schon demnächst!, key:
+              -4429b64c
+            label: Text
+            name: '-4429b64c'
             widget: string
           - hint: 'Original text: WX-ONE by, key: -fa48b23'
             label: Text

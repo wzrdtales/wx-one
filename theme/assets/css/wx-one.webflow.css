@@ -6387,6 +6387,14 @@ img {
   display: none;
 }
 
+.html-embed {
+  margin-top: 15px;
+}
+
+.div-block-26, .div-block-27 {
+  color: #141733;
+}
+
 @media screen and (min-width: 1280px) {
   h1 {
     font-size: 90px;
