@@ -1,12 +1,9 @@
 backend:
-  name: gitlab
-  repo: wx-one/marketing/website
-  api_root: https://dev0git.wizardtales.com/api/v4
-  base_url: https://dev0git.wizardtales.com
+  name: git-gateway
+  accept_roles:
+    - admin
+    - editor
   branch: master
-  auth_type: pkce
-  app_id: 26d47b35abc8d8918f9e8bd554b8a7347f66ca0117f52bd2638b8303be5f6d55
-
 media_folder: theme/assets/images
 public_folder: /assets/images
 collections:
@@ -147,11 +144,6 @@ collections:
             value: Menu 3 Column 1
           - label: Menu 3 Column 2
             value: Menu 3 Column 2
-      - hint: ''
-        name: f_url-2
-        label: URL
-        widget: string
-        required: false
       - hint: Leave empty if you don't want this to be highlighted
         name: f_label
         label: Label

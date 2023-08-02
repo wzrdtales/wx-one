@@ -50,7 +50,7 @@
                       <div class="dropdown-grid">
                         <div class="dropdown-column first">
                           <div class="dropdown-column-title">{{ texts.7f059f5c }}</div>
-                          {%- assign collection = collections.menu | filter: "f_menu,eq,Menu 2 Column 1", "ALL", page.inputPath | limit: 8 | sort: "-created-on" -%}<div class="w-dyn-list">
+                          {%- assign collection = collections.menu | filter: "f_menu,eq,Menu 2 Column 1", "ALL", page.inputPath | sort: "published-on" | limit: 8 -%}<div class="w-dyn-list">
                             {%- unless collection.length == 0 -%}<div role="list" class="w-dyn-items">
                               {%- for item in collection -%}<div role="listitem" class="w-dyn-item">
                                 <a href="{{ item.data.f_link }}" class="dropdown-card w-inline-block">
