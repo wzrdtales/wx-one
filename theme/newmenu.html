@@ -30,7 +30,7 @@
         <a href="{{ links.2f }}" class="brand-2 responsive w-nav-brand">{%- image images.-1101e822.url, images.-1101e822.alt, '[]', 'loading="lazy" height="45"' -%}</a>
         <nav role="navigation" class="menu w-nav-menu">
           <div class="menu-left">
-            <a href="{{ links.23 }}" class="brand-2 w-nav-brand">{%- image images.-1101e822.url, images.-1101e822.alt, '[]', 'loading="lazy" width="150" height="45"' -%}</a>
+            <a href="{{ links.2f }}" class="brand-2 w-nav-brand">{%- image images.-1101e822.url, images.-1101e822.alt, '[]', 'loading="lazy" width="150" height="45"' -%}</a>
             <div data-hover="false" data-delay="0" data-asn="or-dd-toggle" class="dropdown-4 w-dropdown">
               <div class="dropdown-toggle-3 w-dropdown-toggle">
                 <div class="dropdown-toggle-text">{{ texts.560f747e }}</div>
@@ -53,7 +53,7 @@
                           {%- assign collection = collections.menu | filter: "f_menu,eq,Menu 2 Column 1", "ALL", page.inputPath | limit: 8 | sort: "-created-on" -%}<div class="w-dyn-list">
                             {%- unless collection.length == 0 -%}<div role="list" class="w-dyn-items">
                               {%- for item in collection -%}<div role="listitem" class="w-dyn-item">
-                                <a href="{{ links.23 }}" class="dropdown-card w-inline-block">
+                                <a href="{{ item.data.f_link }}" class="dropdown-card w-inline-block">
                                   <div class="dropdown-card-bg purple"></div>
                                   <div class="dropdown-card-content">
                                     <div class="div-block-25 w-clearfix">
@@ -75,7 +75,7 @@
                               {%- assign collection = collections.menu | filter: "f_menu,eq,Menu 2 Column 2", "ALL", page.inputPath | limit: 4 | sort: "-created-on" -%}<div class="w-dyn-list">
                                 {%- unless collection.length == 0 -%}<div role="list" class="w-dyn-items">
                                   {%- for item in collection -%}<div role="listitem" class="w-dyn-item">
-                                    <a href="{{ links.23 }}" class="dropdown-card w-inline-block">
+                                    <a href="{{ item.data.f_link }}" class="dropdown-card w-inline-block">
                                       <div class="dropdown-card-bg purple"></div>
                                       <div class="dropdown-card-content">
                                         <div class="div-block-25 w-clearfix">
@@ -152,7 +152,7 @@
                           {%- assign collection = collections.menu | filter: "f_menu,eq,Menu 3 Column 1", "ALL", page.inputPath | limit: 4 | sort: "-created-on" -%}<div class="w-dyn-list">
                             {%- unless collection.length == 0 -%}<div role="list" class="w-dyn-items">
                               {%- for item in collection -%}<div role="listitem" class="w-dyn-item">
-                                <a href="{{ links.23 }}" class="dropdown-card w-inline-block">
+                                <a href="{{ item.data.f_link }}" class="dropdown-card w-inline-block">
                                   <div class="dropdown-card-bg purple"></div>
                                   <div class="dropdown-card-content">
                                     <div class="div-block-25 w-clearfix">
@@ -174,7 +174,7 @@
                               {%- assign collection = collections.menu | filter: "f_menu,eq,Menu 3 Column 2", "ALL", page.inputPath | limit: 4 | sort: "-created-on" -%}<div class="w-dyn-list">
                                 {%- unless collection.length == 0 -%}<div role="list" class="w-dyn-items">
                                   {%- for item in collection -%}<div role="listitem" class="w-dyn-item">
-                                    <a href="{{ links.23 }}" class="dropdown-card w-inline-block">
+                                    <a href="{{ item.data.f_link }}" class="dropdown-card w-inline-block">
                                       <div class="dropdown-card-bg purple"></div>
                                       <div class="dropdown-card-content">
                                         <div class="div-block-25 w-clearfix">
@@ -218,7 +218,7 @@
                               {%- assign collection = collections.blog-posts | sort: "-created-on" | limit: 3 -%}<div class="w-dyn-list">
                                 {%- unless collection.length == 0 -%}<div role="list" class="w-dyn-items">
                                   {%- for item in collection -%}<div role="listitem" class="w-dyn-item">
-                                    <a href="{{ links.23 }}" class="blog-card w-inline-block">{%- image images.62e85c47.url, images.62e85c47.alt, '[]', 'loading="lazy" sym-bind="{"img":{"type":"Call","val":{"fun":{"type":"Variable","val":["DynamoGateway","dynamoImageToImage"]},"arg":{"type":"Select","val":{"from":{"type":"Variable","val":"Dynamo"},"prop":"image"}}}}}" class="blog-card-image"' -%}
+                                    <a href="{{ item.url }}" class="blog-card w-inline-block">{%- image images.62e85c47.url, images.62e85c47.alt, '[]', 'loading="lazy" sym-bind="{"img":{"type":"Call","val":{"fun":{"type":"Variable","val":["DynamoGateway","dynamoImageToImage"]},"arg":{"type":"Select","val":{"from":{"type":"Variable","val":"Dynamo"},"prop":"image"}}}}}" class="blog-card-image"' -%}
                                       <div class="blog-card-content">
                                         <div class="blog-card-label">{{ texts.1fa3c2 }}</div>
                                         <div class="blog-card-title"></div>

@@ -1,12 +1,9 @@
 backend:
-  name: gitlab
-  repo: wx-one/marketing/website
-  api_root: https://dev0git.wizardtales.com/api/v4
-  base_url: https://dev0git.wizardtales.com
+  name: git-gateway
+  accept_roles:
+    - admin
+    - editor
   branch: master
-  auth_type: pkce
-  app_id: 26d47b35abc8d8918f9e8bd554b8a7347f66ca0117f52bd2638b8303be5f6d55
-
 media_folder: theme/assets/images
 public_folder: /assets/images
 collections:
@@ -172,6 +169,11 @@ collections:
       - hint: Hover color of the headline, currently not in use
         name: f_hovercolor
         label: HoverColor
+        widget: string
+        required: false
+      - hint: ''
+        name: f_link
+        label: Link
         widget: string
         required: false
       - label: Tags
