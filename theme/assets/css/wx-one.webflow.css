@@ -5946,6 +5946,7 @@ img {
   margin-top: 2px;
   margin-right: 12px;
   line-height: 0;
+  display: block;
   position: relative;
 }
 
@@ -5978,9 +5979,11 @@ img {
 
 .dropdown-card-title {
   color: #151b26;
+  object-fit: fill;
   margin-bottom: 8px;
   font-size: 15px;
   font-weight: 700;
+  display: block;
 }
 
 .dropdown-card-title.is-secondary {
@@ -6030,6 +6033,7 @@ img {
 
 .dropdown-card-bg.purple {
   background-color: #f0f0ff;
+  display: block;
 }
 
 .dropdown-card-bg.white {
@@ -6212,6 +6216,10 @@ img {
   overflow: hidden;
 }
 
+.dropdown-list-3.w--open {
+  top: 90px;
+}
+
 .dropdown-column-title {
   color: #151b26;
   letter-spacing: 1px;
@@ -6319,6 +6327,9 @@ img {
 }
 
 .label {
+  z-index: 5000;
+  float: right;
+  clear: none;
   color: #fff;
   letter-spacing: .1em;
   text-transform: uppercase;
@@ -6327,9 +6338,15 @@ img {
   margin-left: 4px;
   padding: 2px 5px 1px 6px;
   font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
   line-height: 16px;
-  display: inline-block;
-  position: absolute;
+  display: block;
+  position: relative;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: auto;
 }
 
 .dropdown-toggle-text {
@@ -6339,6 +6356,17 @@ img {
 .blog-card-title {
   font-size: 16px;
   line-height: 20px;
+}
+
+.div-block-25 {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+}
+
+.empty-state-2 {
+  display: none;
 }
 
 @media screen and (min-width: 1280px) {
@@ -6685,6 +6713,10 @@ img {
     height: 145px;
   }
 
+  .dropdown-card-title {
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+  }
+
   .menu {
     height: 90px;
   }
@@ -6703,6 +6735,10 @@ img {
 
   .blog-card.third {
     display: none;
+  }
+
+  .dropdown-list-3.w--open {
+    top: 90px;
   }
 
   .container-6 {
@@ -6829,6 +6865,10 @@ img {
     display: flex;
   }
 
+  .dropdown-list-3.w--open {
+    top: 90px;
+  }
+
   .nav-sales-text {
     display: block;
   }
@@ -6919,6 +6959,14 @@ img {
     width: 46%;
   }
 
+  .sidebar-column-bg {
+    display: none;
+  }
+
+  .navbar-wrapper {
+    color: #222b37;
+  }
+
   .menu {
     height: 90px;
   }
@@ -6931,8 +6979,18 @@ img {
     top: 90px;
   }
 
+  .dropdown-column-title {
+    display: block;
+  }
+
   .dropdown-inner-shadow {
     height: 90px;
+  }
+
+  .blog-card-title {
+    color: #222b37;
+    font-size: 12px;
+    font-weight: 400;
   }
 
   .cell-6 {
