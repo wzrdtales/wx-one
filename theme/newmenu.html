@@ -193,7 +193,7 @@
                               {%- assign collection = collections.menu | filter: "f_menu,eq,Menu 3 Column 2", "ALL", page.inputPath | offset: 3 | limit: 4 | sort: "-created-on" -%}<div class="w-dyn-list">
                                 {%- unless collection.length == 0 -%}<div role="list" class="w-dyn-items">
                                   {%- for item in collection -%}<div role="listitem" class="w-dyn-item">
-                                    <a href="{{ links.23 }}" class="dropdown-card w-inline-block">
+                                    <a href="{{ item.data.f_link }}" class="dropdown-card w-inline-block">
                                       <div class="dropdown-card-bg purple"></div>
                                       <div class="dropdown-card-content">
                                         <div class="div-block-25 w-clearfix">
