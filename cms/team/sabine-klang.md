@@ -6,7 +6,7 @@ published-on: 2023-08-01T19:16:27.846Z
 f_headshot:
   url: /assets/images/anonym.jpeg
 f_role: C - First level Support
-tags: menu
+tags: team
 seo:
   noindex: true
 layout: "[team].html"

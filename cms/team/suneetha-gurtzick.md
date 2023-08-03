@@ -6,7 +6,7 @@ published-on: 2023-08-01T19:02:20.826Z
 f_headshot:
   url: /assets/images/sunismall.jpg
 f_role: A - COO
-tags: menu
+tags: team
 seo:
   noindex: true
 layout: "[team].html"

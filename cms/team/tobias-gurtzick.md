@@ -9,7 +9,7 @@ f_headshot:
   url: /assets/images/1588928353571.jpeg
   alt: null
 f_role: A - CEO
-tags: menu
+tags: team
 seo:
   noindex: true
 date: 2023-08-01T15:06:32.972Z

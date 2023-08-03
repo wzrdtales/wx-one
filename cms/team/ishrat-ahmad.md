@@ -7,7 +7,7 @@ f_headshot:
   alt: ""
   url: /assets/images/anonym.jpeg
 f_role: B - Information Security Officier
-tags: menu
+tags: team
 seo:
   noindex: true
 layout: "[team].html"

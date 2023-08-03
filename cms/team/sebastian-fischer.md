@@ -6,7 +6,7 @@ published-on: 2023-08-01T19:14:58.687Z
 f_headshot:
   url: /assets/images/anonym.jpeg
 f_role: C - Software Engineer
-tags: menu
+tags: team
 seo:
   noindex: true
 layout: "[team].html"
