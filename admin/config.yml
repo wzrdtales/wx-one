@@ -1740,8 +1740,8 @@ collections:
             name: '-6107b712'
             widget: string
           - hint: >-
-              Original text: Um Identitätsdiebstahl entgegenzuwirken haben wir
-              dir soeben eine EMail geschickt., key: 4c693359
+              Original text: Wir haben deine Nachricht
+              erhalten., key: 4c693359
             label: Text
             name: 4c693359
             widget: string
