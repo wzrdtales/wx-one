@@ -8,7 +8,7 @@ f_type: Full Time
 f_location: Paris
 f_time: 9 am - 5 pm
 layout: '[careers].html'
-tags: menu
+tags: careers
 seo:
   noindex: true
 ---
