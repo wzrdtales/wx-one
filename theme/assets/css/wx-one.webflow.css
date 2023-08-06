@@ -6990,6 +6990,10 @@ img {
     width: 46%;
   }
 
+  .image-18 {
+    max-width: none;
+  }
+
   .sidebar-column-bg {
     display: none;
   }
@@ -8697,7 +8701,7 @@ img {
   }
 
   .section {
-    margin-top: 130px;
+    margin-top: 160px;
     margin-bottom: 55px;
   }
 
@@ -8711,6 +8715,7 @@ img {
   }
 
   .section.background-image {
+    margin-bottom: 0;
     padding-top: 0;
   }
 
@@ -9715,6 +9720,12 @@ img {
 @media screen and (max-width: 479px) {
   .section {
     text-align: center;
+    margin-top: 50px;
+    position: static;
+  }
+
+  .section.background-image {
+    margin-bottom: 0;
   }
 
   .section.additional-padding {
@@ -9763,6 +9774,7 @@ img {
 
   .container.hidden {
     max-width: 480px;
+    margin-top: 0;
   }
 
   .container.padding-home-3 {
