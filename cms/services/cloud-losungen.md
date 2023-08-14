@@ -1,13 +1,14 @@
 ---
-title: Cloud Lösungen.
-f_icon:
-  url: >-
-    https://uploads-ssl.webflow.com/649e8340bde586a93b2c23c2/64b5b4ad8c51cafc5d1eb512_CloudSolution2Free.png
+created-on: 2022-03-29T15:58:47.351Z
+f_background:
+  url: https://uploads-ssl.webflow.com/649e8340bde586a93b2c23c2/64bbf2a158e886d3f5c0ff68_cloud5.png
   alt: null
-slug: cloud-losungen
-updated-on: '2023-07-24T15:06:45.518Z'
-created-on: '2022-03-29T15:58:47.351Z'
-published-on: '2022-04-20T07:57:46.075Z'
+f_image:
+  url: https://uploads-ssl.webflow.com/649e8340bde586a93b2c23c2/64b9e574a6e0ed80043e75e8_cloud8.png
+  alt: null
+f_chart:
+  url: https://uploads-ssl.webflow.com/649e8340bde586a93b2c23c2/64b9e574a6e0ed80043e75e8_cloud8.png
+  alt: null
 f_rich-text-2: >-
   1\. Unbegrenzte Skalierbarkeit: Unsere Cloud-Lösungen passen sich an Ihre
   Bedürfnisse an, egal ob Sie gerade erst starten oder ein etabliertes
@@ -15,49 +16,35 @@ f_rich-text-2: >-
   reduzieren, um optimal auf Geschäftsschwankungen zu reagieren.
 
 
-  2\. Höchste Sicherheit: Wir legen größten Wert auf die Sicherheit Ihrer Daten.
-  Unsere Cloud-Lösungen bieten modernste Sicherheitsmaßnahmen, um Ihre Daten vor
-  potenziellen Bedrohungen zu schützen und den Datenschutz zu gewährleisten.
+  2\. Höchste Sicherheit: Wir legen größten Wert auf die Sicherheit Ihrer Daten. Unsere Cloud-Lösungen bieten modernste Sicherheitsmaßnahmen, um Ihre Daten vor potenziellen Bedrohungen zu schützen und den Datenschutz zu gewährleisten.
 
 
-  3\. Kosteneffizienz: Statt in teure Hardware und Wartung zu investieren,
-  zahlen Sie nur für die Ressourcen, die Sie tatsächlich nutzen. Dies reduziert
-  Ihre IT-Kosten erheblich und ermöglicht es Ihnen, Ihr Budget effektiver zu
-  nutzen.
+  3\. Kosteneffizienz: Statt in teure Hardware und Wartung zu investieren, zahlen Sie nur für die Ressourcen, die Sie tatsächlich nutzen. Dies reduziert Ihre IT-Kosten erheblich und ermöglicht es Ihnen, Ihr Budget effektiver zu nutzen.
 
 
-  4\. Schnelle Implementierung und Innovation: Unsere Cloud-Lösungen ermöglichen
-  es Ihnen, neue Anwendungen schnell zu implementieren und zu testen, was die
-  Markteinführungszeit verkürzt. Zudem haben Sie Zugang zu den neuesten
-  Technologien, um Innovationen voranzutreiben.
+  4\. Schnelle Implementierung und Innovation: Unsere Cloud-Lösungen ermöglichen es Ihnen, neue Anwendungen schnell zu implementieren und zu testen, was die Markteinführungszeit verkürzt. Zudem haben Sie Zugang zu den neuesten Technologien, um Innovationen voranzutreiben.
 
 
-  5\. 24/7 Zugang und Support: Sie können auf Ihre Daten und Anwendungen von
-  überall und zu jeder Zeit zugreifen. Unser engagiertes Support-Team steht
-  Ihnen rund um die Uhr zur Verfügung, um bei Fragen oder Problemen zu helfen.
+  5\. 24/7 Zugang und Support: Sie können auf Ihre Daten und Anwendungen von überall und zu jeder Zeit zugreifen. Unser engagiertes Support-Team steht Ihnen rund um die Uhr zur Verfügung, um bei Fragen oder Problemen zu helfen.
+layout: "[services].html"
+slug: cloud-losungen
+title: Cloud Lösungen.
+updated-on: 2023-07-24T15:06:45.518Z
+published-on: 2022-04-20T07:57:46.075Z
+f_icon:
+  url: https://uploads-ssl.webflow.com/649e8340bde586a93b2c23c2/64b5b4ad8c51cafc5d1eb512_CloudSolution2Free.png
+  alt: null
+f_categories: cms/unser-portfolio/cloud-losungen.md
 f_list: |-
   ##### 5 Fakten, die für sich sprechen
 
-  1.  Unbegrenzte Skalierbarkeit
-  2.  Hüchste Sicherheit
-  3.  Kosteneffizienz
-  4.  Schnelle Implementierung und Innovation
-  5.  24/7 Zugang zum Support
-f_image:
-  url: >-
-    https://uploads-ssl.webflow.com/649e8340bde586a93b2c23c2/64b9e574a6e0ed80043e75e8_cloud8.png
-  alt: null
-f_categories: cms/unser-portfolio/cloud-losungen.md
-f_background:
-  url: >-
-    https://uploads-ssl.webflow.com/649e8340bde586a93b2c23c2/64bbf2a158e886d3f5c0ff68_cloud5.png
-  alt: null
-f_chart:
-  url: >-
-    https://uploads-ssl.webflow.com/649e8340bde586a93b2c23c2/64b9e574a6e0ed80043e75e8_cloud8.png
-  alt: null
-layout: '[services].html'
+  1. Unbegrenzte Skalierbarkeit
+  2. Höchste Sicherheit
+  3. Kosteneffizienz
+  4. Schnelle Implementierung und Innovation
+  5. 24/7 Zugang zum Support
 tags: services
+date: 2023-08-14T11:39:54.670Z
 ---
 
 ### **Entfesseln Sie das volle Potenzial von Docker und Kubernetes mit unseren Cloud-Lösungen!**
