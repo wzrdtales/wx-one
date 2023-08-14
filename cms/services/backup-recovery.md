@@ -59,4 +59,4 @@ Und keine Sorge, Sie müssen kein IT-Experte sein, um unsere Lösungen zu nutzen
 
 Mit unseren Backup & Recovery-Lösungen können Sie das Unerwartete erwarten und sich darauf vorbereiten. Sie können sich darauf verlassen, dass Ihre Daten sicher sind und Sie sie im Notfall schnell wiederherstellen können.
 
-#### **Bereiten Sie sich auf das Unerwartete vor. Mit unserer Backup & Recovery-Lösungen sind Ihre Daten immer sicher. Willkommen in der Welt der Datenruhe!**‍
+#### **Bereiten Sie sich auf das Unerwartete vor. Mit unseren Backup & Recovery-Lösungen sind Ihre Daten immer sicher. Willkommen in der Welt der Datenruhe!**‍
