@@ -45,7 +45,28 @@ f_list: |-
   5.  Proaktive IT-Wartung
 tags: services
 date: 2023-08-14T11:41:23.272Z
+seo:
+  title: Managed Services — WX-ONE
+  og:title: Managed Services — WX-ONE
+  twitter:title: Managed Services — WX-ONE
+  noindex: false
+  twitter:site: ""
+  additional_tags: >-
+    <meta property="og:image:height" content="500">
+
+    <meta property="og:image:width" content="500">
+
+    <meta property="og:site_name" content="WX-ONE">
+
+    <meta content="https://wx1.de/assets/images/WX-One_og.jpeg" property="twitter:image">
+
+    <meta name="keywords" content="wx1, cloud, wx-one, wxone, wizardtales, iaas, saas, paas, kubernetes, infrastructure, datacenter, csp">
+  twitter:card: ""
+  og:image: https://wx1.de/assets/images/WX-One_og.jpeg
+  description: Spezialisiert auf IT-Infrastruktur, Datenzentren, Cloud- und
+    Managed Services. Revolutionäre Technologien für Ihren Geschäftserfolg.
 ---
+
 ### **Herzlich willkommen in der Welt der sorgenfreien IT mit unseren Managed Services!**
 
 Stellen Sie sich vor, Sie könnten sich ganz auf das konzentrieren, was Sie am besten können - Ihr Geschäft führen - und das ganze Technikzeugs jemand anderem überlassen. Klingt wie ein Traum, oder? Mit unseren Managed Services wird dieser Traum zur Realität.

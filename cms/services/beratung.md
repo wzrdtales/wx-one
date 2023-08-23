@@ -5,9 +5,9 @@ f_icon:
   url: >-
     https://uploads-ssl.webflow.com/649e8340bde586a93b2c23c2/649e8340bde586a93b2c249d_service-logo-03-52x50.png
   alt: null
-updated-on: '2023-07-24T15:44:33.352Z'
-created-on: '2022-03-29T15:56:36.944Z'
-published-on: '2022-04-20T07:57:46.075Z'
+updated-on: "2023-07-24T15:44:33.352Z"
+created-on: "2022-03-29T15:56:36.944Z"
+published-on: "2022-04-20T07:57:46.075Z"
 f_categories: cms/unser-portfolio/managed-services.md
 f_image:
   url: >-
@@ -56,8 +56,28 @@ f_rich-text-2: >-
   5\. Risikominderung:\*Durch unser umfassendes Verständnis Ihrer
   Geschäftsprozesse und IT-Landschaft können wir Risiken frühzeitig erkennen und
   geeignete Maßnahmen ergreifen, um diese zu minimieren.
-layout: '[services].html'
+layout: "[services].html"
 tags: services
+seo:
+  title: 360° Beratung — WX-ONE
+  og:title: 360° Beratung — WX-ONE
+  twitter:title: 360° Beratung — WX-ONE
+  noindex: false
+  twitter:site: ""
+  additional_tags: >-
+    <meta property="og:image:height" content="500">
+
+    <meta property="og:image:width" content="500">
+
+    <meta property="og:site_name" content="WX-ONE">
+
+    <meta content="https://wx1.de/assets/images/WX-One_og.jpeg" property="twitter:image">
+
+    <meta name="keywords" content="wx1, cloud, wx-one, wxone, wizardtales, iaas, saas, paas, kubernetes, infrastructure, datacenter, csp">
+  twitter:card: ""
+  og:image: https://wx1.de/assets/images/WX-One_og.jpeg
+  description: Spezialisiert auf IT-Infrastruktur, Datenzentren, Cloud- und
+    Managed Services. Revolutionäre Technologien für Ihren Geschäftserfolg.
 ---
 
 ### **Willkommen in der Welt der ganzheitlichen IT-Beratung. Willkommen in der Welt des 360° Beratungsansatzes von WX-ONE!**

@@ -1,9 +1,9 @@
 ---
 title: Kundensupport.
 slug: kundensupport
-updated-on: '2023-07-24T15:38:53.115Z'
-created-on: '2022-03-29T15:53:10.501Z'
-published-on: '2022-04-20T07:57:46.075Z'
+updated-on: "2023-07-24T15:38:53.115Z"
+created-on: "2022-03-29T15:53:10.501Z"
+published-on: "2022-04-20T07:57:46.075Z"
 f_icon:
   url: >-
     https://uploads-ssl.webflow.com/649e8340bde586a93b2c23c2/649e8340bde586a93b2c24dc_service-logo-01-52x59.png
@@ -55,8 +55,28 @@ f_rich-text-2: >-
   arbeitet eng mit unseren Entwicklern und Produktmanagern zusammen, um
   sicherzustellen, dass Ihr Feedback in unsere Produktentwicklung und
   -verbesserung einfließt.
-layout: '[services].html'
+layout: "[services].html"
 tags: services
+seo:
+  title: Kundensupport — WX-ONE
+  og:title: Kundensupport — WX-ONE
+  twitter:title: Kundensupport — WX-ONE
+  noindex: false
+  twitter:site: ""
+  additional_tags: >-
+    <meta property="og:image:height" content="500">
+
+    <meta property="og:image:width" content="500">
+
+    <meta property="og:site_name" content="WX-ONE">
+
+    <meta content="https://wx1.de/assets/images/WX-One_og.jpeg" property="twitter:image">
+
+    <meta name="keywords" content="wx1, cloud, wx-one, wxone, wizardtales, iaas, saas, paas, kubernetes, infrastructure, datacenter, csp">
+  twitter:card: ""
+  og:image: https://wx1.de/assets/images/WX-One_og.jpeg
+  description: Spezialisiert auf IT-Infrastruktur, Datenzentren, Cloud- und
+    Managed Services. Revolutionäre Technologien für Ihren Geschäftserfolg.
 ---
 
 ### **Willkommen im Servicebereich, wo Kundensupport keine Nebensache ist, sondern im Mittelpunkt steht!**

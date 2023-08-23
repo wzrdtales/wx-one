@@ -17,8 +17,6 @@ seo:
 
     <meta property="og:site_name" content="WX-ONE">
 
-    <meta property="og:url" content="https://wx1.de">
-
     <meta content="https://wx1.de/assets/images/WX-One_og.jpeg" property="twitter:image">
 
     <meta name="keywords" content="wx1, cloud, wx-one, wxone, wizardtales, iaas, saas, paas, kubernetes, infrastructure, datacenter, csp">

@@ -48,6 +48,23 @@ date: 2023-08-14T11:39:54.670Z
 seo:
   title: Cloud Lösungen — WX-ONE
   og:title: Cloud Lösungen — WX-ONE
+  twitter:title: Cloud Lösungen — WX-ONE
+  noindex: false
+  twitter:site: ""
+  additional_tags: >-
+    <meta property="og:image:height" content="500">
+
+    <meta property="og:image:width" content="500">
+
+    <meta property="og:site_name" content="WX-ONE">
+
+    <meta content="https://wx1.de/assets/images/WX-One_og.jpeg" property="twitter:image">
+
+    <meta name="keywords" content="wx1, cloud, wx-one, wxone, wizardtales, iaas, saas, paas, kubernetes, infrastructure, datacenter, csp">
+  twitter:card: ""
+  og:image: https://wx1.de/assets/images/WX-One_og.jpeg
+  description: Spezialisiert auf IT-Infrastruktur, Datenzentren, Cloud- und
+    Managed Services. Revolutionäre Technologien für Ihren Geschäftserfolg.
 ---
 
 ### **Entfesseln Sie das volle Potenzial von Docker und Kubernetes mit unseren Cloud-Lösungen!**
