@@ -4,11 +4,8 @@ permalink: "{{ page.fileSlug }}/index.html"
 layout: backup-recovery.html
 slug: backup-recovery
 tags: pages
+date: 2023-08-23T16:49:39.536Z
 seo:
-  noindex: false
-  og:title: Backup & Recovery in Goldstandard
-  title: Backup & Recovery in Goldstandard
-  twitter: Backup & Recovery in Goldstandard
   twitter:site: ""
   additional_tags: >-
     <meta property="og:image:height" content="500">
@@ -20,7 +17,11 @@ seo:
     <meta content="https://wx1.de/assets/images/WX-One_og.jpeg" property="twitter:image">
 
     <meta name="keywords" content="wx1, cloud, wx-one, wxone, wizardtales, iaas, saas, paas, kubernetes, infrastructure, datacenter, csp">
+  noindex: true
+  twitter: Backup & Recovery in Goldstandard
+  og:title: Backup & Recovery in Goldstandard
   twitter:card: ""
+  title: Backup & Recovery in Goldstandard
   og:image: https://wx1.de/assets/images/WX-One_og.jpeg
   description: Günstiger und hochwertiger S3 Hot-Backup Speicher.
 ---
