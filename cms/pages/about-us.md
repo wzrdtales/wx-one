@@ -22,8 +22,6 @@ seo:
     <meta content="https://wx1.de/assets/images/WX-One_og.jpeg" property="twitter:image">
 
     <meta name="keywords" content="wx1, cloud, wx-one, wxone, wizardtales, iaas, saas, paas, kubernetes, infrastructure, datacenter, csp">
-  twitter:title: About Us - WX-ONE
-  og:title: About Us - WX-ONE
   twitter:card: ""
   title: ""
   og:image: https://wx1.de/assets/images/WX-One_og.jpeg
