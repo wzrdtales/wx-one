@@ -163,8 +163,8 @@ module.exports = function (eleventyConfig) {
                         seoString += seo.additional_tags;
                     } else if (key.startsWith('og:')) {
 
-                        if(key === 'og:image') {
-                            seoString += `<meta property="${escape(key)}" content="${htmlEntities(`${domain}/${seo[key]}`)}">`;
+                        if(key === 'og:image' && seo[key].startsWith('/')) {
+                            seoString += `<meta property="${escape(key)}" content="${htmlEntities(`${domain}${seo[key]}`)}">`;
                         } else {
                             seoString += `<meta property="${escape(key)}" content="${htmlEntities(seo[key])}">`;
                         }
