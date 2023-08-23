@@ -23,7 +23,6 @@ seo:
   noindex: false
   og:title: WX-ONE - Die neue Cloud aus Deutschland
   twitter:card: ""
-  title: ""
   og:image: https://wx1.de/assets/images/WX-One_og.jpeg
   description: Spezialisiert auf IT-Infrastruktur, Datenzentren, Cloud- und
     Managed Services. Revolutionäre Technologien für Ihren Geschäftserfolg.

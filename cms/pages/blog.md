@@ -1,5 +1,5 @@
 ---
-title: unser Blog
+title: Unser Blog - WX-ONE
 permalink: "{{ page.fileSlug }}/index.html"
 layout: blog.html
 slug: blog
@@ -22,7 +22,6 @@ seo:
   noindex: false
   og:title: Blog - WX-ONE
   twitter:card: ""
-  title: ""
   og:image: https://wx1.de/assets/images/WX-One_og.jpeg
   description: Spezialisiert auf IT-Infrastruktur, Datenzentren, Cloud- und
     Managed Services. Revolutionäre Technologien für Ihren Geschäftserfolg.

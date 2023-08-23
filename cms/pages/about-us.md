@@ -1,12 +1,11 @@
 ---
-title: Über uns
-permalink: '{{ page.fileSlug }}/index.html'
+title: About Us — WX-ONE
+permalink: "{{ page.fileSlug }}/index.html"
 layout: about-us.html
 slug: about-us
 tags: pages
 seo:
   noindex: false
-  title: About Us — WX-ONE
   og:title: About Us — WX-ONE
   twitter:title: About Us — WX-ONE
   twitter:site: ""
@@ -23,9 +22,7 @@ seo:
 
     <meta name="keywords" content="wx1, cloud, wx-one, wxone, wizardtales, iaas, saas, paas, kubernetes, infrastructure, datacenter, csp">
   twitter:card: ""
-  title: ""
   og:image: https://wx1.de/assets/images/WX-One_og.jpeg
   description: Spezialisiert auf IT-Infrastruktur, Datenzentren, Cloud- und
     Managed Services. Revolutionäre Technologien für Ihren Geschäftserfolg.
-
 ---
