@@ -4,10 +4,12 @@ const {formatPrice, ecommerceFormat, convertPrice} = require('./money/utils');
 const fetch = require('node-fetch');
 
 let config;
+let domain ='';
 
 try {
-    const {images_optimization} = require(path.join(process.cwd(), 'cms', '_data', 'settings', 'site.json'));
+    const {images_optimization, domain: _domain } = require(path.join(process.cwd(), 'cms', '_data', 'settings', 'site.json'));
     config = images_optimization;
+    domain = _domain;
 } catch (e) {
     config = {
         formats: ['webp'],
@@ -160,7 +162,13 @@ module.exports = function (eleventyConfig) {
                     if (key == 'additional_tags') {
                         seoString += seo.additional_tags;
                     } else if (key.startsWith('og:')) {
-                        seoString += `<meta property="${escape(key)}" content="${htmlEntities(seo[key])}">`;
+
+                        if(key === 'og:image') {
+                            seoString += `<meta property="${escape(key)}" content="${htmlEntities(`${domain}/${seo[key]}`)}">`;
+                        } else {
+                            seoString += `<meta property="${escape(key)}" content="${htmlEntities(seo[key])}">`;
+                        }
+
                     } else {
                         seoString += `<meta name="${escape(key)}" content="${htmlEntities(seo[key])}">`;
                     }
