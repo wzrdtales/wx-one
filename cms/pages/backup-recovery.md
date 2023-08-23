@@ -1,12 +1,9 @@
 ---
 title: Backup & Recovery in Goldstandard
-permalink: '{{ page.fileSlug }}/index.html'
+permalink: "{{ page.fileSlug }}/index.html"
 layout: backup-recovery.html
 slug: backup-recovery
 tags: pages
-seo:
-  noindex: false
-  title: Backup & Recovery in Goldstandard
 seo:
   noindex: false
   og:title: Backup & Recovery in Goldstandard
@@ -26,5 +23,4 @@ seo:
   twitter:card: ""
   og:image: https://wx1.de/assets/images/WX-One_og.jpeg
   description: Günstiger und hochwertiger S3 Hot-Backup Speicher.
-
 ---
