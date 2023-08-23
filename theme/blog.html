@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html data-wf-page="649e8340bde586a93b2c239e" data-wf-site="649e8340bde586a93b2c230d" lang="de"><head>
+<html data-wf-page="64e4aad96343f7e6f4e72a93" data-wf-site="649e8340bde586a93b2c230d" lang="de"><head>{%- seo seo -%}
   <meta charset="utf-8">
-  <title>Blog — WX-ONE</title>
-  <meta content="Blog — WX-ONE" property="og:title">
-  <meta content="Blog — WX-ONE" property="twitter:title">
+  
+  
+  
   <meta content="width=device-width, initial-scale=1" name="viewport">
-  <meta content="Webflow" name="generator">
+  
   <link href="/assets/css/normalize.css" rel="stylesheet" type="text/css">
   <link href="/assets/css/webflow.css" rel="stylesheet" type="text/css">
   <link href="/assets/css/wx-one.webflow.css" rel="stylesheet" type="text/css">
@@ -284,7 +284,7 @@
     <div class="container w-container">
       {%- assign collection = collections.blog-posts | sort: "-created-on" -%}<div class="w-dyn-list">
         {%- unless collection.length == 0 -%}<div role="list" class="case-study-grid w-dyn-items">
-          {%- for item in collection -%}<div id="w-node-fed545b4-e04d-ff4b-78a5-4187ed7ad53b-3b2c239e" role="listitem" class="inline-block-case-study-1 relative w-dyn-item">
+          {%- for item in collection -%}<div id="w-node-fed545b4-e04d-ff4b-78a5-4187ed7ad53b-f4e72a93" role="listitem" class="inline-block-case-study-1 relative w-dyn-item">
             <a href="{{ item.url }}" class="link-block-2 w-inline-block">{%- image item.data.f_image.url, item.data.f_image.alt, '[{"max":479,"size":"100vw"},{"max":767,"size":"93vw"},{"max":991,"size":"46vw"},{"max":1279,"size":"30vw"},{"max":10000,"size":"370px"}]', 'loading="lazy" class="blog-3"' -%}</a>
             {%- assign blog-categoryOfBlog-posts = item.data.f_ref | resolveReference -%}<a href="{{ blog-categoryOfBlog-posts.url }}" class="classic-blog-date-info">{{ blog-categoryOfBlog-posts.data.title }}</a>
             <div data-w-id="fed545b4-e04d-ff4b-78a5-4187ed7ad53c" class="blog-3-image-wrapper">

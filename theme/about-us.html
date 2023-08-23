@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html data-wf-page="649e8340bde586a93b2c239d" data-wf-site="649e8340bde586a93b2c230d" lang="de"><head>
+<html data-wf-page="64e4aad96343f7e6f4e72a91" data-wf-site="649e8340bde586a93b2c230d" lang="de"><head>{%- seo seo -%}
   <meta charset="utf-8">
-  <title>Über uns — WX-ONE</title>
-  <meta content="Über uns — WX-ONE" property="og:title">
-  <meta content="Über uns — WX-ONE" property="twitter:title">
+  
+  
+  
   <meta content="width=device-width, initial-scale=1" name="viewport">
-  <meta content="Webflow" name="generator">
+  
   <link href="/assets/css/normalize.css" rel="stylesheet" type="text/css">
   <link href="/assets/css/webflow.css" rel="stylesheet" type="text/css">
   <link href="/assets/css/wx-one.webflow.css" rel="stylesheet" type="text/css">
@@ -360,21 +360,21 @@
   <div id="Unsere-Werte" class="video-section werte">
     <div class="container animated w-container">
       <div class="w-layout-grid what-we-do-grid">
-        <div id="w-node-b5324398-7057-a326-9af4-b34f9a1819bc-3b2c239d" class="what-we-do-container">
+        <div id="w-node-b5324398-7057-a326-9af4-b34f9a1819bc-f4e72a91" class="what-we-do-container">
           <div class="div-block-22">{%- image images.467a54fc.url, images.467a54fc.alt, '[{"max":479,"size":"100vw"},{"max":767,"size":"96vw"},{"max":10000,"size":"45vw"}]', 'loading="lazy" height="" class="image-5"' -%}</div>
           <div class="what-we-do-info">
             <h3 class="haeading-what-we-do">{{ texts.-6b369276 }}</h3>
             <p class="paragraph">{{ texts.-212963c1 }}</p>
           </div>
         </div>
-        <div id="w-node-_9e5013a5-6957-c306-ab2d-d1127b2e714b-3b2c239d" class="what-we-do-container central">
+        <div id="w-node-_9e5013a5-6957-c306-ab2d-d1127b2e714b-f4e72a91" class="what-we-do-container central">
           <div class="div-block-23">{%- image images.-4690bf21.url, images.-4690bf21.alt, '[{"max":479,"size":"100vw"},{"max":767,"size":"96vw"},{"max":10000,"size":"45vw"}]', 'loading="lazy" height="" class="image-5 large"' -%}</div>
           <div class="what-we-do-info">
             <h3 class="haeading-what-we-do">{{ texts.1f3cb1af }}</h3>
             <p class="paragraph">{{ texts.131343cd }}</p>
           </div>
         </div>
-        <div id="w-node-a93136b7-d361-7f0d-22a6-dc7f99d4cc48-3b2c239d" class="what-we-do-container">
+        <div id="w-node-a93136b7-d361-7f0d-22a6-dc7f99d4cc48-f4e72a91" class="what-we-do-container">
           <div class="div-block-24">{%- image images.-771f9056.url, images.-771f9056.alt, '[{"max":479,"size":"100vw"},{"max":767,"size":"96vw"},{"max":10000,"size":"45vw"}]', 'loading="lazy" height="140" class="image-5"' -%}</div>
           <div class="what-we-do-info">
             <h3 class="haeading-what-we-do">{{ texts.-49e07d6 }}</h3>
@@ -387,10 +387,10 @@
   <section id="Unser-Team" class="section-6 team">
     <div class="container w-container">
       <h2 class="centured-heading">{{ texts.-6d550228 }}<br>{{ texts.200d }}</h2>
-      {%- assign collection = collections.team | sort: "f_role" -%}{%- assign pagination = collection | paginate: 8 -%}<div id="w-node-ba6e5cfe-d450-4dd2-85fc-3ce7247e8dfb-3b2c239d" class="w-dyn-list">
+      {%- assign collection = collections.team | sort: "f_role" -%}{%- assign pagination = collection | paginate: 8 -%}<div id="w-node-ba6e5cfe-d450-4dd2-85fc-3ce7247e8dfb-f4e72a91" class="w-dyn-list">
         {%- unless pagination.length == 0 -%}<div role="list" class="w-dyn-items w-row">
           {%- for item in pagination[0] -%}<div role="listitem" class="w-dyn-item w-col w-col-3">
-            <div id="w-node-_779d3937-e385-329c-b3e2-dc64c4b2dbcb-3b2c239d" class="our-team-content">{%- image item.data.f_headshot.url, item.data.f_headshot.alt, '[{"max":479,"size":"100vw"},{"max":767,"size":"96vw"},{"max":1279,"size":"97vw"},{"max":10000,"size":"1210px"}]', 'loading="lazy" width="265" height="265" class="team-image"' -%}
+            <div id="w-node-_779d3937-e385-329c-b3e2-dc64c4b2dbcb-f4e72a91" class="our-team-content">{%- image item.data.f_headshot.url, item.data.f_headshot.alt, '[{"max":479,"size":"100vw"},{"max":767,"size":"96vw"},{"max":1279,"size":"97vw"},{"max":10000,"size":"1210px"}]', 'loading="lazy" width="265" height="265" class="team-image"' -%}
               <div class="portfolio-container">
                 <h5>{{ item.data.title }}</h5>
                 <p>{{ item.data.f_role }}</p>
@@ -398,7 +398,7 @@
             </div>
           </div>{%- endfor -%}
         {%- for paginationPage in pagination -%}{%- if forloop.index > 1 -%}{%- assign paginationFilePath = "/public/_data/paginations" | appendMultiple: page.filePathStem, "/page-741a1fa5-", forloop.index, ".html" -%}<template data-pagination-index="{{ forloop.index }}" data-pagination-url="{{ paginationFilePath | replace: "/public", "" }}">{% capture currentPageHTML %}{%- for item in paginationPage -%}<div role="listitem" class="w-dyn-item w-col w-col-3">
-            <div id="w-node-_779d3937-e385-329c-b3e2-dc64c4b2dbcb-3b2c239d" class="our-team-content">{%- image item.data.f_headshot.url, item.data.f_headshot.alt, '[{"max":479,"size":"100vw"},{"max":767,"size":"96vw"},{"max":1279,"size":"97vw"},{"max":10000,"size":"1210px"}]', 'loading="lazy" width="265" height="265" class="team-image"' -%}
+            <div id="w-node-_779d3937-e385-329c-b3e2-dc64c4b2dbcb-f4e72a91" class="our-team-content">{%- image item.data.f_headshot.url, item.data.f_headshot.alt, '[{"max":479,"size":"100vw"},{"max":767,"size":"96vw"},{"max":1279,"size":"97vw"},{"max":10000,"size":"1210px"}]', 'loading="lazy" width="265" height="265" class="team-image"' -%}
               <div class="portfolio-container">
                 <h5>{{ item.data.title }}</h5>
                 <p>{{ item.data.f_role }}</p>

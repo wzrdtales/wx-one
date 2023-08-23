@@ -1,12 +1,9 @@
 backend:
-  name: gitlab
-  repo: wx-one/marketing/website
-  api_root: https://dev0git.wizardtales.com/api/v4
-  base_url: https://dev0git.wizardtales.com
+  name: git-gateway
+  accept_roles:
+    - admin
+    - editor
   branch: master
-  auth_type: pkce
-  app_id: 26d47b35abc8d8918f9e8bd554b8a7347f66ca0117f52bd2638b8303be5f6d55
-
 media_folder: theme/assets/images
 public_folder: /assets/images
 collections:
@@ -1586,6 +1583,363 @@ collections:
           - hint: 'Original text: Beratungstermin vereinbaren!, key: -5ae86b2c'
             label: Text
             name: '-5ae86b2c'
+            widget: string
+          - hint: >-
+              Original text: Sicheres, schnelles und bezahlbares Backup &
+              Recovery , key: -4fc702be
+            label: Text
+            name: '-4fc702be'
+            widget: string
+          - hint: 'Original text: ___________________, key: 32d5d17f'
+            label: Text
+            name: 32d5d17f
+            widget: string
+          - hint: >-
+              Original text: Entwickelt und betrieben in Deutschland. , key:
+              -6bab1f87
+            label: Text
+            name: '-6bab1f87'
+            widget: string
+          - hint: 'Original text: Zuverlässigkeit, die überzeugt. , key: -f2b9081'
+            label: Text
+            name: '-f2b9081'
+            widget: string
+          - hint: 'Original text: Der neue Goldstandard für Storage., key: -2c3d4b50'
+            label: Text
+            name: '-2c3d4b50'
+            widget: string
+          - hint: 'Original text: Schon ab, key: -252ed2f6'
+            label: Text
+            name: '-252ed2f6'
+            widget: string
+          - hint: 'Original text: 4,40 €, key: 5b408680'
+            label: Text
+            name: 5b408680
+            widget: string
+          - hint: 'Original text: je TB/Mo!, key: -6ffc3dfd'
+            label: Text
+            name: '-6ffc3dfd'
+            widget: string
+          - hint: 'Original text: Jetzt starten, key: -6855cf22'
+            label: Text
+            name: '-6855cf22'
+            widget: string
+          - hint: 'Original text: Warum uns wählen?, key: 610ad81f'
+            label: Text
+            name: 610ad81f
+            widget: string
+          - hint: 'Original text: Lokal und vertrauenswürdig, key: d6d2eac'
+            label: Text
+            name: d6d2eac
+            widget: string
+          - hint: "Original text: 100\_% entwickelt und betrieben in Deutschland – , key: 38ded5b0"
+            label: Text
+            name: 38ded5b0
+            widget: string
+          - hint: 'Original text: Ihr Datenpartner im Herzen Europas, key: -d5276ac'
+            label: Text
+            name: '-d5276ac'
+            widget: string
+          - hint: 'Original text: Zuverlässige Technologie, key: 177d5670'
+            label: Text
+            name: 177d5670
+            widget: string
+          - hint: >-
+              Original text: Unterstützt den Industriestandard S3 , key:
+              172c36dc
+            label: Text
+            name: 172c36dc
+            widget: string
+          - hint: >-
+              Original text: für höchste Kompatibilität und Zuverlässigkeit.,
+              key: -12bb6024
+            label: Text
+            name: '-12bb6024'
+            widget: string
+          - hint: 'Original text: Datenintegrität, key: 18ab961c'
+            label: Text
+            name: 18ab961c
+            widget: string
+          - hint: 'Original text: 11×9’s Data durability – , key: 242f7b52'
+            label: Text
+            name: 242f7b52
+            widget: string
+          - hint: >-
+              Original text: Ihr digitaler Schatz ist bei uns sicher., key:
+              -5e3c5819
+            label: Text
+            name: '-5e3c5819'
+            widget: string
+          - hint: 'Original text: Maximale Verfügbarkeit, key: -42785104'
+            label: Text
+            name: '-42785104'
+            widget: string
+          - hint: "Original text: Standard Verfügbarkeit von 99,9\_% , key: 39fc09ea"
+            label: Text
+            name: 39fc09ea
+            widget: string
+          - hint: "Original text: mit Optionen für bis zu 99,99\_% – , key: 73ce40f"
+            label: Text
+            name: 73ce40f
+            widget: string
+          - hint: 'Original text: Wir sind immer für Sie da!, key: -458f690f'
+            label: Text
+            name: '-458f690f'
+            widget: string
+          - hint: 'Original text: Sofortiger Zugriff, key: d49e595'
+            label: Text
+            name: d49e595
+            widget: string
+          - hint: >-
+              Original text: Dateien jederzeit und sofort verfügbar – , key:
+              7d30849c
+            label: Text
+            name: 7d30849c
+            widget: string
+          - hint: >-
+              Original text: Keine Wartezeiten, keine Kompromisse., key:
+              -118e5aab
+            label: Text
+            name: '-118e5aab'
+            widget: string
+          - hint: 'Original text: Besonderheiten, key: 7cb62773'
+            label: Text
+            name: 7cb62773
+            widget: string
+          - hint: 'Original text: DSGVO , key: 78bcbbef'
+            label: Text
+            name: 78bcbbef
+            widget: string
+          - hint: 'Original text: Konformität, key: 5c85b2a9'
+            label: Text
+            name: 5c85b2a9
+            widget: string
+          - hint: >-
+              Original text: Wir nehmen Datenschutz ernst: 100 % DSGVO-konform
+              für Ihre und die Sicherheit Ihrer Kunden., key: -29e9a4b4
+            label: Text
+            name: '-29e9a4b4'
+            widget: text
+          - hint: 'Original text: Langzeit-speicherung, key: -5539b2ae'
+            label: Text
+            name: '-5539b2ae'
+            widget: string
+          - hint: >-
+              Original text: Langzeitarchivierung für mehr als 10 Jahre
+              verfügbar – und das mit weiteren Einsparungen., key: -67429667
+            label: Text
+            name: '-67429667'
+            widget: string
+          - hint: 'Original text: DiaT*-, key: 79fe86bb'
+            label: Text
+            name: 79fe86bb
+            widget: string
+          - hint: 'Original text: Recovery, key: -2bc71c4b'
+            label: Text
+            name: '-2bc71c4b'
+            widget: string
+          - hint: >-
+              Original text: Einzigartige Recovery-Optionen, inklusive "Data in
+              a Truck*" Service für schnelle Wiederherstellung bei großen
+              Datenmengen., key: 4aaf6043
+            label: Text
+            name: 4aaf6043
+            widget: text
+          - hint: 'Original text: Unschlagbares , key: -5f61078e'
+            label: Text
+            name: '-5f61078e'
+            widget: string
+          - hint: 'Original text: Preis-Leistungs-Verhältnis , key: 1e318678'
+            label: Text
+            name: '1e318678'
+            widget: string
+          - hint: 'Original text: und maximale Transparenz, key: 6223253f'
+            label: Text
+            name: 6223253f
+            widget: string
+          - hint: 'Original text: Fakten, key: 7cfc872d'
+            label: Text
+            name: 7cfc872d
+            widget: string
+          - hint: 'Original text: WX-ONE, key: -669ca6a6'
+            label: Text
+            name: '-669ca6a6'
+            widget: string
+          - hint: 'Original text: wasabi, key: -2f62a721'
+            label: Text
+            name: '-2f62a721'
+            widget: string
+          - hint: 'Original text: AWS, key: fedd'
+            label: Text
+            name: fedd
+            widget: string
+          - hint: 'Original text: AZURE, key: 3be2a6f'
+            label: Text
+            name: 3be2a6f
+            widget: string
+          - hint: 'Original text: Entwickelt in Deutschland, key: 17645320'
+            label: Text
+            name: '17645320'
+            widget: string
+          - hint: 'Original text: Betrieben in Deutschland, key: 7b094a7a'
+            label: Text
+            name: 7b094a7a
+            widget: string
+          - hint: 'Original text: Industriestandard S3, key: 4b21fdec'
+            label: Text
+            name: 4b21fdec
+            widget: string
+          - hint: 'Original text: 11x9s data durability, key: -3228e22f'
+            label: Text
+            name: '-3228e22f'
+            widget: string
+          - hint: 'Original text: 99.9 % Standard Verfügbarkeit, key: -3103c4a9'
+            label: Text
+            name: '-3103c4a9'
+            widget: string
+          - hint: 'Original text: bis zu 99.99 % Verfügbarkeit, key: -2ef60754'
+            label: Text
+            name: '-2ef60754'
+            widget: string
+          - hint: 'Original text: Dateien jederzeit sofort verfügbar, key: 46b1d1bc'
+            label: Text
+            name: 46b1d1bc
+            widget: string
+          - hint: 'Original text: DiaT recovery Optionen, key: -6855627f'
+            label: Text
+            name: '-6855627f'
+            widget: string
+          - hint: >-
+              Original text: Long term Archiv (+10 Jahre) mit weiteren
+              Einsparungen , key: -2d8c803e
+            label: Text
+            name: '-2d8c803e'
+            widget: string
+          - hint: 'Original text: 100 % DSGVO konform, key: -69dd586b'
+            label: Text
+            name: '-69dd586b'
+            widget: string
+          - hint: 'Original text: Preisvergleich und Übersicht, key: 3b880bb5'
+            label: Text
+            name: 3b880bb5
+            widget: string
+          - hint: >-
+              Original text: Beinhaltet folgende Traffic Preise je GB Download,
+              key: -559d5f1d
+            label: Text
+            name: '-559d5f1d'
+            widget: string
+          - hint: 'Original text: 5,67 €*, key: 41d5e286'
+            label: Text
+            name: 41d5e286
+            widget: string
+          - hint: 'Original text: je TiB/Mo., key: -4c00dbfb'
+            label: Text
+            name: '-4c00dbfb'
+            widget: string
+          - hint: 'Original text: 0,006192 €, key: ddeca9c'
+            label: Text
+            name: ddeca9c
+            widget: string
+          - hint: 'Original text: 6,47 €*, key: 769feec5'
+            label: Text
+            name: 769feec5
+            widget: string
+          - hint: 'Original text: 0,00 €, key: 546b5288'
+            label: Text
+            name: 546b5288
+            widget: string
+          - hint: 'Original text: 27,30 €*, key: -a905886'
+            label: Text
+            name: '-a905886'
+            widget: string
+          - hint: 'Original text: 0,083333 €, key: -4ff46cb0'
+            label: Text
+            name: '-4ff46cb0'
+            widget: string
+          - hint: 'Original text: 33,80 €*, key: -7601a326'
+            label: Text
+            name: '-7601a326'
+            widget: string
+          - hint: 'Original text: 0,080556 €, key: -54f5d38a'
+            label: Text
+            name: '-54f5d38a'
+            widget: string
+          - hint: "Original text: *Alle Berechnungen wurden zwecks Vergleichbarkeit mit 20\_% Traffic durchgeführt – entspricht ca. 2x komplett Download im Jahr, key: 683cf30d"
+            label: Text
+            name: 683cf30d
+            widget: text
+          - hint: 'Original text: Keine Sichere Angaben, key: 3f846247'
+            label: Text
+            name: 3f846247
+            widget: string
+          - hint: >-
+              Original text: Nicht bei den vergleichbaren Angeboten enthalten,
+              key: -4eb9dbc2
+            label: Text
+            name: '-4eb9dbc2'
+            widget: string
+          - hint: 'Original text: Einige Anwendungsgebiete, key: 52dd0eb8'
+            label: Text
+            name: 52dd0eb8
+            widget: string
+          - hint: >-
+              Original text: Wir nutzen modernste Technologien, um die
+              Integrität Ihrer Daten zu gewährleisten. Dabei speichern wir
+              Backups auf effiziente Weise und können diese im Notfall rasch
+              wiederherstellen, um jeglichen Datenverlust zu vermeiden., key:
+              -428781b9
+            label: Text
+            name: '-428781b9'
+            widget: text
+          - hint: 'Original text: KI und Machine Learning, key: 5688732e'
+            label: Text
+            name: 5688732e
+            widget: string
+          - hint: >-
+              Original text: Unser Storage Service bietet die hochmoderne
+              Speicherkapazität und Geschwindigkeit, die für das Training und
+              den Betrieb von KI und Machine Learning-Modellen erforderlich ist.
+              Somit ermöglichen wir Entwicklern, effizient auf umfangreiche
+              Datenmengen zuzugreifen und den Trainingsprozess zu optimieren.,
+              key: 28aa5e87
+            label: Text
+            name: 28aa5e87
+            widget: text
+          - hint: 'Original text: Multimedia Inhaltskataloge, key: 682227dc'
+            label: Text
+            name: 682227dc
+            widget: string
+          - hint: >-
+              Original text: Dank unseres Storage Services können wir große
+              Mengen an Multimedia-Inhalten speichern und bereitstellen. Dies
+              garantiert eine schnelle und zuverlässige Nutzung, wodurch Ihre
+              Kunden stets die beste Erfahrung genießen können., key: -622cfe01
+            label: Text
+            name: '-622cfe01'
+            widget: text
+          - hint: >-
+              Original text: Wir bieten weitere innovative Lösungen zur
+              Modernisierung von Plattformen und Datensicherung für alle
+              Unternehmensgrößen sowie fortschrittliche Big Data &
+              KI-Anwendungen. , key: -6ba51fb
+            label: Text
+            name: '-6ba51fb'
+            widget: text
+          - hint: >-
+              Original text: Kontaktieren Sie uns für eine individuelle Beratung
+              und entdecken Sie die grenzenlosen Möglichkeiten mit WX-ONE., key:
+              5bdc88d8
+            label: Text
+            name: 5bdc88d8
+            widget: text
+          - hint: 'Original text: Wir beraten Sie gerne jederzeit!, key: -3b89d730'
+            label: Text
+            name: '-3b89d730'
+            widget: string
+          - hint: 'Original text: Jetzt Beratung buchen, key: -a727a38'
+            label: Text
+            name: '-a727a38'
             widget: string
           - hint: 'Original text: unsere Blog Beiträge., key: -499df18c'
             label: Text
@@ -3575,6 +3929,19 @@ collections:
                 widget: string
                 required: false
           - label: Image
+            name: 729e923e
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
             name: '-1101e822'
             widget: object
             fields:
@@ -3862,6 +4229,201 @@ collections:
                 required: false
           - label: Image
             name: '-771f9056'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 2927f4cb
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 217bb6cb
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-57b89e0b'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-1bdb953a'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-57c6b58c'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-50c1d07b'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-57804007'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-1bcd7db9'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 29360c4c
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-1bbf6638'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 4df0e148
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 1918bd88
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 1926d509
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: c87127b
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-136a8476'
             widget: object
             fields:
               - name: url
