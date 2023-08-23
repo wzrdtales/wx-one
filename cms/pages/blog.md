@@ -6,6 +6,7 @@ slug: blog
 tags: pages
 seo:
   twitter:site: ""
+  title: Unser Blog - WX-ONE
   additional_tags: >-
     <meta property="og:image:height" content="500">
 

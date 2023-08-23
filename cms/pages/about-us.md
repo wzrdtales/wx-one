@@ -7,6 +7,7 @@ tags: pages
 seo:
   noindex: false
   og:title: About Us — WX-ONE
+  title: About Us — WX-ONE
   twitter:title: About Us — WX-ONE
   twitter:site: ""
   additional_tags: >-
