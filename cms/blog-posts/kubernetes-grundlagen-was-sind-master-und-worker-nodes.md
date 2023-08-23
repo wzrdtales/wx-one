@@ -12,6 +12,13 @@ published-on: 2023-08-01T13:09:54.153Z
 f_prev-text: "Die sogenannten #Worker-Nodes und den #Master-Node (control plan/ kurz cp)..."
 tags: blog-posts
 date: 2023-08-01T13:09:54.170Z
+seo:
+  title: Kubernetes Grundlagen - Was sind Master und Worker Nodes? - WX-ONE
+  og:title: Kubernetes Grundlagen - Was sind Master und Worker Nodes? - WX-ONE
+  description: "Die sogenannten #Worker-Nodes und den #Master-Node (control plan/
+    kurz cp)..."
+  og:image: /assets/images/62c1c3afd210ea09132f-designohnetitel.png
+  twitter:title: Kubernetes Grundlagen - Was sind Master und Worker Nodes? - WX-ONE
 ---
 ![](/assets/images/62c1c3afd210ea09132f-designohnetitel.png)
 
