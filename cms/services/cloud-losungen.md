@@ -45,6 +45,9 @@ f_list: |-
   5. 24/7 Zugang zum Support
 tags: services
 date: 2023-08-14T11:39:54.670Z
+seo:
+  title: Cloud Lösungen — WX-ONE
+  og:title: Cloud Lösungen — WX-ONE
 ---
 
 ### **Entfesseln Sie das volle Potenzial von Docker und Kubernetes mit unseren Cloud-Lösungen!**
