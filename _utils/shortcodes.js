@@ -4,12 +4,10 @@ const {formatPrice, ecommerceFormat, convertPrice} = require('./money/utils');
 const fetch = require('node-fetch');
 
 let config;
-let domain ='';
 
 try {
-    const {images_optimization, domain: _domain } = require(path.join(process.cwd(), 'cms', '_data', 'settings', 'site.json'));
+    const {images_optimization} = require(path.join(process.cwd(), 'cms', '_data', 'settings', 'site.json'));
     config = images_optimization;
-    domain = _domain;
 } catch (e) {
     config = {
         formats: ['webp'],
@@ -33,16 +31,6 @@ function escape(s) {
 
 function htmlEntities(str) {
     return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-}
-
-
-const externalFilesJSONPath = path.join(__dirname, 'config','external-files.json')
-
-let externalFiles;
-try {
-    externalFiles    = require(externalFilesJSONPath);
-} catch(_) {
-    externalFiles    = require(externalFilesJSONPath);
 }
 
 module.exports = function (eleventyConfig) {
@@ -71,9 +59,6 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.addShortcode('image', async function(src, alt = "", dataSizes = "", attributes = "") {
 
-        const imgAttributes = attributes.replace(/class(?:\s+)?=(?:\s+)?["'][^'"]+["']/, '')
-
-        
         if (!src) {
             return "";
         }
@@ -109,8 +94,6 @@ module.exports = function (eleventyConfig) {
 
         if (!src.startsWith("http")) {
             src = "theme" + src;
-        } else if(src.startsWith("http") && externalFiles[src]) {
-            src = externalFiles[src];
         } else {
             return `<img src="${src}" alt="${alt}" ${attributes}>`;
         }
@@ -125,7 +108,7 @@ module.exports = function (eleventyConfig) {
             const formats = Object.keys(metadata);
             const lowsrc = metadata[formats[formats.length - 1]][0];
 
-            return `<picture ${imgAttributes}>
+            return `<picture ${attributes}>
     ${Object.values(metadata).map(imageFormat => {
                 return `  <source type="${imageFormat[0].sourceType}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}">`;
             }).join("\n")}
@@ -162,13 +145,7 @@ module.exports = function (eleventyConfig) {
                     if (key == 'additional_tags') {
                         seoString += seo.additional_tags;
                     } else if (key.startsWith('og:')) {
-
-                        if(key === 'og:image' && seo[key].startsWith('/')) {
-                            seoString += `<meta property="${escape(key)}" content="${htmlEntities(`${domain}${seo[key]}`)}">`;
-                        } else {
-                            seoString += `<meta property="${escape(key)}" content="${htmlEntities(seo[key])}">`;
-                        }
-
+                        seoString += `<meta property="${escape(key)}" content="${htmlEntities(seo[key])}">`;
                     } else {
                         seoString += `<meta name="${escape(key)}" content="${htmlEntities(seo[key])}">`;
                     }

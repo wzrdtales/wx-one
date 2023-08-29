@@ -10778,6 +10778,7 @@ img {
   }
 
   .checklisten-box {
+    width: 25px;
     height: 40px;
   }
 
@@ -10846,9 +10847,14 @@ img {
   }
 
   .button-5 {
-    width: 250px;
+    width: 300px;
     margin-top: 0;
     margin-right: 24px;
+  }
+
+  .image-40, .image-41 {
+    width: 25px;
+    height: 25px;
   }
 }
 
