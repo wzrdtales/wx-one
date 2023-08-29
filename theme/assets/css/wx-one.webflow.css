@@ -11632,6 +11632,7 @@ img {
     -webkit-text-fill-color: inherit;
     background-image: none;
     background-clip: border-box;
+    position: absolute;
   }
 
   .navbar-2 {
@@ -11845,7 +11846,6 @@ img {
   }
 
   .div-block-40 {
-    height: 100px;
     text-align: center;
   }
 
@@ -11863,7 +11863,6 @@ img {
   }
 
   .image-29 {
-    max-height: 100%;
     max-width: 75%;
     text-align: center;
   }
