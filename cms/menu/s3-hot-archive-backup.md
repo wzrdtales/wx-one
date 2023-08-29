@@ -8,7 +8,7 @@ updated-on: 2023-08-23T16:36:44.790Z
 published-on: 2023-08-23T16:36:44.807Z
 f_menu: Menu 2 Column 2
 f_label: POPULAR
-f_link: /services/managed-services/
+f_link: /backup-recovery/
 tags: menu
 date: 2023-08-23T16:36:44.823Z
 seo:
