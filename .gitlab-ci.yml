@@ -57,6 +57,7 @@ spec::audit:
     - "pnpm install"
   cache: *spec__audit_-_cache
   image: *nodeversion
+  interruptible: true
   script:
     - "pnpm audit --audit-level critical --production"
   stage: test
@@ -65,6 +66,7 @@ spec::build:
   image: *nodeversionb
   stage: test
   cache: *spec__audit_-_cache
+  interruptible: true
   artifacts:
     expire_in: 1d
     paths:
@@ -87,6 +89,7 @@ build:container:tag:
   variables:
     TAG: "$CI_COMMIT_TAG"
   <<: *containerbuild
+  interruptible: true
   only:
     - tags
 
@@ -98,6 +101,7 @@ build:container:latest:
   variables:
     TAG: "latest"
   <<: *containerbuild
+  interruptible: true
   only:
     - master
 
@@ -109,6 +113,7 @@ build:container:dev:
   variables:
     TAG: "dev"
   <<: *containerbuild
+  interruptible: true
   only:
     - develop
 
@@ -120,6 +125,7 @@ build:container:prod:
   variables:
     TAG: "prod"
   <<: *containerbuild
+  interruptible: true
   only:
     - prod
 
