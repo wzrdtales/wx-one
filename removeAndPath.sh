@@ -11,6 +11,6 @@ git cherry-pick 882a7cf34d11976aae7d5483aab3a48243471d32
 git cherry-pick f9e4c88f3c547607c7223147715cbc14b364ec36
 # git cherry-pick 46e46ebca1c8d0da5bd226f057f6e0826352fd92
 # sometimes fails
-git cherry-pick 6ded9b5a554263f1511aa1e1fafcebd44ae7d4c2
+git cherry-pick 318ace9f106855fa6bde2e767d5f3ea49bafb2be
 
 # find theme -name *.html | xargs -I% bash -c "sed -i -e '/<link href=\"https:\/\/fonts.googleapis.com\" rel=\"preconnect\">\|<link href=\"https:\/\/fonts.gstatic.com\" rel=\"preconnect\" crossorigin=\"anonymous\">\|<script src=\"https:\/\/ajax.googleapis.com\/ajax\/libs\/webfont\/1.6.26\/webfont.js\" type=\"text\/javascript\"><\/script>\|<script type=\"text\/javascript\">WebFont.load(.*);<\/script>/d' % && sed -i 's/<meta content=\"Webflow\" name=\"generator\">/<meta property=\"og:image:type\" content=\"image\/jpeg\">\n<meta property=\"og:image:height\" content=\"500\">\n<meta property=\"og:image:width\" content=\"500\">\n<meta property=\"og:site_name\" content=\"WX-ONE\">\n<meta property=\"og:url\" content=\"https:\/\/pre.wx1.de\">\n<meta content=\"https:\/\/pre.wx1.de\/assets\/images\/WX-One_og.jpeg\" property=\"og:image\">\n<meta content=\"https:\/\/pre.wx1.de\/assets\/images\/WX-One_og.jpeg\" property=\"twitter:image\">/' %"
