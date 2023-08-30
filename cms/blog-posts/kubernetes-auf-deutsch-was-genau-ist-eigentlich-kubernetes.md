@@ -9,14 +9,15 @@ slug: a-helpful-guide-for-overcoming-design-frustration
 title: Kubernetes auf Deutsch - Was genau ist eigentlich Kubernetes?
 updated-on: 2023-08-30T20:07:02.590Z
 published-on: 2023-08-30T20:07:03.160Z
-f_prev-text: "Die sogenannten #Worker-Nodes und den #Master-Node (control plan/ kurz cp)..."
+f_prev-text: Was genau ist eigentlich Kubernetes, wir erklären es euch einmal
+  einfach und für jeden verständlich.
 tags: blog-posts
-date: 2023-08-30T20:06:57.259Z
+date: 2023-08-30T20:08:19.786Z
 seo:
   title: Kubernetes auf Deutsch - Was genau ist eigentlich Kubernetes? - WX-ONE
   og:title: Kubernetes auf Deutsch - Was genau ist eigentlich Kubernetes? - WX-ONE
-  description: Was genau ist eigentlich Kubernetes, wir erklären euch es einmal
-    einfach und für jeden Verständlich.
+  description: Was genau ist eigentlich Kubernetes, wir erklären es euch einmal
+    einfach und für jeden verständlich.
   og:image: /assets/images/62c1c3afd210ea09132f-designohnetitel.png
   twitter:title: Kubernetes auf Deutsch - Was genau ist eigentlich Kubernetes? - WX-ONE
   additional_tags: >-
