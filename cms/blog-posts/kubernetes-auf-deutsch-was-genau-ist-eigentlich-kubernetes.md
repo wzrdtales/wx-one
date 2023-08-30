@@ -1,7 +1,7 @@
 ---
 created-on: 2023-08-30T20:07:01.914Z
 f_image:
-  url: /assets/images/62c1c3afd210ea09132f-designohnetitel.png
+  url: /assets/images/ad-developer.png
   alt: null
 f_author: by Tobias Gurtzick
 layout: "[blog-posts].html"
@@ -18,7 +18,7 @@ seo:
   og:title: Kubernetes auf Deutsch - Was genau ist eigentlich Kubernetes? - WX-ONE
   description: Was genau ist eigentlich Kubernetes, wir erklären es euch einmal
     einfach und für jeden verständlich.
-  og:image: /assets/images/62c1c3afd210ea09132f-designohnetitel.png
+  og:image: /assets/images/ad-developer.png
   twitter:title: Kubernetes auf Deutsch - Was genau ist eigentlich Kubernetes? - WX-ONE
   additional_tags: >-
     <meta property="og:image:height" content="500">
