@@ -29,6 +29,7 @@ seo:
     <meta property="og:url" content="https://wx1.de">
 
     <meta name="keywords" content="wx1, cloud, wx-one, wxone, wizardtales, iaas, saas, paas, kubernetes, infrastructure, datacenter, csp">
+  noindex: false
 ---
 ![](/assets/images/62c1c3afd210ea09132f-designohnetitel.png)
 
