@@ -31,6 +31,8 @@ seo:
 
     <meta name="keywords" content="wx1, cloud, wx-one, wxone, wizardtales, iaas, saas, paas, kubernetes, infrastructure, datacenter, csp">
 ---
+![](/assets/images/ad-developer.png)
+
 Das 2014 von Google entwickelte Kubernetes ist ein #OpenSource System, welches die Verwaltung von Anwendungen in sogenannten Containern erleichtert. Was bedeutet das?
 
 Stell dir vor, du hast eine Anwendung, zum Beispiel eine Website bzw. eine #Software. Normalerweise läuft diese Anwendung auf einem einzigen Server. Das kann gut funktionieren, solange die Anwendung nicht zu komplex oder zu groß wird. Aber wenn die Anwendung wächst & mehr Nutzer hat, kann es schwierig werden, sie auf nur einem Server am Laufen zu halten.
