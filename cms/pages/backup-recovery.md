@@ -17,11 +17,12 @@ seo:
     <meta content="https://wx1.de/assets/images/WX-One_og.jpeg" property="twitter:image">
 
     <meta name="keywords" content="wx1, cloud, wx-one, wxone, wizardtales, iaas, saas, paas, kubernetes, infrastructure, datacenter, csp">
-  noindex: true
+  noindex: false
   twitter: Backup & Recovery in Goldstandard
   og:title: Backup & Recovery in Goldstandard
   twitter:card: ""
   title: Backup & Recovery in Goldstandard
-  og:image: https://wx1.de/assets/images/WX-One_og.jpeg
-  description: Günstiger und hochwertiger S3 Hot-Backup Speicher.
+  og:image: /assets/images/storageseo.png
+  description: Der beste in Deutschland! Unschlagbar günstiger und hochwertiger S3
+    Hot-Backup Speicher. Schon ab 4.40€/TB im Monat.
 ---
