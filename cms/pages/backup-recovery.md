@@ -1,5 +1,5 @@
 ---
-title: Backup & Recovery in Goldstandard
+title: Cloud Storage in Goldstandard
 permalink: "{{ page.fileSlug }}/index.html"
 layout: backup-recovery.html
 slug: backup-recovery
@@ -19,7 +19,7 @@ seo:
     <meta name="keywords" content="wx1, cloud, wx-one, wxone, wizardtales, iaas, saas, paas, kubernetes, infrastructure, datacenter, csp">
   noindex: false
   twitter: Backup & Recovery in Goldstandard
-  og:title: Backup & Recovery in Goldstandard
+  og:title: Cloud Storage in Goldstandard
   twitter:card: ""
   title: Backup & Recovery in Goldstandard
   og:image: /assets/images/storageseo.png
