@@ -28,6 +28,8 @@ Wie immer werden wir versuchen, es gerecht für jeden Interessierten zu gestalte
 
 # Was genau ist confidential computing und was sind CVMs?
 
-Confidential computing ist eine Technologie, welche Entwickelt wurde, um die Sicherheit in geteilten Umgebungen zu verbessern. Allen voran, damit die Cloud. CVMs, confidential VMs, sind dementsprechend also VMs die diese Technologie nutzen. Es handelt sich kurz gesagt um eine Verschlüsselung des RAM Speichers, jedoch individuell je VM und nicht für das gesamte System. Dies hat den Vorteil das zwei VMs selbst bei einer Sicherheitslücke, dieser nicht einfach ausgelesen werden kann. Das Konzept in freier Wildbahn hat zuallererst Intel an den Markt gebracht. Intel ist hier sogar noch einen Schritt weiter gegangen und mit Ihrer SGX Technologie, das mit sogenannten Enklaven arbeitet, dieses Konzept statt auf die Maschine, auf einzelne Programme erweitert.
+Confidential computing ist eine Technologie, welche Entwickelt wurde, um die Sicherheit in geteilten Umgebungen zu verbessern. Allen voran, damit die Cloud. CVMs, confidential VMs, sind dementsprechend also VMs, die diese Technologie nutzen. Es handelt sich kurz gesagt um eine Verschlüsselung des RAM Speichers, jedoch individuell je VM und nicht für das gesamte System. Dies hat den Vorteil, dass zwei VMs selbst bei einer Sicherheitslücke, dieser nicht einfach ausgelesen werden kann. Das Konzept in freier Wildbahn hat zuallererst Intel an den Markt gebracht. Intel ist hier sogar noch einen Schritt weiter gegangen und mit Ihrer SGX Technologie, das mit sogenannten Enklaven arbeitet, dieses Konzept statt auf die Maschine, auf einzelne Programme erweitert.
+
+Ein weiteres Konzept, welches sich hieraus etablierte ist die sogenannte Remote attestation, auf die wir im nächsten Abschnitt eingehen.
 
 ##### Detail Part
