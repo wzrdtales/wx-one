@@ -32,6 +32,6 @@ Confidential computing ist eine Technologie, welche Entwickelt wurde, um die Sic
 
 Kurz gesagt, der Zugriff auf den Speicher wird durch kundenindividuelle Verschlüsselung erschwert. 
 
-Ein weiteres Konzept, welches sich hieraus etablierte ist die sogenannte Remote attestation, auf die wir im nächsten Abschnitt eingehen.
+Ein weiteres Konzept, welches sich hieraus etablierte, ist die sogenannte Remote attestation, auf die wir im nächsten Abschnitt eingehen.
 
 ##### Detail Part
