@@ -27,7 +27,7 @@ seo:
 
     <meta property="og:site_name" content="WX-ONE">
 
-    <meta property="og:url" content="https://wx1.de">
+    <meta property="og:url" content="https://wx1.de/blog-posts/kubernetes-auf-deutsch-was-genau-ist-eigentlich-kubernetes/">
 
     <meta name="keywords" content="wx1, cloud, wx-one, wxone, wizardtales, iaas, saas, paas, kubernetes, infrastructure, datacenter, csp">
   noindex: false
