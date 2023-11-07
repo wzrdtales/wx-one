@@ -5,7 +5,7 @@ created-on: 2023-11-07T16:11:32.424Z
 updated-on: 2023-11-07T16:11:32.446Z
 published-on: 2023-11-07T16:11:32.470Z
 f_image:
-  url: /assets/images/digitale-transformation.png
+  url: /assets/images/design-ohne-titel.svg
 f_prev-text: Die digitale Transformation ist in der heutigen Geschäftswelt ein
   unverzichtbarer Schritt, um konkurrenzfähig zu bleiben. Für mittelständische
   Unternehmen ist der Übergang von einer analogen zu...
@@ -36,9 +36,9 @@ seo:
     <meta property="og:url" content="https://wx1.de/blog-posts/digitale-transformation-im-mittelstand-ein-schritt-f%C3%BCr-schritt-ansatz-zur-vollst%C3%A4ndigen-digitalisierung/">
 
     <meta name="keywords" content="wx1, cloud, wx-one, wxone, wizardtales, iaas, saas, paas, kubernetes, infrastructure, datacenter, csp, digitalisierung">
-  og:image: /assets/images/digitale-transformation.png
+  og:image: /assets/images/design-ohne-titel.svg
 ---
-![](/assets/images/digitale-transformation.png)
+![](/assets/images/design-ohne-titel.svg)
 
 Die digitale Transformation ist in der heutigen Geschäftswelt ein unverzichtbarer Schritt, um konkurrenzfähig zu bleiben. Für mittelständische Unternehmen ist der Übergang von einer analogen zu einer vollständig digitalen Infrastruktur eine Herausforderung, die mit dem richtigen Partner bewältigt werden kann. Im folgenden Artikel skizzieren wir, wie wir einem mittelständischen Unternehmen mit über 500 Mitarbeitern den Übergang in die digitale Ära erleichtert haben.
 
