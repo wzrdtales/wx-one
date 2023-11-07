@@ -13,8 +13,18 @@ layout: "[blog-posts].html"
 date: 2023-11-07T16:11:32.484Z
 seo:
   noindex: false
-  twitter:title: summary
-  twitter:card: summary
+  twitter:title: "WX-ONE - Digitale Transformation im Mittelstand: Ein
+    Schritt-für-Schritt Ansatz zur vollständigen Digitalisierung"
+  twitter:card: "Digitale Transformation im Mittelstand: Ein Schritt-für-Schritt
+    Ansatz zur vollständigen Digitalisierung"
+  og:title: "WX-ONE - Digitale Transformation im Mittelstand: Ein
+    Schritt-für-Schritt Ansatz zur vollständigen Digitalisierung"
+  title: "WX-ONE - Digitale Transformation im Mittelstand: Ein Schritt-für-Schritt
+    Ansatz zur vollständigen Digitalisierung"
+  description: Die digitale Transformation ist in der heutigen Geschäftswelt ein
+    unverzichtbarer Schritt, um konkurrenzfähig zu bleiben. Für mittelständische
+    Unternehmen ist der Übergang von einer analogen zu einer vollständig
+    digitalen Infrastruktur...
 ---
 Die digitale Transformation ist in der heutigen Geschäftswelt ein unverzichtbarer Schritt, um konkurrenzfähig zu bleiben. Für mittelständische Unternehmen ist der Übergang von einer analogen zu einer vollständig digitalen Infrastruktur eine Herausforderung, die mit dem richtigen Partner bewältigt werden kann. Im folgenden Artikel skizzieren wir, wie wir einem mittelständischen Unternehmen mit über 500 Mitarbeitern den Übergang in die digitale Ära erleichtert haben.
 
