@@ -25,6 +25,16 @@ seo:
     unverzichtbarer Schritt, um konkurrenzfähig zu bleiben. Für mittelständische
     Unternehmen ist der Übergang von einer analogen zu einer vollständig
     digitalen Infrastruktur...
+  additional_tags: >-
+    <meta property="og:image:height" content="500">
+
+    <meta property="og:image:width" content="500">
+
+    <meta property="og:site_name" content="WX-ONE">
+
+    <meta property="og:url" content="https://wx1.de">
+
+    <meta name="keywords" content="wx1, cloud, wx-one, wxone, wizardtales, iaas, saas, paas, kubernetes, infrastructure, datacenter, csp, digitalisierung">
 ---
 Die digitale Transformation ist in der heutigen Geschäftswelt ein unverzichtbarer Schritt, um konkurrenzfähig zu bleiben. Für mittelständische Unternehmen ist der Übergang von einer analogen zu einer vollständig digitalen Infrastruktur eine Herausforderung, die mit dem richtigen Partner bewältigt werden kann. Im folgenden Artikel skizzieren wir, wie wir einem mittelständischen Unternehmen mit über 500 Mitarbeitern den Übergang in die digitale Ära erleichtert haben.
 
