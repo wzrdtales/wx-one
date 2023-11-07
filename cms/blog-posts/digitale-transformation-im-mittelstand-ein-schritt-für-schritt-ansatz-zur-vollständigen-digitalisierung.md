@@ -8,8 +8,7 @@ f_image:
   url: /assets/images/digitale-transformation.png
 f_prev-text: Die digitale Transformation ist in der heutigen Geschäftswelt ein
   unverzichtbarer Schritt, um konkurrenzfähig zu bleiben. Für mittelständische
-  Unternehmen ist der Übergang von einer analogen zu einer vollständig digitalen
-  Infrastruktur...
+  Unternehmen ist der Übergang von einer analogen zu...
 tags: blog-posts
 layout: "[blog-posts].html"
 date: 2023-11-07T16:11:32.484Z
