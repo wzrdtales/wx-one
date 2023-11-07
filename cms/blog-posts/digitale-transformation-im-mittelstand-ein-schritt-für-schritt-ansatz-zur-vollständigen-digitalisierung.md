@@ -36,6 +36,8 @@ seo:
 
     <meta name="keywords" content="wx1, cloud, wx-one, wxone, wizardtales, iaas, saas, paas, kubernetes, infrastructure, datacenter, csp, digitalisierung">
 ---
+![](/assets/images/digitale-transformation.png)
+
 Die digitale Transformation ist in der heutigen Geschäftswelt ein unverzichtbarer Schritt, um konkurrenzfähig zu bleiben. Für mittelständische Unternehmen ist der Übergang von einer analogen zu einer vollständig digitalen Infrastruktur eine Herausforderung, die mit dem richtigen Partner bewältigt werden kann. Im folgenden Artikel skizzieren wir, wie wir einem mittelständischen Unternehmen mit über 500 Mitarbeitern den Übergang in die digitale Ära erleichtert haben.
 
 **Vorbereitungsphase:** Eine eingehende IT-Beratung ermöglichte es, die spezifischen Anforderungen des Unternehmens zu ermitteln und einen maßgeschneiderten Digitalisierungsplan zu erstellen.
