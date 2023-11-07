@@ -4,6 +4,8 @@ title: "Digitale Transformation im Mittelstand: Ein Schritt-für-Schritt Ansatz
 created-on: 2023-11-07T16:11:32.424Z
 updated-on: 2023-11-07T16:11:32.446Z
 published-on: 2023-11-07T16:11:32.470Z
+f_image:
+  url: /assets/images/digitale-transformation.png
 f_prev-text: Die digitale Transformation ist in der heutigen Geschäftswelt ein
   unverzichtbarer Schritt, um konkurrenzfähig zu bleiben. Für mittelständische
   Unternehmen ist der Übergang von einer analogen zu einer vollständig digitalen
@@ -35,6 +37,7 @@ seo:
     <meta property="og:url" content="https://wx1.de">
 
     <meta name="keywords" content="wx1, cloud, wx-one, wxone, wizardtales, iaas, saas, paas, kubernetes, infrastructure, datacenter, csp, digitalisierung">
+  og:image: /assets/images/digitale-transformation.png
 ---
 ![](/assets/images/digitale-transformation.png)
 
