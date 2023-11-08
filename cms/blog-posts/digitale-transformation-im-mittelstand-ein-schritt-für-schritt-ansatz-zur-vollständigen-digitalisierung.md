@@ -8,7 +8,7 @@ f_image:
   url: /assets/images/design-ohne-titel.svg
 f_prev-text: Die digitale Transformation ist in der heutigen Geschäftswelt ein
   unverzichtbarer Schritt, um konkurrenzfähig zu bleiben. Für mittelständische
-  Unternehmen ist der Übergang von einer analogen zu...
+  Unternehmen ist...
 tags: blog-posts
 layout: "[blog-posts].html"
 date: 2023-11-07T16:11:32.484Z
@@ -36,7 +36,7 @@ seo:
     <meta property="og:url" content="https://wx1.de/blog-posts/digitale-transformation-im-mittelstand-ein-schritt-f%C3%BCr-schritt-ansatz-zur-vollst%C3%A4ndigen-digitalisierung/">
 
     <meta name="keywords" content="wx1, cloud, wx-one, wxone, wizardtales, iaas, saas, paas, kubernetes, infrastructure, datacenter, csp, digitalisierung">
-  og:image: /assets/images/design-ohne-titel.svg
+  og:image: /assets/images/digitale-transformation.png
 ---
 ![](/assets/images/design-ohne-titel.svg)
 
