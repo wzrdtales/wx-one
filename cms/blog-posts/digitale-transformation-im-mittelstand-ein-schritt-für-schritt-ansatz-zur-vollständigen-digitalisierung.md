@@ -36,7 +36,7 @@ seo:
     <meta property="og:url" content="https://wx1.de/blog-posts/digitale-transformation-im-mittelstand-ein-schritt-f%C3%BCr-schritt-ansatz-zur-vollst%C3%A4ndigen-digitalisierung/">
 
     <meta name="keywords" content="wx1, cloud, wx-one, wxone, wizardtales, iaas, saas, paas, kubernetes, infrastructure, datacenter, csp, digitalisierung">
-  og:image: /assets/images/digitale-transformation.png
+  og:image: /assets/images/design-ohne-titel-14-.png
 ---
 ![](/assets/images/design-ohne-titel.svg)
 
