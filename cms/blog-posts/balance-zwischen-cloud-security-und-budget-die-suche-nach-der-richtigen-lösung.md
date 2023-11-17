@@ -57,17 +57,15 @@ Unternehmer müssen ihre aktuelle Sicherheitslage bewerten und Bereiche ermittel
 
 Kleine und mittlere Unternehmen (KMU) haben oft mit Budgetbeschränkungen zu kämpfen, wenn es um die Implementierung von Cloud-Security und Appliance-Basierte Sicherheit geht. Glücklicherweise gibt es verschiedene Lösungen, die KMU bei der Sicherung ihrer in der Cloud gespeicherten Daten unterstützen können. Öffentliche Clouds sind bei KMU aufgrund ihrer Kosteneffizienz und ihrer starken Sicherheitsmaßnahmen sehr beliebt. Dennoch ziehen immer mehr Unternehmen private Clouds oder hybride Cloud-Lösungen in Betracht, um von zusätzlichen Funktionen und einer besseren Kontrolle über ihre Daten zu profitieren.
 
-### **Open Source und Neuvector**
+Es gibt auch die Möglichkeit, Open Source dafür zu nutzen. Ein Beispiel ist Neuvector, eine Zero-Trust-Sicherheitslösung von SUSE Linux, die sich auf Kubernetes konzentriert. Mit Open Source haben Sie die Möglichkeit, sich zu beteiligen und einen Beitrag zu leisten, indem Sie eigene Funktionen entwickeln oder in Auftrag geben. Das Geschäftsmodell für Open Source ist transparent, da es um die Finanzierung der Projekte geht und nicht nur um das Streben nach großen Gewinnen. Sie können spenden oder auf verschiedene Weise einen Beitrag leisten, um die Zukunft der Software zu sichern. Mehr Informationen unter: *[https://www.suse.com/neuvector/](https://www.suse.com/neuvector/ "https\://www.suse.com/neuvector/")*
 
-Open Source bietet die Kraft der Zusammenarbeit. Ein Beispiel ist Neuvector, eine Zero-Trust-Sicherheitslösung von SUSE Linux, die sich auf Kubernetes konzentriert. Mit Open Source haben Sie die Möglichkeit, sich zu beteiligen und einen Beitrag zu leisten, indem Sie eigene Funktionen entwickeln oder in Auftrag geben. Das Geschäftsmodell für Open Source ist transparent, da es um die Finanzierung der Projekte geht und nicht nur um das Streben nach großen Gewinnen. Sie können spenden oder auf verschiedene Weise einen Beitrag leisten, um die Zukunft der Software zu sichern.
-
-Mehr Informationen unter: *[https://www.suse.com/neuvector/](https://www.suse.com/neuvector/ "https\://www.suse.com/neuvector/")*
+Ergänzend dazu ist auch die Open Source SIEM und XDR Solution Wazuh ein weiteres Security Tool. Mehr Informationen unter: <https://wazuh.com/>
 
 **Ein Beispiel aus der Praxis**
 
 Um die Wirksamkeit unseres Ansatzes zu veranschaulichen, betrachten wir ein hypothetisches Beispiel.
 
-Stellen Sie sich ein mittelständisches Unternehmen vor, das traditionelles Cloud-Computing betreibt. Die Firma steht vor einem Konflikt: Sie möchte ihre Sicherheit erhöhen, aber gleichzeitig die knappen Budget Ressourcen nicht ausreizen.
+Stellen Sie sich ein mittelständisches Unternehmen vor, das traditionelles Cloud-Computing betreibt. Die Firma steht vor einem Konflikt: Sie möchte ihre Sicherheit erhöhen, aber gleichzeitig die knappen Budget Ressourcen nicht ausreizen. 
 
 Nach einer gründlichen Analyse ihrer Situation entscheiden sie sich für die Migration ihrer Daten und Dienste in unsere preiswerte Cloud-Plattform. Dies ermöglicht es ihnen, ihre Daten sicher zu speichern, zu verwalten und zu schützen, ohne eine kostspielige eigene Infrastruktur aufzubauen und zu warten.
 
@@ -113,15 +111,13 @@ In der heutigen Geschäftswelt müssen Unternehmen nicht länger zwischen Sicher
 
 **Ihre Checkliste für die Auswahl der richtigen Cloud**
 
-1. ***Bestimmen Sie Ihr Budget für Cloud-Dienste –** Gesamtbudget inkl. ein Puffer für Wachstum.*
-2. ***Beurteilen Sie Ihre spezifischen Bedürfnisse und Anforderungen –** 3 Szenarien worst-, real- und bestcase.*
-3. ***Vergleichen Sie die Preisoptionen verschiedener Cloud-Anbieter –** immer im Einklang mit den definierten Szenarien.*
-4. ***Berücksichtigen Sie die Skalierbarkeit und Flexibilität des Cloud-Dienstes –** Hier hilft es in die AGBs genau zu schauen, welche zusätzliche Kosten entstehen könnten.*
-5. ***Bewerten Sie die Sicherheitsmaßnahmen und Datenschutzrichtlinien, die vorhanden sind –** Wo wird die Cloud betrieben? Sind die Bedingungen DSGVO-konform?*
-6. ***Achten Sie auf zusätzliche Funktionen und Dienste, die im Preis inbegriffen sein können –** Sind es adäquate oder irrelevante Funktionen, die den Preis aufstocken?*
-7. ***Prüfen Sie den Ruf und die Zuverlässigkeit des Cloud-Anbieters –** Unterscheiden Sie rational zwischen Prestige Brands und tatsächliche Qualität.*
-8. ***Lesen Sie Bewertungen und Erfahrungsberichte von anderen Kunden –** Unterscheiden Sie auch hier rational zwischen sachliche Berichte und Hype Berichte.*
-9. ***Treffen Sie eine endgültige Entscheidung auf der Grundlage Ihres Budgets und des Wertes, den der Cloud-Dienst bietet –** Entscheiden Sie sich für einen Dienstleiter oder einen echten Partner für die Zukunft.*
+1. **\*Bestimmen Sie Ihr Budget für Cloud-Dienste –** Gesamtbudget inkl. ein Puffer für Wachstum.*
+2. **\*Beurteilen Sie Ihre spezifischen Bedürfnisse und Anforderungen –** 3 Szenarien worst-, real- und bestcase.*
+3. **\*Vergleichen Sie die Preisoptionen verschiedener Cloud-Anbieter –** immer im Einklang mit den definierten Szenarien. Geben Sie besonderen Fokus auf die Qualität des Services. Zu niedrige Preise können zulasten der Qualität gehen.*
+4. **\*Berücksichtigen Sie die Skalierbarkeit und Flexibilität des Cloud-Dienstes –** Hier hilft es in die AGB genau zu schauen, welche zusätzliche Kosten entstehen könnten.*
+5. **\*Bewerten Sie die Sicherheitsmaßnahmen und Datenschutzrichtlinien, die vorhanden sind –** Wo wird die Cloud betrieben? Sind die Bedingungen DSGVO-konform?*
+6. **\*Achten Sie auf zusätzliche Funktionen und Dienste, die im Preis inbegriffen sein können –** Sind es adäquate oder irrelevante Funktionen, die den Preis aufstocken?*
+7. **\*Treffen Sie eine endgültige Entscheidung auf der Grundlage Ihres Budgets und des Wertes, den der Cloud-Dienst bietet –** Entscheiden Sie sich für einen Dienstleiter oder einen echten Partner für die Zukunft.*
 
 Anhand dieser Checkliste können Sie den richtigen Cloud-Dienst auswählen, der zu Ihrem Budget passt und Ihre geschäftlichen Anforderungen erfüllt.
 
