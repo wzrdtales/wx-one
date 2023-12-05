@@ -1,5 +1,5 @@
 ---
-title: Ist Ihr Startup bereit für den großen Sprung?
+title: "Der Sprung in die Zukunft: Wie Start-ups mit Cloud-Technologie Durchstarten"
 created-on: 2023-12-04T21:54:19.660Z
 updated-on: 2023-12-04T21:54:19.681Z
 published-on: 2023-12-04T21:54:19.694Z
@@ -13,18 +13,17 @@ layout: "[blog-posts].html"
 date: 2023-12-04T21:54:19.705Z
 seo:
   noindex: false
-  twitter:title: WX-ONE - Wie junge Start-ups den Weg in die Cloud meistern können
-    – die ultimative Anleitung
-  twitter:card: Wie junge Start-ups den Weg in die Cloud meistern können – die
-    ultimative Anleitung
-  title: WX-ONE - Wie junge Start-ups den Weg in die Cloud meistern können – die
-    ultimative Anleitung
-  description: In der Welt des Unternehmertums ist Wachstum ein zweischneidiges
-    Schwert. Einerseits öffnet es Türen zu neuen Möglichkeiten und
-    Marktanteilen, andererseits bringt es eine Fülle von Herausforderungen mit
-    sich, insbesondere...
-  og:title: WX-ONE - Wie junge Start-ups den Weg in die Cloud meistern können –
-    die ultimative Anleitung
+  twitter:title: "WX-ONE - Der Sprung in die Zukunft: Wie Start-ups mit
+    Cloud-Technologie Durchstarten"
+  twitter:card: "Der Sprung in die Zukunft: Wie Start-ups mit Cloud-Technologie Durchstarten"
+  title: "WX-ONE - Der Sprung in die Zukunft: Wie Start-ups mit Cloud-Technologie
+    Durchstarten"
+  description: In der rasanten Welt des Unternehmertums ist Wachstum ein
+    zweischneidiges Schwert. Einerseits öffnet es Türen zu neuen Möglichkeiten
+    und Marktanteilen, andererseits bringt es eine Fülle von Herausforderungen
+    mit sich, insbesondere...
+  og:title: "WX-ONE - Der Sprung in die Zukunft: Wie Start-ups mit
+    Cloud-Technologie Durchstarten"
   og:image: /assets/images/saisonale-stürme.png
   additional_tags: >-
     <meta property="og:image:height" content="500">
@@ -33,7 +32,7 @@ seo:
 
     <meta property="og:site_name" content="WX-ONE">
 
-    <meta property="og:url" content="https://wx1.de/blog-posts/wie-junge-start-ups-den-weg-in-die-cloud-meistern-k%C3%B6nnen>
+    <meta property="og:url" content="https://wx1.de/blog-posts/der-sprung-in-die-zukunft-wie-start-ups-mit-cloud-technologie-durchstarten>
 
     <meta name="keywords" content="wx1, cloud, wx-one, wxone, wizardtales, iaas, saas, paas, kubernetes, infrastructure, datacenter, csp, digitalisierung,sicherheit,cloudsicherheit, cloud-sicherheit, budget, cloudsecurity, cloud-security, cloudcomputing, cloud-computing, startup, start-up, Anleitung">
 ---
