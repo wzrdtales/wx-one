@@ -23,12 +23,12 @@ seo:
     <meta property="og:url" content="https://wx1.de/blog-posts/entfesseln-sie-die-macht-der-ki-in-cloud-diensten>
 
     <meta name="keywords" content="wx1, cloud, wx-one, wxone, wizardtales, iaas, saas, paas, kubernetes, infrastructure, datacenter, csp, ki, kuenstlicheintelligenz, digitalisierung, sicherheit, cloudsicherheit, cloud-sicherheit, budget, cloudsecurity, cloud-security, cloudcomputing, cloud-computing">
-  twitter:title: WX-ONE - Entfesseln Sie die Macht der KI in Cloud-Diensten!
+  twitter:title: Entfesseln Sie die Macht der KI in Cloud-Diensten mit WX-ONE
   noindex: false
-  og:title: WX-ONE - Entfesseln Sie die Macht der KI in Cloud-Diensten!
+  og:title: Entfesseln Sie die Macht der KI in Cloud-Diensten mit WX-ONE
   twitter:card: Entfesseln Sie die volle Macht der künstlichen Intelligenz in
     Cloud-Diensten und erleben Sie eine neue Ära des Cloud-Computings.
-  title: WX-ONE - Entfesseln Sie die Macht der KI in Cloud-Diensten!
+  title: Entfesseln Sie die Macht der KI in Cloud-Diensten mit WX-ONE
   og:image: /assets/images/blog-visuals.png
   description: Die kontinuierliche Weiterentwicklung von Technologie ermöglicht es
     Unternehmen heute, die enorme Leistungsfähigkeit der künstlichen Intelligenz
