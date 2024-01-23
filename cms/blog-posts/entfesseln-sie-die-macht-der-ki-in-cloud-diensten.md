@@ -1,5 +1,5 @@
 ---
-title: Entfesseln Sie die Macht der KI in Cloud-Diensten!
+title: WX-ONE - KI in Cloud-Diensten
 created-on: 2024-01-10T22:01:23.093Z
 updated-on: 2024-01-10T22:01:23.113Z
 published-on: 2024-01-10T22:01:23.126Z
