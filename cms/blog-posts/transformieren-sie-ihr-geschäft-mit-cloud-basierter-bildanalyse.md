@@ -1,5 +1,5 @@
 ---
-title: Transformieren Sie Ihr Geschäft mit Cloud-basierter Bildanalyse!
+title: WX- ONE - Cloud-basierte Bildanalyse
 created-on: 2024-01-17T22:26:07.795Z
 updated-on: 2024-01-17T22:26:07.811Z
 published-on: 2024-01-17T22:26:07.821Z
