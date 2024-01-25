@@ -2,7 +2,7 @@
 title: "Texterkennung neu gedacht: Wie die Cloud Ihre Datenarbeit vereinfacht."
 created-on: 2024-01-23T15:59:09.209Z
 updated-on: 2024-01-23T15:59:09.224Z
-published-on: 2024-01-24T20:24:35.418Z
+published-on: 2024-01-25T11:47:44.386Z
 f_image:
   url: /assets/images/blog-visuals-1-.png
 f_prev-text: In unserer schnelllebigen, digitalen Welt sind Textdaten
