@@ -44,7 +44,7 @@ CVMs sind also trotzdem eine interessante Technologie, diese kommt so wie das im
 
 # Was genau ist confidential computing und was sind CVMs?
 
-Confidential computing ist eine CPU Technologie, welche Entwickelt wurde, um die Sicherheit in geteilten Umgebungen zu verbessern und arbeitet eng mit dem sogenannten TPM Modul zusammen. Allen voran, damit die Cloud. CVMs, confidential VMs, sind dementsprechend also VMs, die diese Technologie nutzen. Es handelt sich kurz gesagt um eine Verschlüsselung des RAM Speichers, jedoch individuell je VM und nicht für das gesamte System. Dies hat den Vorteil, dass zwei VMs selbst bei einer Sicherheitslücke, dieser nicht einfach ausgelesen werden kann. Das Konzept in freier Wildbahn hat zuallererst Intel an den Markt gebracht. Intel ist hier sogar noch einen Schritt weiter gegangen und mit Ihrer SGX Technologie, das mit sogenannten Enklaven arbeitet, dieses Konzept statt auf die Maschine, auf einzelne Programme erweitert.
+Confidential computing  ist eine CPU Technologie, welche Entwickelt wurde, um die Sicherheit in geteilten Umgebungen zu verbessern und arbeitet eng mit dem sogenannten TPM Modul zusammen. Allen voran, damit die Cloud. CVMs, confidential VMs, sind dementsprechend also VMs, die diese Technologie nutzen. Es handelt sich kurz gesagt um eine Verschlüsselung des RAM Speichers, jedoch individuell je VM und nicht für das gesamte System. Dies hat den Vorteil, dass zwei VMs selbst bei einer Sicherheitslücke, dieser nicht einfach ausgelesen werden kann. Das Konzept in freier Wildbahn hat zuallererst Intel an den Markt gebracht. Intel ist hier sogar noch einen Schritt weiter gegangen und mit Ihrer SGX Technologie, das mit sogenannten Enklaven arbeitet, dieses Konzept statt auf die Maschine, auf einzelne Programme erweitert.
 
 Kurz gesagt, der Zugriff auf den Speicher wird durch kundenindividuelle Verschlüsselung erschwert. 
 
@@ -53,3 +53,17 @@ Ein weiteres Konzept, welches sich hieraus etablierte, ist die sogenannte Remote
 
 
 ##### Detail Part
+
+
+
+# Was ist die Remote Attestation?
+
+Bei der Remote Attestation handelt es sich um eine Weiterentwicklung des CC¹ mithilfe der einer weiteren Maschine in Ihrem System der Sie vertrauen bestätigt werden kann, das 
+
+
+
+
+
+
+
+¹ Confidential Computing
