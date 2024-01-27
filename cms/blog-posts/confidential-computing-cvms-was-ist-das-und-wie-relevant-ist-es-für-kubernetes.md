@@ -22,6 +22,26 @@ WX-ONE bietet nun im Beta Programm auch Confidential VMs (CVMs) an, wir starten 
 
 Wie immer werden wir versuchen, es gerecht für jeden Interessierten zu gestalten und trotzdem in gewohnter fachlicher Tiefe zu erklären. Da es sich in diesem Fall um ein komplexes Thema handelt, teilen wir jeden einzelnen Block in einen Detail Part und einen generalisierten auf. Wenn Sie sich nicht für die tiefen Details interessieren, überspringen Sie einfach jeweils das entsprechende Segment.
 
+# Wie vertrauenswürdig sind CVMs?
+
+Klären wir zuallererst den Elefanten im Raum. Schützt mich eine CVM vor dem Cloud Provider?
+
+Die Antwort ist ein ganz klares nein, wer sich erhofft CVMs könnten einen Schutz etwa vor US-Geheimdiensten darstellen, der irrt sich leider. Sie machen es ganz klar schwieriger, jedoch verschieben CVMs das Problem lediglich vom Cloud-Provider zum Hersteller den CPUs. Alle relevanten CPU Hersteller sind jedoch US-Konzerne und damit kann die Frage relativ einfach beantwortet werden:
+
+\- Keiner kann garantieren, dass CPU Hersteller nicht die Zertifikate herausrücken, die auf die CPUs geschrieben werden.
+
+\- Keiner kann garantieren, dass Cloud Provider XYZ keinen geheimen Deal mit CPU Hersteller XYZ hat und seine eigenen Zertifikate auf die CPUs schreiben lässt.
+
+Wovor eine CVM und Confidential Computing generell allerdings schützt:
+
+\- Vor Mitarbeiter XYZ von Public Cloud Provider XYZ
+
+\- Vor Hackern, die es schaffen, ins Datenzentrum zu spazieren, oder sonstiger weise Zugriff auf den Hypervisor bekommen, auf denen Ihre VMs liegen.
+
+CVMs sind also trotzdem eine interessante Technologie, diese kommt so wie das immer ist, jedoch mit einem Preis, auf den wir später eingehen.
+
+
+
 # Was genau ist confidential computing und was sind CVMs?
 
 Confidential computing ist eine CPU Technologie, welche Entwickelt wurde, um die Sicherheit in geteilten Umgebungen zu verbessern und arbeitet eng mit dem sogenannten TPM Modul zusammen. Allen voran, damit die Cloud. CVMs, confidential VMs, sind dementsprechend also VMs, die diese Technologie nutzen. Es handelt sich kurz gesagt um eine Verschlüsselung des RAM Speichers, jedoch individuell je VM und nicht für das gesamte System. Dies hat den Vorteil, dass zwei VMs selbst bei einer Sicherheitslücke, dieser nicht einfach ausgelesen werden kann. Das Konzept in freier Wildbahn hat zuallererst Intel an den Markt gebracht. Intel ist hier sogar noch einen Schritt weiter gegangen und mit Ihrer SGX Technologie, das mit sogenannten Enklaven arbeitet, dieses Konzept statt auf die Maschine, auf einzelne Programme erweitert.
@@ -29,5 +49,7 @@ Confidential computing ist eine CPU Technologie, welche Entwickelt wurde, um die
 Kurz gesagt, der Zugriff auf den Speicher wird durch kundenindividuelle Verschlüsselung erschwert. 
 
 Ein weiteres Konzept, welches sich hieraus etablierte, ist die sogenannte Remote attestation, auf die wir im nächsten Abschnitt eingehen.
+
+
 
 ##### Detail Part
