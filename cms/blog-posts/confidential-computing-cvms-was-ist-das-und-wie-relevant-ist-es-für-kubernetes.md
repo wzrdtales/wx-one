@@ -62,7 +62,7 @@ Insgesamt bildet Measured Boot somit das Rückgrat eines vertrauenswürdigen Sta
 
 ### Integritätsmessungen
 
-Während des Bootvorgangs erstellt Measured Boot kryptografische Hash-Werte oder "Messungen" von entscheidenden Komponenten wie dem Bootloader, dem Betriebssystem-Kernel und wichtigen Treibern. Diese Messungen dienen als digitale Fingerabdrücke, die die Unversehrtheit jeder Komponente dokumentieren.
+Während des Bootvorgangs erstellt Measured Boot kryptografische Hash-Werte oder "Messungen" von entscheidenden Komponenten wie dem Bootloader, dem Betriebssystem-Kernel sowie wichtigen Treibern. Diese Messungen dienen als digitale Fingerabdrücke, die die Unversehrtheit jeder Komponente dokumentieren.
 
 ### Platform Configuration Register (PCR)
 
