@@ -58,7 +58,7 @@ Bei der Remote Attestation handelt es sich um eine Weiterentwicklung des CC¹. M
 
 ##### Detail Part
 
-Während über Linux IMA theoretisch auch Applikationen aus dem Userspace² attestiert werden können, ist dies nicht deterministisch über PCRs möglich. Auch wenn es hier fortschritt gibt (https://lwn.net/Articles/938914/)
+Während über Linux IMA theoretisch auch Applikationen aus dem Userspace² attestiert werden können, ist dies derzeit nicht deterministisch über PCRs möglich. Auch wenn es hier Fortschritt gibt (https://lwn.net/Articles/938914/). Hier wird dann für gewöhnlich auf Policen zurückgegriffen. 
 
 
 
