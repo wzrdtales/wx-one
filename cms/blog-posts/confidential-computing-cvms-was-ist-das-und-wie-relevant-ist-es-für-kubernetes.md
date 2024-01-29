@@ -52,7 +52,21 @@ Ein weiteres Konzept, welches sich hieraus etablierte, ist die sogenannte Remote
 
 # Was ist die Remote Attestation?
 
-Bei der Remote Attestation handelt es sich um eine Weiterentwicklung des CC¹. Mithilfe einer weiteren Maschine in Ihrem System der Sie vertrauen kann bestätigt werden, dass es sich um eine unverändertes Image handelt und die Integrität der neuen Maschine gewährleistet ist. Dies bezieht sich jedoch regelmäßig nur auf das Image das Sie zur Verfügung gestellt haben. Während über  Linux IMA theoretisch auch Applikationen aus dem Userspace², ist dies nicht zuverlässig
+Bei der Remote Attestation handelt es sich um eine Weiterentwicklung des CC¹. Mithilfe einer weiteren Maschine in Ihrem System der Sie vertrauen kann bestätigt werden, dass es sich um eine unverändertes Image handelt und die Integrität der neuen Maschine gewährleistet ist. Dies bezieht sich jedoch regelmäßig nur auf das Image das Sie zur Verfügung gestellt haben. Während über  Linux IMA theoretisch auch Applikationen aus dem Userspace², ist dies nicht deterministisch
+
+
+
+# Die Sache mit SGX...
+
+Nun gibt es da noch SGX. SGX erlaubt es auch einzelne Programme zu kapseln. Der Elefant im Raum, warum dann nicht SGX und lieber TEEs wie AMD SEV-SNP? Einige Gründe:
+
+* SGX benötigt explizite Anpassung der Applikationen, die gekapselt werden sollen, TEEs nicht
+* SGX ist bis zu 22x langsamer als TEEs, eine mini VM mit nur einer einzigen Applikation, wie CoCO³, ist also die sinnvollere Alterantive
+
+
+
+
 
 ¹ Confidential Computing\
-² Applikationen, die sich nicht im Kernel (Hauptbetriebssystemkomponente) befinden, sondern im Bereich des Benutzers
+² Applikationen, die sich nicht im Kernel (Hauptbetriebssystemkomponente) befinden, sondern im Bereich des Benutzers\
+³ Confidential Containers
