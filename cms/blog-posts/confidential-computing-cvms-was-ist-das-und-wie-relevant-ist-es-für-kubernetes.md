@@ -52,7 +52,13 @@ Ein weiteres Konzept, welches sich hieraus etablierte, ist die sogenannte Remote
 
 # Was ist die Remote Attestation?
 
-Bei der Remote Attestation handelt es sich um eine Weiterentwicklung des CC¹. Mithilfe einer weiteren Maschine in Ihrem System der Sie vertrauen kann bestätigt werden, dass es sich um eine unverändertes Image handelt und die Integrität der neuen Maschine gewährleistet ist. Dies bezieht sich jedoch regelmäßig nur auf das Image das Sie zur Verfügung gestellt haben. Während über  Linux IMA theoretisch auch Applikationen aus dem Userspace², ist dies nicht deterministisch
+Bei der Remote Attestation handelt es sich um eine Weiterentwicklung des CC¹. Mithilfe einer weiteren Maschine in Ihrem System der Sie vertrauen kann bestätigt werden, dass es sich um eine unverändertes Image handelt und die Integrität der neuen Maschine gewährleistet ist. Dies bezieht sich jedoch regelmäßig nur auf das Image das Sie zur Verfügung gestellt haben und nur bedingt auf Inhalte und Programme die nach dem Boot hinzukommen, genauer gesagt extern hinzugefügt werden. Die Technik mit der Remote Attestation arbeitet heißt übrigens Measured Boot.
+
+
+
+##### Detail Part
+
+Während über Linux IMA theoretisch auch Applikationen aus dem Userspace² attestiert werden können, ist dies nicht deterministisch über PCRs möglich. Auch wenn es hier fortschritt gibt (https://lwn.net/Articles/938914/)
 
 
 
