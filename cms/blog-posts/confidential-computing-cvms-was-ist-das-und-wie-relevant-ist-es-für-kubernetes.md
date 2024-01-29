@@ -54,8 +54,6 @@ Ein weiteres Konzept, welches sich hieraus etablierte, ist die sogenannte Remote
 
 Bei der Remote Attestation handelt es sich um eine Weiterentwicklung des CC¹. Mithilfe einer weiteren Maschine in Ihrem System der Sie vertrauen kann bestätigt werden, dass es sich um eine unverändertes Image handelt und die Integrität der neuen Maschine gewährleistet ist. Dies bezieht sich jedoch regelmäßig nur auf das Image das Sie zur Verfügung gestellt haben und nur bedingt auf Inhalte und Programme die nach dem Boot hinzukommen, genauer gesagt extern hinzugefügt werden. Die Technik mit der Remote Attestation arbeitet heißt übrigens Measured Boot.
 
-
-
 ##### Detail Part
 
 Mit Measured Boot wird eine robuste Vertrauenskette geschaffen. Jeder Schritt des Bootvorgangs zertifiziert den vorherigen, und selbst bei einer Sicherheitslücke bleibt die Kette intakt.
@@ -76,9 +74,7 @@ Was Measured Boot besonders macht, ist seine Fähigkeit zur kontinuierlichen Üb
 
 ### Die Sache mit dem Userspace...
 
-Während über Linux IMA theoretisch auch Applikationen aus dem Userspace² attestiert werden können, ist dies derzeit nicht deterministisch über PCRs möglich. Auch wenn es hier Fortschritt gibt (https://lwn.net/Articles/938914/). Hier wird dann für gewöhnlich auf Policen zurückgegriffen. 
-
-
+Während über Linux IMA theoretisch auch Applikationen aus dem Userspace² attestiert und enforced werden können, ist dies derzeit nicht deterministisch über PCRs möglich. Auch wenn es hier Fortschritt gibt (https://lwn.net/Articles/938914/). Hier wird dann für gewöhnlich direkt auf IMA auf Policen zurückgegriffen. Mit dem Thema IMA beschäftigen wir uns demnächst in einem eigenem Beitrag.
 
 # Die Sache mit SGX...
 
@@ -86,10 +82,6 @@ Nun gibt es da noch SGX. SGX erlaubt es auch einzelne Programme zu kapseln. Der 
 
 * SGX benötigt explizite Anpassung der Applikationen, die gekapselt werden sollen, TEEs nicht
 * SGX ist bis zu 22x langsamer als TEEs, eine mini VM mit nur einer einzigen Applikation, wie CoCO³, ist also die sinnvollere Alterantive
-
-
-
-
 
 ¹ Confidential Computing\
 ² Applikationen, die sich nicht im Kernel (Hauptbetriebssystemkomponente) befinden, sondern im Bereich des Benutzers\
