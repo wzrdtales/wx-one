@@ -70,6 +70,10 @@ Bei CVMs im Speziellen handelt es sich entweder um AMD SEV, SEV-ES, SEV-SNP, ode
 
 Die Industrie wendet sich immer mehr von SGX ab, dies hat viele Gründe, angefangen bei dem wirklich unglaublich großen Performance Impact, Memory Limitierungen, aber nicht zuletzt der Unsicherheit, was Intel mit der Technologie vorhat. Denn Intel hat SGX offiziell für consumer CPUs eingestellt, für Intel XEON Prozessoren existiert SGX derweil aktuell noch, die Zukunft ist allerdings mindestens ungewiss.
 
+Währen sich AMD SEV und seine Weiterentwicklung SEV-ES hauptsächlich mit der Verschlüsselung (und zusammen mit einem vTPM auch um die Remote Attestation) beschäftigen, führt AMD SEV-SNP auch noch das Konzept der SVSM⁴ ein.
+
+SVSMs sind Applikationen die im selben Context wie die VM gestartet werden. Der Clou, weder die VM noch der Hypervisor können auf die SVSM direkt zugreifen. Ein Beispiel eines Services der als SVSM ausgeliefert wird ist ein vTPM als SVSM. Dabei kommuniziert die VM über ein spezielles Kernel Protokol mit dem jeweiligem SVSM, in diesem Fall unserem TPM. Der Vorteil, das TPM ist vor manipulationen geschützt. Ist das TPM ephemeral kann sogar der Cloud Provider keine Daten mehr einschleusen. 
+
 
 
 # Was ist die Remote Attestation?
@@ -118,4 +122,5 @@ Zusammen mit Remote Attestation, und entweder einer cleveren Nutzung der Linux I
 
 ¹ Confidential Computing\
 ² Applikationen, die sich nicht im Kernel (Hauptbetriebssystemkomponente) befinden, sondern im Bereich des Benutzers\
-³ Confidential Containers
+³ Confidential Containers\
+⁴ Secure VM Service Module
