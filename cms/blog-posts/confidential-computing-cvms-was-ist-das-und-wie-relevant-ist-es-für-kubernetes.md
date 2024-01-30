@@ -43,7 +43,8 @@ Klären wir zuallererst den Elefanten im Raum. Schützt mich eine CVM vor dem Cl
 Die Antwort ist ein ganz klares nein, wer sich erhofft CVMs könnten einen Schutz etwa vor US-Geheimdiensten darstellen, der irrt sich leider. Sie machen es ganz klar schwieriger, jedoch verschieben CVMs das Problem lediglich vom Cloud-Provider zum Hersteller den CPUs. Alle relevanten CPU Hersteller sind jedoch US-Konzerne und damit kann die Frage relativ einfach beantwortet werden:
 
 * Keiner kann garantieren, dass CPU Hersteller nicht die Zertifikate herausrücken, die auf die CPUs geschrieben werden.
-*  Keiner kann garantieren, dass Cloud Provider XYZ keinen geheimen Deal mit CPU Hersteller XYZ hat und seine eigenen Zertifikate auf die CPUs schreiben lässt.
+* Keiner kann garantieren, dass es keine Backdoors im CPU selbst gibt
+* Keiner kann garantieren, dass Cloud Provider XYZ keinen geheimen Deal mit CPU Hersteller XYZ hat und seine eigenen Zertifikate auf die CPUs schreiben lässt.
 * Sofern die Firmware für den vTPM nicht open source ist, kann auch durch den TPM manipuliert und der Stack angegriffen werden
 
 Wovor eine CVM und Confidential Computing generell allerdings schützt:
