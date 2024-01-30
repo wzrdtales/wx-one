@@ -153,6 +153,14 @@ Zu guter Letzt noch einmal zum Positiven. Die CVM sorgt dafür, dass der Workloa
 
 Zusammen mit Remote Attestation, und entweder einer cleveren Nutzung der Linux IMA oder aber Mini VMs, ala CoCO³, lassen sich außerdem sehr interessante Hochsicherheitssysteme aufbauen, die sich vollständig attestieren lassen.
 
+## CVMs und Kubernetes
+
+Zusammen mit Linux IMA und der Remote Attestation lässt sich bereits etwa eine besonders gesicherte Infrastruktur errichten. Etwa kann eingegrenzt werden, mit welchem Tooling Container ausgeführt werden können. Etwa das Erzwingen von notarisierten Container Images, um nur vertraute Workloads auszuführen. Mithilfe von SVSM wird dieser Prozess noch einmal vertrauenswürdiger.
+
+Kubernetes selbst profitiert von CVMs nicht direkt, jedoch können Workloads so sensibel sein, dass auf CVMs zurückgegriffen wird.
+
+
+
 ¹ Confidential Computing\
 ² Applikationen, die sich nicht im Kernel (Hauptbetriebssystemkomponente) befinden, sondern im Bereich des Benutzers\
 ³ Confidential Containers\
