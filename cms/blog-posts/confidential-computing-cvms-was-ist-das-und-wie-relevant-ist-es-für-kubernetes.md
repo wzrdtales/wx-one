@@ -54,6 +54,8 @@ Wovor eine CVM und Confidential Computing generell allerdings schützt:
 
 CVMs sind also trotzdem eine interessante Technologie, diese kommt so wie das immer ist, jedoch mit einem Preis, auf den wir später eingehen.
 
+
+
 # Was genau ist confidential computing und was sind CVMs?
 
 Confidential computing  ist eine CPU Technologie, welche Entwickelt wurde, um die Sicherheit in geteilten Umgebungen zu verbessern und arbeitet eng mit dem sogenannten TPM Modul zusammen. Allen voran, damit die Cloud. CVMs, confidential VMs, sind dementsprechend also VMs, die diese Technologie nutzen. Es handelt sich kurz gesagt um eine Verschlüsselung des RAM Speichers, jedoch individuell je VM und nicht für das gesamte System. Dies hat den Vorteil, dass zwei VMs selbst bei einer Sicherheitslücke, dieser nicht einfach ausgelesen werden kann. Das Konzept in freier Wildbahn hat zuallererst Intel an den Markt gebracht. Intel ist hier sogar noch einen Schritt weiter gegangen und mit Ihrer SGX Technologie, das mit sogenannten Enklaven arbeitet, dieses Konzept statt auf die Maschine, auf einzelne Programme erweitert.
@@ -64,9 +66,17 @@ Ein weiteres Konzept, welches sich hieraus etablierte, ist die sogenannte Remote
 
 ##### Detail Part
 
+Bei CVMs im Speziellen handelt es sich entweder um AMD SEV, SEV-ES, SEV-SNP, oder Intel TDX. Auch Intel SGX mit Ihren enklaven gibt es noch, hier werden keine ganzen VMs, sondern einzelne Programme in eine enclave verpackt. 
+
+Die Industrie wendet sich immer mehr von SGX ab, dies hat viele Gründe, angefangen bei dem wirklich unglaublich großen Performance Impact, Memory Limitierungen, aber nicht zuletzt der Unsicherheit, was Intel mit der Technologie vorhat. Denn Intel hat SGX offiziell für consumer CPUs eingestellt, für Intel XEON Prozessoren existiert SGX derweil aktuell noch, die Zukunft ist allerdings mindestens ungewiss.
+
+
+
 # Was ist die Remote Attestation?
 
 Bei der Remote Attestation handelt es sich um eine Weiterentwicklung des CC¹. Mithilfe einer weiteren Maschine in Ihrem System der Sie vertrauen kann bestätigt werden, dass es sich um eine unverändertes Image handelt und die Integrität der neuen Maschine gewährleistet ist. Dies bezieht sich jedoch regelmäßig nur auf das Image das Sie zur Verfügung gestellt haben und nur bedingt auf Inhalte und Programme die nach dem Boot hinzukommen, genauer gesagt extern hinzugefügt werden. Die Technik mit der Remote Attestation arbeitet findet man unter den Namen Measured Boot (Microsoft) oder IMA (Linux).
+
+
 
 ##### Detail Part
 
