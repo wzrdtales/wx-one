@@ -84,7 +84,7 @@ Dann kommen noch schwer erfassbare Kosten hinzu. Evtl. benötigte Mitarbeiter od
 
 # Eigentlich alles noch gar nicht fertig!
 
-Einen großen Haken gibt es bei dem Thema CVMs und insbesondere die neuesten Iterationen: SEV-SNP mit SVSMs als neuer Komponente. So sind bis heute die notwendigen Änderungen insb. für die Remote Attestation noch gar nicht im Linux Kernel angekommen. Das Gleiche gilt für die SVSMs. Bei den Providern, und damit sprechen wir über alle egal ob AWS, Azure, oder auch wir gilt daher:
+Einen großen Haken gibt es bei dem Thema CVMs und insbesondere die neuesten Iterationen: SEV-SNP mit SVSMs als neuer Komponente. So sind bis heute die notwendigen Änderungen insb. für die Remote Attestation noch gar nicht im Linux Kernel angekommen. Das Gleiche gilt für die SVSMs. Bei den Providern, und damit sprechen wir über alle, egal ob AWS, Azure, oder auch wir, gilt daher:
 
 Die Software hinter der Hardware ist eigentlich noch eine Vorabversion, an der sich noch viel bewegt.
 
