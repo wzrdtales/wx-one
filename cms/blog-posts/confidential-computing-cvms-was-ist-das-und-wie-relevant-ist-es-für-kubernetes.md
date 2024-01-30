@@ -88,6 +88,8 @@ Einen großen Haken gibt es bei dem Thema CVMs und insbesondere die neuesten Ite
 
 Die Software hinter der Hardware ist eigentlich noch eine Vorabversion, an der sich noch viel bewegt.
 
+Übrigens sollten Sie bei sich selbst on-premise die neueste Generation einsetzen wollen, benötigen Sie auch für AMD SEV-SNP einen selbst gebauten Kernel aus dem offiziellem AMD Repo https://github.com/AMDESE/AMDSEV/tree/snp-latest.
+
 Bei den SVSM geht es sogar einen Schritt weiter, den ersten Wurf lieferte AMD, das originale Projekt ist mittlerweile eingestellt, jetzt entwickelt es allen voran SUSE Linux im neuem Coconut SVSM https://github.com/coconut-svsm/svsm
 
 
