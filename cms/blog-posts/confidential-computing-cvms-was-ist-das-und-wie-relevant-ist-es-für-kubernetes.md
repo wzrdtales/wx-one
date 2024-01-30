@@ -31,7 +31,7 @@ Wie immer werden wir versuchen, es gerecht für jeden Interessierten zu gestalte
 * Muss ich durch den Einsatz von CVMs mehr Geld in die Hand nehmen? - **Ja**
 * Wieviel? - **Technologieabhängig, wir betrachten gerade nur die Performance bedingten kosten**
 
-  * TEEs (i.e. AMD-SEV) 20-40% mehrkosten nur durch Performance Verlust
+  * TEEs (i.e. AMD-SEV) 5-30% mehrkosten nur durch Performance Verlust
   * SGX extreme (bis zu 2200% im Vergleich zu TEEs) Mehrkosten nur durch den Performance Verlust
 * Garantiert mir die Remote Attestation einen hundertprozentig unkompromittierten Workload? - **Nein**
 * Können CVMs überprovisioniert werden? - **Im Falle des RAMs, mit den aktuellen CPUs (2024) nein, CPU ja**
@@ -54,8 +54,6 @@ Wovor eine CVM und Confidential Computing generell allerdings schützt:
 
 CVMs sind also trotzdem eine interessante Technologie, diese kommt so wie das immer ist, jedoch mit einem Preis, auf den wir später eingehen.
 
-
-
 # Was genau ist confidential computing und was sind CVMs?
 
 Confidential computing  ist eine CPU Technologie, welche Entwickelt wurde, um die Sicherheit in geteilten Umgebungen zu verbessern und arbeitet eng mit dem sogenannten TPM Modul zusammen. Allen voran, damit die Cloud. CVMs, confidential VMs, sind dementsprechend also VMs, die diese Technologie nutzen. Es handelt sich kurz gesagt um eine Verschlüsselung des RAM Speichers, jedoch individuell je VM und nicht für das gesamte System. Dies hat den Vorteil, dass zwei VMs selbst bei einer Sicherheitslücke, dieser nicht einfach ausgelesen werden kann. Das Konzept in freier Wildbahn hat zuallererst Intel an den Markt gebracht. Intel ist hier sogar noch einen Schritt weiter gegangen und mit Ihrer SGX Technologie, das mit sogenannten Enklaven arbeitet, dieses Konzept statt auf die Maschine, auf einzelne Programme erweitert.
@@ -76,11 +74,25 @@ SVSMs sind Applikationen die im selben Context wie die VM gestartet werden. Der 
 
 
 
+# Was kostet mich das ganze?
+
+Um eine CVM zu starten, können Sie das in aller Regel einfach über den Provider Ihrer Wahl. Mehrkosten können an mehreren Stellen entstehen. Brauchen Sie etwa noch einen Key Management Server, etwa für Festplattenverschlüsselungen und andere kryptografische Routinen. Der vTPM kann kosten erzeugen, sollte er persistenten Speicher besitzen. Dies ist etwa bei Azure der Fall.
+
+Dann kommen noch schwer erfassbare Kosten hinzu. Evtl. benötigte Mitarbeiter oder Technologien zur Unterstützung bei der Validierung der Remote Attestation. Das Ausgleichen des Performance-Defizits von CVMs und nicht zuletzt Anpassungen in Ihrem Stack. Denn benötigen Sie auch ein spezielles Image wie z.B. https://ubuntu.com/blog/introducing-confidential-vms-on-ubuntu-pro-for-azure
+
+
+
+# Eigentlich alles noch gar nicht fertig!
+
+Einen großen Haken gibt es bei dem Thema CVMs und insbesondere die neuesten Iterationen: SEV-SNP mit SVSMs als neuer Komponente. So sind bis heute die notwendigen Änderungen insb. für die Remote Attestation noch gar nicht im Linux Kernel angekommen. Das Gleiche gilt für die SVSMs. Bei den Providern, und damit sprechen wir über alle egal ob AWS, Azure, oder auch wir gilt daher:
+
+Die Software hinter der Hardware ist eigentlich noch eine Vorabversion, an der sich noch viel bewegt.
+
+
+
 # Was ist die Remote Attestation?
 
 Bei der Remote Attestation handelt es sich um eine Weiterentwicklung des CC¹. Mithilfe einer weiteren Maschine in Ihrem System der Sie vertrauen kann bestätigt werden, dass es sich um eine unverändertes Image handelt und die Integrität der neuen Maschine gewährleistet ist. Dies bezieht sich jedoch regelmäßig nur auf das Image das Sie zur Verfügung gestellt haben und nur bedingt auf Inhalte und Programme die nach dem Boot hinzukommen, genauer gesagt extern hinzugefügt werden. Die Technik mit der Remote Attestation arbeitet findet man unter den Namen Measured Boot (Microsoft) oder IMA (Linux).
-
-
 
 ##### Detail Part
 
@@ -111,8 +123,6 @@ Nun gibt es da noch SGX. SGX erlaubt es auch einzelne Programme zu kapseln. Der 
 * SGX benötigt explizite Anpassung der Applikationen, die gekapselt werden sollen, TEEs nicht
 * SGX ist bis zu 22x langsamer als TEEs, eine mini VM mit nur einer einzigen Applikation, wie CoCO³, ist also die sinnvollere Alternative
 * SGX hat ein capped memory limit (64GB bei SGXv2 64bit)
-
-
 
 # Was genau bringt mir eine CVM?
 
