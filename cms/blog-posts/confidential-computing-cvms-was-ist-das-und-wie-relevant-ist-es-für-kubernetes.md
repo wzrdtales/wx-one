@@ -29,7 +29,7 @@ seo:
 
     <meta property="og:site_name" content="WX-ONE">
 
-    <meta property="og:url" content="https://wx1.de/blog-posts/balance-zwischen-cloud-security-und-budget-die-suche-nach-der-richtigen-l%C3%B6sung/">
+    <meta property="og:url" content="https://wx1.de/blog-posts/confidential-computing-cvms-was-ist-das-und-wie-relevant-ist-es-f%C3%BCr-kubernetes/">
 
     <meta name="keywords" content="wx1, cloud, wx-one, wxone, wizardtales, iaas, saas, paas, kubernetes, infrastructure, datacenter, csp, digitalisierung,sicherheit,cloudsicherheit, cloud-sicherheit, budget, cloudsecurity, cloud-security, cloudcomputing, cloud-computing, appliancebasiertesicherheit, appliance basierte sicherheit, appliance-basierte-sicherheit, opensource, open source, neuvector, open-source">
   description: Confidential Computing kurz CVMs, nur ein Hype, oder ein muss? Wir
