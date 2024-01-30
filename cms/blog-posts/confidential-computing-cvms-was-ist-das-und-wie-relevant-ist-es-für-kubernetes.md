@@ -32,7 +32,7 @@ Wie immer werden wir versuchen, es gerecht für jeden Interessierten zu gestalte
 * Wieviel? - **Technologieabhängig, wir betrachten gerade nur die Performance bedingten kosten**
 
   * TEEs (i.e. AMD-SEV) 20-40% mehrkosten nur durch Performance Verlust
-  * SGX 2000-2500% mehrkosten nur durch den Performance Verlust
+  * SGX extreme (bis zu 2200% im Vergleich zu TEEs) Mehrkosten nur durch den Performance Verlust
 * Garantiert mir die Remote Attestation einen 100%ig unkompromittierten Workload? - **Nein**
 * Können CVMs überprovisioniert werden? - **Im Falle des RAMs, mit den aktuellen CPUs (2024) nein, CPU ja**
 
@@ -95,7 +95,8 @@ Während über Linux IMA theoretisch auch Applikationen aus dem Userspace² atte
 Nun gibt es da noch SGX. SGX erlaubt es auch einzelne Programme zu kapseln. Der Elefant im Raum, warum dann nicht SGX und lieber TEEs wie AMD SEV-SNP? Einige Gründe:
 
 * SGX benötigt explizite Anpassung der Applikationen, die gekapselt werden sollen, TEEs nicht
-* SGX ist bis zu 22x langsamer als TEEs, eine mini VM mit nur einer einzigen Applikation, wie CoCO³, ist also die sinnvollere Alterantive
+* SGX ist bis zu 22x langsamer als TEEs, eine mini VM mit nur einer einzigen Applikation, wie CoCO³, ist also die sinnvollere Alternative
+* SGX hat ein capped memory limit (64GB bei SGXv2 64bit)
 
 ¹ Confidential Computing\
 ² Applikationen, die sich nicht im Kernel (Hauptbetriebssystemkomponente) befinden, sondern im Bereich des Benutzers\
