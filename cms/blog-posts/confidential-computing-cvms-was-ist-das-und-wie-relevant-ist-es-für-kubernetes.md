@@ -43,11 +43,11 @@ seo:
 
 WX-ONE bietet nun im Beta Programm auch Confidential VMs (CVMs) an, wir starten diesen Launch, in dem wir damit erst einmal aufräumen: Confidential Computing, der neue Hype? Wir klären auf: Wer braucht es wirklich, was leistet es tatsächlich und decken falsche Versprechungen auf.
 
-## Vorwort
+# Vorwort
 
 Wie immer werden wir versuchen, es gerecht für jeden Interessierten zu gestalten und trotzdem in gewohnter fachlicher Tiefe zu erklären. Da es sich in diesem Fall um ein komplexes Thema handelt, teilen wir jeden einzelnen Block in einen Detail Part und einen generalisierten auf. Wenn Sie sich nicht für die tiefen Details interessieren, überspringen Sie einfach jeweils das entsprechende Segment.
 
-# Die wichtigsten Fragen zuerst
+## Die wichtigsten Fragen zuerst
 
 * Schützt mich eine CVM vor dem Cloud-Provider? - **Nein**
 * Schützt mich eine CVM vor individuellen Attacken durch Mitarbeiter des Cloud-Providers? - **Ja**
@@ -61,7 +61,7 @@ Wie immer werden wir versuchen, es gerecht für jeden Interessierten zu gestalte
 * Garantiert mir die Remote Attestation einen hundertprozentig unkompromittierten Workload? - **Nein**
 * Können CVMs über provisioniert werden? - **Im Falle des RAMs, mit den aktuellen CPUs (2024) nein, CPU ja**
 
-# Wie vertrauenswürdig sind CVMs?
+## Wie vertrauenswürdig sind CVMs?
 
 Klären wir zuallererst den Elefanten im Raum. Schützt mich eine CVM vor dem Cloud-Provider?
 
@@ -79,7 +79,7 @@ Wovor eine CVM und Confidential Computing generell allerdings schützt:
 
 CVMs sind also trotzdem eine interessante Technologie, diese kommt so wie das immer ist, jedoch mit einem Preis, auf den wir später eingehen.
 
-# Was genau ist confidential computing und was sind CVMs?
+## Was genau ist confidential computing und was sind CVMs?
 
 Confidential computing  ist eine CPU Technologie, welche Entwickelt wurde, um die Sicherheit in geteilten Umgebungen zu verbessern und arbeitet eng mit dem sogenannten TPM Modul zusammen. Allen voran, damit die Cloud. CVMs, confidential VMs, sind dementsprechend also VMs, die diese Technologie nutzen. Es handelt sich kurz gesagt um eine Verschlüsselung des RAM Speichers, jedoch individuell je VM und nicht für das gesamte System. Dies hat den Vorteil, dass zwei VMs selbst bei einer Sicherheitslücke, dieser nicht einfach ausgelesen werden kann. Das Konzept in freier Wildbahn hat zuallererst Intel an den Markt gebracht. Intel ist hier sogar noch einen Schritt weiter gegangen und mit Ihrer SGX Technologie, das mit sogenannten Enklaven arbeitet, dieses Konzept statt auf die Maschine, auf einzelne Programme erweitert.
 
@@ -87,7 +87,7 @@ Kurz gesagt, der Zugriff auf den Speicher wird durch kundenindividuelle Verschl�
 
 Ein weiteres Konzept, welches sich hieraus etablierte, ist die sogenannte Remote attestation, auf die wir im nächsten Abschnitt eingehen.
 
-##### Detail Part
+#### Detail Part
 
 Bei CVMs im Speziellen handelt es sich entweder um AMD SEV, SEV-ES, SEV-SNP, oder Intel TDX. Auch Intel SGX mit Ihren Enklaven gibt es noch, hier werden keine ganzen VMs, sondern einzelne Programme in eine Enklave verpackt. 
 
@@ -97,14 +97,13 @@ Während sich AMD SEV und seine Weiterentwicklung SEV-ES hauptsächlich mit der 
 
 SVSMs sind Applikationen, die im selben Kontext wie die VM gestartet werden. Der Clou, weder die VM noch der Hypervisor können auf die SVSM direkt zugreifen. Ein Beispiel eines Services, der als SVSM ausgeliefert wird, ist ein vTPM als SVSM. Dabei kommuniziert die VM über ein spezielles Kernel Protokoll mit dem jeweiligen SVSM, in diesem Fall unserem TPM. Der Vorteil, das TPM ist vor Manipulationen geschützt. Ist das TPM ephemeral kann sogar der Cloud Provider keine Daten mehr einschleusen. 
 
-# Was kostet mich das Ganze?
+## Was kostet mich das Ganze?
 
 Um eine CVM zu starten, können Sie das in aller Regel einfach über den Provider Ihrer Wahl. Mehrkosten können an mehreren Stellen entstehen. Brauchen Sie etwa noch einen Key Management Server, etwa für Festplattenverschlüsselungen und andere kryptografische Routinen. Der vTPM kann Kosten erzeugen, sollte er persistenten Speicher besitzen. Dies ist etwa bei Azure der Fall.
 
 Dann kommen noch schwer erfassbare Kosten hinzu. Evtl. benötigte Mitarbeiter oder Technologien zur Unterstützung bei der Validierung der Remote Attestation. Das Ausgleichen des Performance-Defizits von CVMs und nicht zuletzt Anpassungen in Ihrem Stack. Denn benötigen Sie auch ein spezielles Image wie https://ubuntu.com/blog/introducing-confidential-vms-on-ubuntu-pro-for-azure
 
-
-# Eigentlich alles noch gar nicht fertig!
+## Eigentlich alles noch gar nicht fertig!
 
 Einen großen Haken gibt es bei dem Thema CVMs und insbesondere die neuesten Iterationen: SEV-SNP mit SVSMs als neuer Komponente. So sind bis heute die notwendigen Änderungen insb. für die Remote Attestation noch gar nicht im Linux Kernel angekommen. Das Gleiche gilt für die SVSMs. Bei den Providern, und damit sprechen wir über alle, egal ob AWS, Azure, oder auch wir, gilt daher:
 
@@ -114,11 +113,11 @@ Die Software hinter der Hardware ist eigentlich noch eine Vorabversion, an der s
 
 Bei den SVSM geht es sogar einen Schritt weiter, den ersten Wurf lieferte AMD, das originale Projekt ist mittlerweile eingestellt, jetzt entwickelt es allen voran SUSE Linux im neuem Coconut SVSM https://github.com/coconut-svsm/svsm
 
-# Was ist die Remote Attestation?
+## Was ist die Remote Attestation?
 
 Bei der Remote Attestation handelt es sich um eine Weiterentwicklung des CC¹. Mithilfe einer weiteren Maschine in Ihrem System, der Sie vertrauen kann bestätigt werden, dass es sich um ein unverändertes Image handelt und die Integrität der neuen Maschine gewährleistet ist. Dies bezieht sich jedoch regelmäßig nur auf das Image, das Sie zur Verfügung gestellt haben und nur bedingt auf Inhalte und Programme, die nach dem Boot hinzukommen, genauer gesagt extern hinzugefügt werden. Die Technik, mit der Remote Attestation arbeitet, findet man unter den Namen Measured Boot (Microsoft) oder IMA (Linux).
 
-##### Detail Part
+#### Detail Part
 
 Mit Measured Boot wird eine robuste Vertrauenskette geschaffen. Jeder Schritt des Bootvorgangs zertifiziert den vorherigen, und selbst bei einer Sicherheitslücke bleibt die Kette intakt.
 
@@ -138,11 +137,9 @@ Was Measured Boot besonders macht, ist seine Fähigkeit zur kontinuierlichen Üb
 
 ### Die Sache mit dem Userspace …
 
-
 Während über Linux IMA theoretisch auch Applikationen aus dem Userspace² attestiert und enforced werden können, ist dies derzeit nicht immer zuverlässig deterministisch über PCRs möglich. Auch wenn es hier Fortschritt gibt (https://lwn.net/Articles/938914/). Hier wird dann für gewöhnlich direkt auf IMA auf Policen zurückgegriffen. Mit dem Thema IMA beschäftigen wir uns demnächst in einem eigenen Beitrag.
 
-# Die Sache mit SGX …
-
+## Die Sache mit SGX …
 
 Nun gibt es da noch SGX. SGX erlaubt es auch einzelne Programme zu kapseln. Der Elefant im Raum, warum dann nicht SGX und lieber TEEs wie AMD SEV-SNP? Einige Gründe:
 
@@ -150,7 +147,7 @@ Nun gibt es da noch SGX. SGX erlaubt es auch einzelne Programme zu kapseln. Der 
 * SGX ist bis zu 22x langsamer als TEEs, eine Mini VM mit nur einer einzigen Applikation, wie CoCO³, ist also die sinnvollere Alternative
 * SGX hat ein capped memory limit (64GB bei SGXv2 64bit)
 
-# Was genau bringt mir eine CVM?
+## Was genau bringt mir eine CVM?
 
 Zu guter Letzt noch einmal zum Positiven. Die CVM sorgt dafür, dass der Workload (verschlüsselter RAM) auf fremden wie eigenen Systemen sicher vor neugierigen Augen ist. Es macht es erheblich schwieriger, Informationen aus der betroffenen CVM zu entwenden. Natürlich geht dies mit einem Performance-Impact ein, es bleibt dabei jedem selbst überlassen, ob es für den jeweiligen Workload tatsächlich sinnvoll ist, das Geld in die Hand zu nehmen. Auch das ist das positive, CVMs, sind eine Option, keine Verpflichtung.
 
