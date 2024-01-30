@@ -41,6 +41,8 @@ seo:
 ---
 ![](/assets/images/cchype.jpeg)
 
+### Offizielle Beta gestartet
+
 WX-ONE bietet nun im Beta Programm auch Confidential VMs (CVMs) an, wir starten diesen Launch, in dem wir damit erst einmal aufräumen: Confidential Computing, der neue Hype? Wir klären auf: Wer braucht es wirklich, was leistet es tatsächlich und decken falsche Versprechungen auf.
 
 # Vorwort
