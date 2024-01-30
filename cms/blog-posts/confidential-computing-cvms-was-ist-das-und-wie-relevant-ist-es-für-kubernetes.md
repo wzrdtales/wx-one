@@ -22,6 +22,20 @@ WX-ONE bietet nun im Beta Programm auch Confidential VMs (CVMs) an, wir starten 
 
 Wie immer werden wir versuchen, es gerecht für jeden Interessierten zu gestalten und trotzdem in gewohnter fachlicher Tiefe zu erklären. Da es sich in diesem Fall um ein komplexes Thema handelt, teilen wir jeden einzelnen Block in einen Detail Part und einen generalisierten auf. Wenn Sie sich nicht für die tiefen Details interessieren, überspringen Sie einfach jeweils das entsprechende Segment.
 
+# Die wichtigsten Fragen zuerst
+
+* Schützt mich eine CVM vor dem Cloud Provider? - **Nein**
+* Schützt mich eine CVM vor individuellen Attacken durch Mitarbeiter des Cloud Providers? - **Ja**
+* Schützt mich eine CVM vor einem Hack des Hypervisors meiner VM? - **Ja, außer bei Hardware Bugs**
+* Ist es unmöglich an den Speicher meiner CVM zu gelangen? - **Nein, aber schwierig**
+* Muss ich durch den Einsatz von CVMs mehr Geld in die Hand nehmen? - **Ja**
+* Wieviel? - **Technologieabhängig, wir betrachten gerade nur die Performance bedingten kosten**
+
+  * TEEs (i.e. AMD-SEV) 20-40% mehrkosten nur durch Performance Verlust
+  * SGX 2000-2500% mehrkosten nur durch den Performance Verlust
+* Garantiert mir die Remote Attestation unhackbarkeit? - **Nein**
+*
+
 # Wie vertrauenswürdig sind CVMs?
 
 Klären wir zuallererst den Elefanten im Raum. Schützt mich eine CVM vor dem Cloud Provider?
