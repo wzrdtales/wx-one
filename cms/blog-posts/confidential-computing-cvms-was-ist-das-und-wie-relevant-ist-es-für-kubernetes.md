@@ -34,7 +34,7 @@ Wie immer werden wir versuchen, es gerecht für jeden Interessierten zu gestalte
   * TEEs (i.e. AMD-SEV) 20-40% mehrkosten nur durch Performance Verlust
   * SGX 2000-2500% mehrkosten nur durch den Performance Verlust
 * Garantiert mir die Remote Attestation unhackbarkeit? - **Nein**
-*
+* Können CVMs überprovisioniert werden? - **Im Falle des RAMs, mit den aktuellen CPUs (2024) nein, CPU ja**
 
 # Wie vertrauenswürdig sind CVMs?
 
