@@ -4,6 +4,8 @@ title: Confidential Computing - CVMs - Was ist das und wie relevant ist es für
 created-on: 2024-01-30T17:44:24.166Z
 updated-on: 2024-01-30T17:44:25.098Z
 published-on: 2024-01-30T17:44:25.641Z
+f_image:
+  url: /assets/images/cchype.jpeg
 f_author: by Tobias Gurtzick
 f_prev-text: Confidential Computing kurz CVMs, nur ein Hype, oder ein muss? Wir
   erklären dir sowohl in der Tiefe als auch leicht verständlich zu allem, was du
@@ -35,7 +37,10 @@ seo:
   description: Confidential Computing kurz CVMs, nur ein Hype, oder ein muss? Wir
     erklären dir sowohl in der Tiefe als auch leicht verständlich zu allem, was
     du wissen musst.
+  og:image: /assets/images/cchype.jpeg
 ---
+![](/assets/images/cchype.jpeg)
+
 WX-ONE bietet nun im Beta Programm auch Confidential VMs (CVMs) an, wir starten diesen Launch in dem wir damit erst einmal aufräumen: Confidential Computing, der neue Hype? Wir klären auf: Wer braucht es wirklich, was leistet es tatsächlich und decken falsche Versprechungen auf.
 
 ## Vorwort
@@ -92,15 +97,11 @@ Währen sich AMD SEV und seine Weiterentwicklung SEV-ES hauptsächlich mit der V
 
 SVSMs sind Applikationen die im selben Context wie die VM gestartet werden. Der Clou, weder die VM noch der Hypervisor können auf die SVSM direkt zugreifen. Ein Beispiel eines Services der als SVSM ausgeliefert wird ist ein vTPM als SVSM. Dabei kommuniziert die VM über ein spezielles Kernel Protokol mit dem jeweiligem SVSM, in diesem Fall unserem TPM. Der Vorteil, das TPM ist vor manipulationen geschützt. Ist das TPM ephemeral kann sogar der Cloud Provider keine Daten mehr einschleusen. 
 
-
-
 # Was kostet mich das ganze?
 
 Um eine CVM zu starten, können Sie das in aller Regel einfach über den Provider Ihrer Wahl. Mehrkosten können an mehreren Stellen entstehen. Brauchen Sie etwa noch einen Key Management Server, etwa für Festplattenverschlüsselungen und andere kryptografische Routinen. Der vTPM kann kosten erzeugen, sollte er persistenten Speicher besitzen. Dies ist etwa bei Azure der Fall.
 
 Dann kommen noch schwer erfassbare Kosten hinzu. Evtl. benötigte Mitarbeiter oder Technologien zur Unterstützung bei der Validierung der Remote Attestation. Das Ausgleichen des Performance-Defizits von CVMs und nicht zuletzt Anpassungen in Ihrem Stack. Denn benötigen Sie auch ein spezielles Image wie z.B. https://ubuntu.com/blog/introducing-confidential-vms-on-ubuntu-pro-for-azure
-
-
 
 # Eigentlich alles noch gar nicht fertig!
 
@@ -111,8 +112,6 @@ Die Software hinter der Hardware ist eigentlich noch eine Vorabversion, an der s
 Übrigens sollten Sie bei sich selbst on-premise die neueste Generation einsetzen wollen, benötigen Sie auch für AMD SEV-SNP einen selbst gebauten Kernel aus dem offiziellem AMD Repo https://github.com/AMDESE/AMDSEV/tree/snp-latest.
 
 Bei den SVSM geht es sogar einen Schritt weiter, den ersten Wurf lieferte AMD, das originale Projekt ist mittlerweile eingestellt, jetzt entwickelt es allen voran SUSE Linux im neuem Coconut SVSM https://github.com/coconut-svsm/svsm
-
-
 
 # Was ist die Remote Attestation?
 
