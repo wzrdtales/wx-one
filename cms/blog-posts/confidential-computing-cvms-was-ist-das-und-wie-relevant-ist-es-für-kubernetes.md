@@ -13,8 +13,28 @@ layout: "[blog-posts].html"
 date: 2024-01-30T17:44:30.805Z
 seo:
   noindex: false
-  twitter:title: summary
-  twitter:card: summary
+  twitter:title: WX-ONE - Confidential Computing - CVMs - Was ist das und wie
+    relevant ist es für Kubernetes?
+  twitter:card: Confidential Computing kurz CVMs, nur ein Hype, oder ein muss? Wir
+    erklären dir sowohl in der Tiefe als auch leicht verständlich zu allem, was
+    du wissen musst.
+  title: WX-ONE - Confidential Computing - CVMs - Was ist das und wie relevant ist
+    es für Kubernetes?
+  og:title: WX-ONE - Confidential Computing - CVMs - Was ist das und wie relevant
+    ist es für Kubernetes?
+  additional_tags: >-
+    <meta property="og:image:height" content="500">
+
+    <meta property="og:image:width" content="500">
+
+    <meta property="og:site_name" content="WX-ONE">
+
+    <meta property="og:url" content="https://wx1.de/blog-posts/balance-zwischen-cloud-security-und-budget-die-suche-nach-der-richtigen-l%C3%B6sung/">
+
+    <meta name="keywords" content="wx1, cloud, wx-one, wxone, wizardtales, iaas, saas, paas, kubernetes, infrastructure, datacenter, csp, digitalisierung,sicherheit,cloudsicherheit, cloud-sicherheit, budget, cloudsecurity, cloud-security, cloudcomputing, cloud-computing, appliancebasiertesicherheit, appliance basierte sicherheit, appliance-basierte-sicherheit, opensource, open source, neuvector, open-source">
+  description: Confidential Computing kurz CVMs, nur ein Hype, oder ein muss? Wir
+    erklären dir sowohl in der Tiefe als auch leicht verständlich zu allem, was
+    du wissen musst.
 ---
 WX-ONE bietet nun im Beta Programm auch Confidential VMs (CVMs) an, wir starten diesen Launch in dem wir damit erst einmal aufräumen: Confidential Computing, der neue Hype? Wir klären auf: Wer braucht es wirklich, was leistet es tatsächlich und decken falsche Versprechungen auf.
 
