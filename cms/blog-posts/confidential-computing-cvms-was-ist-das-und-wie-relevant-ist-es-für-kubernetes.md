@@ -101,7 +101,7 @@ SVSMs sind Applikationen, die im selben Kontext wie die VM gestartet werden. Der
 
 Um eine CVM zu starten, können Sie das in aller Regel einfach über den Provider Ihrer Wahl. Mehrkosten können an mehreren Stellen entstehen. Brauchen Sie etwa noch einen Key Management Server, etwa für Festplattenverschlüsselungen und andere kryptografische Routinen. Der vTPM kann Kosten erzeugen, sollte er persistenten Speicher besitzen. Dies ist etwa bei Azure der Fall.
 
-Dann kommen noch schwer erfassbare Kosten hinzu. Evtl. benötigte Mitarbeiter oder Technologien zur Unterstützung bei der Validierung der Remote Attestation. Das Ausgleichen des Performance-Defizits von CVMs und nicht zuletzt Anpassungen in Ihrem Stack. Denn benötigen Sie auch ein spezielles Image wie https://ubuntu.com/blog/introducing-confidential-vms-on-ubuntu-pro-for-azure
+Dann kommen noch schwer erfassbare Kosten hinzu. Evtl. benötigte Mitarbeiter oder Technologien zur Unterstützung bei der Validierung der Remote Attestation. Das Ausgleichen des Performance-Defizits von CVMs und nicht zuletzt Anpassungen in Ihrem Stack. Denn benötigen Sie auch ein spezielles Image wie <https://ubuntu.com/blog/introducing-confidential-vms-on-ubuntu-pro-for-azure>
 
 ## Eigentlich alles noch gar nicht fertig!
 
@@ -109,9 +109,9 @@ Einen großen Haken gibt es bei dem Thema CVMs und insbesondere die neuesten Ite
 
 Die Software hinter der Hardware ist eigentlich noch eine Vorabversion, an der sich noch viel bewegt.
 
-Übrigens sollten Sie bei sich selbst on-premise die neueste Generation einsetzen wollen, benötigen Sie auch für AMD SEV-SNP einen selbst gebauten Kernel aus dem offiziellem AMD Repo https://github.com/AMDESE/AMDSEV/tree/snp-latest.
+Übrigens sollten Sie bei sich selbst on-premise die neueste Generation einsetzen wollen, benötigen Sie auch für AMD SEV-SNP einen selbst gebauten Kernel aus dem offiziellem AMD Repo <https://github.com/AMDESE/AMDSEV/tree/snp-latest>.
 
-Bei den SVSM geht es sogar einen Schritt weiter, den ersten Wurf lieferte AMD, das originale Projekt ist mittlerweile eingestellt, jetzt entwickelt es allen voran SUSE Linux im neuem Coconut SVSM https://github.com/coconut-svsm/svsm
+Bei den SVSM geht es sogar einen Schritt weiter, den ersten Wurf lieferte AMD, das originale Projekt ist mittlerweile eingestellt, jetzt entwickelt es allen voran SUSE Linux im neuem Coconut SVSM <https://github.com/coconut-svsm/svsm>
 
 ## Was ist die Remote Attestation?
 
@@ -137,7 +137,7 @@ Was Measured Boot besonders macht, ist seine Fähigkeit zur kontinuierlichen Üb
 
 ### Die Sache mit dem Userspace …
 
-Während über Linux IMA theoretisch auch Applikationen aus dem Userspace² attestiert und enforced werden können, ist dies derzeit nicht immer zuverlässig deterministisch über PCRs möglich. Auch wenn es hier Fortschritt gibt (https://lwn.net/Articles/938914/). Hier wird dann für gewöhnlich direkt auf IMA auf Policen zurückgegriffen. Mit dem Thema IMA beschäftigen wir uns demnächst in einem eigenen Beitrag.
+Während über Linux IMA theoretisch auch Applikationen aus dem Userspace² attestiert und enforced werden können, ist dies derzeit nicht immer zuverlässig deterministisch über PCRs möglich. Auch wenn es hier Fortschritt gibt (<https://lwn.net/Articles/938914/>). Hier wird dann für gewöhnlich direkt auf IMA auf Policen zurückgegriffen. Mit dem Thema IMA beschäftigen wir uns demnächst in einem eigenen Beitrag.
 
 ## Die Sache mit SGX …
 
@@ -158,8 +158,6 @@ Zusammen mit Remote Attestation, und entweder einer cleveren Nutzung der Linux I
 Zusammen mit Linux IMA und der Remote Attestation lässt sich bereits etwa eine besonders gesicherte Infrastruktur errichten. Etwa kann eingegrenzt werden, mit welchem Tooling Container ausgeführt werden können. Etwa das Erzwingen von notarisierten Container Images, um nur vertraute Workloads auszuführen. Mithilfe von SVSM wird dieser Prozess noch einmal vertrauenswürdiger.
 
 Kubernetes selbst profitiert von CVMs nicht direkt, jedoch können Workloads so sensibel sein, dass auf CVMs zurückgegriffen wird.
-
-
 
 ¹ Confidential Computing\
 ² Applikationen, die sich nicht im Kernel (Hauptbetriebssystemkomponente) befinden, sondern im Bereich des Benutzers\
