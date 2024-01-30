@@ -98,6 +98,14 @@ Nun gibt es da noch SGX. SGX erlaubt es auch einzelne Programme zu kapseln. Der 
 * SGX ist bis zu 22x langsamer als TEEs, eine mini VM mit nur einer einzigen Applikation, wie CoCO³, ist also die sinnvollere Alternative
 * SGX hat ein capped memory limit (64GB bei SGXv2 64bit)
 
+
+
+# Was genau bringt mir eine CVM?
+
+Zu guter Letzt noch einmal zum Positiven. Die CVM sorgt dafür, dass der Workload (verschlüsselter RAM) auf fremden wie eigenen Systemen sicher vor neugierigen Augen ist. Es macht es erheblich schwieriger Informationen aus der betroffenen CVM zu entwenden. Natürlich geht dies mit einem Performance Impact ein, es bleibt dabei jedem selbst überlassen, ob es für den jeweiligen Workload tatsächlich Sinnvoll ist das Geld in die Hand zu nehmen. Auch das ist das positive, CVMs, sind eine Option, keine Verpflichtung.
+
+Zusammen mit Remote Attestation, und entweder einer cleveren Nutzung der Linux IMA oder aber Mini VMs, ala CoCO³, lassen sich außerdem sehr interessante Hochsicherheitssysteme aufbauen, die sich vollständig attestieren lassen.
+
 ¹ Confidential Computing\
 ² Applikationen, die sich nicht im Kernel (Hauptbetriebssystemkomponente) befinden, sondern im Bereich des Benutzers\
 ³ Confidential Containers
