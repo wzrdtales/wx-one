@@ -1,9 +1,9 @@
 ---
 title: Confidential Computing - CVMs - Was ist das und wie relevant ist es für
   Kubernetes?
-created-on: 2023-10-30T17:05:32.613Z
-updated-on: 2023-10-30T17:05:32.647Z
-published-on: 2023-10-30T17:05:32.673Z
+created-on: 2024-01-30T17:44:24.166Z
+updated-on: 2024-01-30T17:44:25.098Z
+published-on: 2024-01-30T17:44:25.641Z
 f_author: by Tobias Gurtzick
 f_prev-text: Confidential Computing kurz CVMs, nur ein Hype, oder ein muss? Wir
   erklären dir sowohl in der Tiefe als auch leicht verständlich zu allem, was du
