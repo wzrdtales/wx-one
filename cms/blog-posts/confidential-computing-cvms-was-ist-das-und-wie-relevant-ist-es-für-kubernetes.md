@@ -157,7 +157,7 @@ Zusammen mit Remote Attestation, und entweder einer cleveren Nutzung der Linux I
 
 ## CVMs und Kubernetes
 
-Zusammen mit Linux IMA und der Remote Attestation lässt sich bereits etwa eine besonders gesicherte Infrastruktur errichten. Etwa kann eingegrenzt werden, mit welchem Tooling Container ausgeführt werden können. Etwa das Erzwingen von notarisierten Container Images, um nur vertraute Workloads auszuführen. Mithilfe von SVSM wird dieser Prozess noch einmal vertrauenswürdiger.
+Zusammen mit Linux IMA und der Remote Attestation lässt sich bereits eine besonders gesicherte Infrastruktur für Kubernetes errichten. So kann eingegrenzt werden, mit welchem Tooling Container ausgeführt werden können. Etwa das Erzwingen von notarisierten Container Images, um nur vertraute Workloads auszuführen. Mithilfe von SVSM wird dieser Prozess noch einmal vertrauenswürdiger.
 
 Kubernetes selbst profitiert von CVMs nicht direkt, jedoch können Workloads so sensibel sein, dass auf CVMs zurückgegriffen wird.
 
