@@ -35,7 +35,7 @@ seo:
 
 Anfang des letzten Jahrzehnts hat sich der Begriff "DevOps" etabliert, im Kosmos der modernen Softwareentwicklung und des IT-Betriebes ein fundamentales, bewährtes Konzept.
 
-DevOps sind mehr als nur ein technischer Ansatz; sie sind eine Kulturveränderung, die darauf abzielt, Silos zwischen Entwicklern und Operation-Teams aufzubrechen.
+DevOps ist mehr als nur ein technischer Ansatz; es ist eine Kulturveränderung, die darauf abzielt, Silos zwischen Entwicklern und Operation-Teams aufzubrechen.
 
 Diese Integration ist entscheidend für agile Entwicklungszyklen, da sie zu einer schnelleren Markteinführung, verbesserten Reaktionszeiten auf Kundenfeedback und einer erhöhten Gesamtproduktivität führt.
 
