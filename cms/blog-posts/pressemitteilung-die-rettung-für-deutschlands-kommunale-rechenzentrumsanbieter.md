@@ -14,9 +14,32 @@ tags: blog-posts
 layout: "[blog-posts].html"
 date: 2024-03-13T10:02:21.109Z
 seo:
+  twitter:site: ""
+  additional_tags: >-
+    <meta property="og:image:height" content="500">
+
+    <meta property="og:image:width" content="500">
+
+    <meta property="og:site_name" content="WX-ONE">
+
+    <link rel="canonical" href="https://www.pressebox.de/pressemitteilung/wizardtales-gmbh/die-rettung-fuer-deutschlands-kommunale-rechenzentrumsanbieter/boxid/1193777" />
+
+    <meta property="og:url" content="https://wx1.de/blog-posts/pressemitteilung-die-rettung-für-deutschlands-kommunale-rechenzentrumsanbieter/">
+
+    <meta name="keywords" content="wx1, cloud, wx-one, wxone, wizardtales, iaas, saas, paas, kubernetes, infrastructure, datacenter, csp, digitalisierung,sicherheit,cloudsicherheit, cloud-sicherheit, budget, cloudsecurity, cloud-security, cloudcomputing, cloud-computing, appliancebasiertesicherheit, appliance basierte sicherheit, appliance-basierte-sicherheit, opensource, open source, neuvector, open-source">
+  twitter:title: Die Rettung für Deutschlands kommunale Rechenzentrumsanbieter?
   noindex: false
-  twitter:title: summary
-  twitter:card: summary
+  og:title: WX-ONE - Pressemitteilung - Die Rettung für Deutschlands kommunale
+    Rechenzentrumsanbieter?
+  twitter:card: Deutschlands kommunale Rechenzentren sind zuletzt schwer unter
+    Druck geraten. Ein Cloud-Anbieter aus Nordrhein-Westfalen möchte genau das
+    ändern.
+  title: WX-ONE - Pressemitteilung - Die Rettung für Deutschlands kommunale
+    Rechenzentrumsanbieter?
+  og:image: /assets/images/about-what-01.jpg
+  description: Deutschlands kommunale Rechenzentren sind zuletzt schwer unter
+    Druck geraten. Ein Cloud-Anbieter aus Nordrhein-Westfalen möchte genau das
+    ändern.
 ---
 ![](/assets/images/about-gallery-04.png)
 
