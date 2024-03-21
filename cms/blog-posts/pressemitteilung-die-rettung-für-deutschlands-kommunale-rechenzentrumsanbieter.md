@@ -5,7 +5,7 @@ created-on: 2024-03-13T10:02:20.964Z
 updated-on: 2024-03-13T10:02:21.009Z
 published-on: 2024-03-13T10:02:21.069Z
 f_image:
-  url: /assets/images/wx-one_official_header_1.svg
+  url: /assets/images/pressemitteilung-blogbeitrag.png
 f_author: by Tobias Gurtzick
 f_prev-text: Deutschlands kommunale Rechenzentren sind zuletzt schwer unter
   Druck geraten. Ein Cloud-Anbieter aus Nordrhein-Westfalen möchte genau das
@@ -36,12 +36,12 @@ seo:
     ändern.
   title: WX-ONE - Pressemitteilung - Die Rettung für Deutschlands kommunale
     Rechenzentrumsanbieter?
-  og:image: /assets/images/about-what-01.jpg
+  og:image: /assets/images/pressemitteilung-blogbeitrag.png
   description: Deutschlands kommunale Rechenzentren sind zuletzt schwer unter
     Druck geraten. Ein Cloud-Anbieter aus Nordrhein-Westfalen möchte genau das
     ändern.
 ---
-![](/assets/images/about-gallery-04.png)
+![](/assets/images/pressemitteilung-blogbeitrag.png)
 
 ## Deutschlands kommunale Rechenzentren sind zuletzt schwer unter Druck geraten. Ein Cloud-Anbieter aus Nordrhein-Westfalen möchte genau das ändern.
 
